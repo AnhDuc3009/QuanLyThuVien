@@ -64,6 +64,7 @@ namespace QLThuVien.GUI
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 0;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // guna2DragControl1
             // 
@@ -162,7 +163,7 @@ namespace QLThuVien.GUI
             this.txtMatkhau1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatkhau1.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtMatkhau1.IconLeft")));
             this.txtMatkhau1.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txtMatkhau1.Location = new System.Drawing.Point(121, 346);
+            this.txtMatkhau1.Location = new System.Drawing.Point(123, 363);
             this.txtMatkhau1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtMatkhau1.Name = "txtMatkhau1";
             this.txtMatkhau1.PasswordChar = '•';
@@ -262,9 +263,9 @@ namespace QLThuVien.GUI
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(118, 318);
+            this.label5.Location = new System.Drawing.Point(118, 323);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(207, 24);
+            this.label5.Size = new System.Drawing.Size(207, 36);
             this.label5.TabIndex = 32;
             this.label5.Text = "Xác thực mật khẩu ";
             // 
@@ -289,6 +290,7 @@ namespace QLThuVien.GUI
             this.Controls.Add(this.guna2ControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDangKy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDangKy";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

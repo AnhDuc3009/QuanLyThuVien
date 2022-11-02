@@ -27,12 +27,14 @@ namespace QLThuVien.GUI
 
         private void btnTacGia_Click(object sender, EventArgs e)
         {
-
+            GUI.Hello_TacGia newform = new GUI.Hello_TacGia();
+            newform.Show();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            GUI.TimKiem4Hello newform = new GUI.TimKiem4Hello(txtSearch.Text);
+            newform.Show();
         }
     }
 }

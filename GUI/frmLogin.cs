@@ -49,5 +49,12 @@ namespace QLThuVien.GUI
         {
 
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Form1 newform = new Form1();
+            this.Hide();
+            newform.Show();
+        }
     }
 }

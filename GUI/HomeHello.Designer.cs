@@ -90,10 +90,10 @@ namespace QLThuVien.GUI
             this.guna2Panel3.Controls.Add(this.guna2PictureBox3);
             this.guna2Panel3.FillColor = System.Drawing.Color.White;
             this.guna2Panel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel3.Location = new System.Drawing.Point(783, 50);
+            this.guna2Panel3.Location = new System.Drawing.Point(683, 50);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(297, 187);
+            this.guna2Panel3.Size = new System.Drawing.Size(264, 187);
             this.guna2Panel3.TabIndex = 24;
             // 
             // label7
@@ -102,7 +102,7 @@ namespace QLThuVien.GUI
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label7.Location = new System.Drawing.Point(179, 26);
+            this.label7.Location = new System.Drawing.Point(141, 25);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 28);
@@ -115,7 +115,7 @@ namespace QLThuVien.GUI
             this.lbTongDS.BackColor = System.Drawing.Color.Transparent;
             this.lbTongDS.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold);
             this.lbTongDS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
-            this.lbTongDS.Location = new System.Drawing.Point(199, 65);
+            this.lbTongDS.Location = new System.Drawing.Point(154, 65);
             this.lbTongDS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongDS.Name = "lbTongDS";
             this.lbTongDS.Size = new System.Drawing.Size(60, 46);
@@ -128,7 +128,7 @@ namespace QLThuVien.GUI
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label9.Location = new System.Drawing.Point(157, 123);
+            this.label9.Location = new System.Drawing.Point(132, 123);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(100, 28);
@@ -141,7 +141,7 @@ namespace QLThuVien.GUI
             this.guna2PictureBox3.BorderRadius = 40;
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(27, 48);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(11, 48);
             this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(81, 81);
@@ -161,10 +161,10 @@ namespace QLThuVien.GUI
             this.guna2Panel2.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel2.Location = new System.Drawing.Point(432, 50);
+            this.guna2Panel2.Location = new System.Drawing.Point(376, 50);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(304, 187);
+            this.guna2Panel2.Size = new System.Drawing.Size(258, 187);
             this.guna2Panel2.TabIndex = 23;
             // 
             // label4
@@ -173,7 +173,7 @@ namespace QLThuVien.GUI
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label4.Location = new System.Drawing.Point(189, 123);
+            this.label4.Location = new System.Drawing.Point(125, 123);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 28);
@@ -186,7 +186,7 @@ namespace QLThuVien.GUI
             this.lbTongDG.BackColor = System.Drawing.Color.Transparent;
             this.lbTongDG.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold);
             this.lbTongDG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
-            this.lbTongDG.Location = new System.Drawing.Point(195, 65);
+            this.lbTongDG.Location = new System.Drawing.Point(133, 65);
             this.lbTongDG.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongDG.Name = "lbTongDG";
             this.lbTongDG.Size = new System.Drawing.Size(76, 46);
@@ -199,7 +199,7 @@ namespace QLThuVien.GUI
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label6.Location = new System.Drawing.Point(92, 26);
+            this.label6.Location = new System.Drawing.Point(75, 25);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(179, 28);
@@ -212,7 +212,7 @@ namespace QLThuVien.GUI
             this.guna2PictureBox2.BorderRadius = 40;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(28, 57);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(5, 57);
             this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(81, 81);
@@ -232,10 +232,10 @@ namespace QLThuVien.GUI
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
             this.guna2Panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel1.Location = new System.Drawing.Point(67, 50);
+            this.guna2Panel1.Location = new System.Drawing.Point(57, 50);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(310, 187);
+            this.guna2Panel1.Size = new System.Drawing.Size(269, 187);
             this.guna2Panel1.TabIndex = 22;
             // 
             // label3
@@ -244,7 +244,7 @@ namespace QLThuVien.GUI
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(168, 123);
+            this.label3.Location = new System.Drawing.Point(144, 123);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 28);
@@ -257,7 +257,7 @@ namespace QLThuVien.GUI
             this.lbTongSach.BackColor = System.Drawing.Color.Transparent;
             this.lbTongSach.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold);
             this.lbTongSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
-            this.lbTongSach.Location = new System.Drawing.Point(176, 65);
+            this.lbTongSach.Location = new System.Drawing.Point(154, 65);
             this.lbTongSach.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongSach.Name = "lbTongSach";
             this.lbTongSach.Size = new System.Drawing.Size(100, 46);
@@ -270,7 +270,7 @@ namespace QLThuVien.GUI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label1.Location = new System.Drawing.Point(136, 26);
+            this.label1.Location = new System.Drawing.Point(121, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 28);
@@ -283,7 +283,7 @@ namespace QLThuVien.GUI
             this.guna2PictureBox1.BorderRadius = 40;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(25, 57);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(8, 52);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(100, 100);
@@ -301,18 +301,18 @@ namespace QLThuVien.GUI
             this.guna2Panel4.Controls.Add(this.label10);
             this.guna2Panel4.FillColor = System.Drawing.Color.White;
             this.guna2Panel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel4.Location = new System.Drawing.Point(609, 443);
+            this.guna2Panel4.Location = new System.Drawing.Point(553, 443);
             this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(855, 366);
+            this.guna2Panel4.Size = new System.Drawing.Size(699, 366);
             this.guna2Panel4.TabIndex = 25;
             // 
             // flowpanel
             // 
-            this.flowpanel.Location = new System.Drawing.Point(17, 65);
+            this.flowpanel.Location = new System.Drawing.Point(14, 65);
             this.flowpanel.Margin = new System.Windows.Forms.Padding(4);
             this.flowpanel.Name = "flowpanel";
-            this.flowpanel.Size = new System.Drawing.Size(819, 273);
+            this.flowpanel.Size = new System.Drawing.Size(669, 273);
             this.flowpanel.TabIndex = 22;
             // 
             // label10
@@ -321,7 +321,7 @@ namespace QLThuVien.GUI
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
-            this.label10.Location = new System.Drawing.Point(245, 23);
+            this.label10.Location = new System.Drawing.Point(212, 23);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(288, 28);
@@ -341,7 +341,7 @@ namespace QLThuVien.GUI
             this.guna2Panel5.Location = new System.Drawing.Point(67, 299);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(1321, 97);
+            this.guna2Panel5.Size = new System.Drawing.Size(1185, 97);
             this.guna2Panel5.TabIndex = 26;
             // 
             // btnSearch
@@ -349,7 +349,7 @@ namespace QLThuVien.GUI
             this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(1081, 22);
+            this.btnSearch.Location = new System.Drawing.Point(875, 22);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(161, 55);
@@ -375,7 +375,7 @@ namespace QLThuVien.GUI
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Nhập tên sách để tôi tìm cho bạn";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(1060, 55);
+            this.txtSearch.Size = new System.Drawing.Size(849, 55);
             this.txtSearch.TabIndex = 0;
             // 
             // label11
@@ -408,7 +408,7 @@ namespace QLThuVien.GUI
             this.guna2Panel6.Location = new System.Drawing.Point(67, 443);
             this.guna2Panel6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(516, 266);
+            this.guna2Panel6.Size = new System.Drawing.Size(480, 266);
             this.guna2Panel6.TabIndex = 26;
             // 
             // guna2Button6
@@ -416,7 +416,7 @@ namespace QLThuVien.GUI
             this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(209)))), ((int)(((byte)(98)))));
             this.guna2Button6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(307, 65);
+            this.guna2Button6.Location = new System.Drawing.Point(290, 65);
             this.guna2Button6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.Size = new System.Drawing.Size(181, 55);
@@ -428,7 +428,7 @@ namespace QLThuVien.GUI
             this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(151, 65);
+            this.guna2Button5.Location = new System.Drawing.Point(131, 65);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(148, 55);
@@ -440,7 +440,7 @@ namespace QLThuVien.GUI
             this.btnTheLoai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(149)))), ((int)(((byte)(79)))));
             this.btnTheLoai.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTheLoai.ForeColor = System.Drawing.Color.White;
-            this.btnTheLoai.Location = new System.Drawing.Point(25, 128);
+            this.btnTheLoai.Location = new System.Drawing.Point(14, 129);
             this.btnTheLoai.Margin = new System.Windows.Forms.Padding(4);
             this.btnTheLoai.Name = "btnTheLoai";
             this.btnTheLoai.Size = new System.Drawing.Size(144, 97);
@@ -452,7 +452,7 @@ namespace QLThuVien.GUI
             this.btnTacGia.FillColor = System.Drawing.Color.LightSeaGreen;
             this.btnTacGia.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTacGia.ForeColor = System.Drawing.Color.White;
-            this.btnTacGia.Location = new System.Drawing.Point(25, 65);
+            this.btnTacGia.Location = new System.Drawing.Point(14, 65);
             this.btnTacGia.Margin = new System.Windows.Forms.Padding(4);
             this.btnTacGia.Name = "btnTacGia";
             this.btnTacGia.Size = new System.Drawing.Size(109, 55);
@@ -465,7 +465,7 @@ namespace QLThuVien.GUI
             this.guna2Button2.FillColor = System.Drawing.Color.MediumVioletRed;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(185, 128);
+            this.guna2Button2.Location = new System.Drawing.Point(167, 128);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(303, 97);
@@ -478,7 +478,7 @@ namespace QLThuVien.GUI
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
-            this.label12.Location = new System.Drawing.Point(20, 23);
+            this.label12.Location = new System.Drawing.Point(15, 23);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(55, 28);
@@ -497,10 +497,10 @@ namespace QLThuVien.GUI
             this.guna2Panel7.Controls.Add(this.guna2PictureBox4);
             this.guna2Panel7.FillColor = System.Drawing.Color.White;
             this.guna2Panel7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel7.Location = new System.Drawing.Point(1125, 50);
+            this.guna2Panel7.Location = new System.Drawing.Point(1002, 50);
             this.guna2Panel7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(297, 187);
+            this.guna2Panel7.Size = new System.Drawing.Size(250, 187);
             this.guna2Panel7.TabIndex = 25;
             // 
             // label13
@@ -509,7 +509,7 @@ namespace QLThuVien.GUI
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label13.Location = new System.Drawing.Point(160, 26);
+            this.label13.Location = new System.Drawing.Point(137, 25);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(89, 28);
@@ -522,7 +522,7 @@ namespace QLThuVien.GUI
             this.lbTongTL.BackColor = System.Drawing.Color.Transparent;
             this.lbTongTL.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold);
             this.lbTongTL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
-            this.lbTongTL.Location = new System.Drawing.Point(201, 65);
+            this.lbTongTL.Location = new System.Drawing.Point(154, 65);
             this.lbTongTL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongTL.Name = "lbTongTL";
             this.lbTongTL.Size = new System.Drawing.Size(56, 46);
@@ -535,7 +535,7 @@ namespace QLThuVien.GUI
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label15.Location = new System.Drawing.Point(157, 123);
+            this.label15.Location = new System.Drawing.Point(136, 123);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(90, 28);
@@ -548,7 +548,7 @@ namespace QLThuVien.GUI
             this.guna2PictureBox4.BorderRadius = 40;
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(23, 48);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(20, 48);
             this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.Size = new System.Drawing.Size(81, 81);
@@ -565,7 +565,7 @@ namespace QLThuVien.GUI
             this.btnRegister.Location = new System.Drawing.Point(67, 737);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(516, 71);
+            this.btnRegister.Size = new System.Drawing.Size(480, 71);
             this.btnRegister.TabIndex = 33;
             this.btnRegister.Text = "ĐĂNG KÝ TÀI KHOẢN ĐỘC GIẢ";
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
@@ -587,7 +587,7 @@ namespace QLThuVien.GUI
             this.Controls.Add(this.guna2Panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HomeHello";
-            this.Size = new System.Drawing.Size(1478, 818);
+            this.Size = new System.Drawing.Size(1264, 818);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();

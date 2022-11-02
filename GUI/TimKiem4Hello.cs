@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace QLThuVien.GUI
 {
-    public partial class TimKiem4Hello : Form
+    public partial class TimKiem4Hello : UserControl
     {
         public TimKiem4Hello()
         {
             InitializeComponent();
         }
 
+        public TimKiem4Hello(string Keyword)
+        {
+
+        }
 
 
         private void btnFindByTG_Click(object sender, EventArgs e)
@@ -47,6 +51,13 @@ namespace QLThuVien.GUI
         private void btnCreatePM_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Form1 newform = new Form1();
+            this.Hide();
+            newform.Show();
         }
     }
 }

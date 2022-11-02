@@ -54,6 +54,15 @@
     <Reference Include="DevExpress.Data.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>packages\DevExpress.Data.22.1.6\lib\net452\DevExpress.Data.v22.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Xpo.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Xpo.22.1.6\lib\net452\DevExpress.Xpo.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
@@ -80,6 +89,7 @@
       <HintPath>packages\System.CodeDom.6.0.0\lib\net461\System.CodeDom.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Configuration.ConfigurationManager.6.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
@@ -145,6 +155,7 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
@@ -230,11 +241,47 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\Home_BUS.cs" />
-    <Compile Include="GUI\CreateDataDB.cs">
-      <SubType>Form</SubType>
+    <Compile Include="GUI\Admin_ThemNV.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\CreateDataDB.Designer.cs">
-      <DependentUpon>CreateDataDB.cs</DependentUpon>
+    <Compile Include="GUI\Admin_ThemNV.Designer.cs">
+      <DependentUpon>Admin_ThemNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DanhSachDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DanhSachDG.Designer.cs">
+      <DependentUpon>DanhSachDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DanhsachNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DanhsachNV.Designer.cs">
+      <DependentUpon>DanhsachNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DSPhieuMuonNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DSPhieuMuonNV.Designer.cs">
+      <DependentUpon>DSPhieuMuonNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DSSachCoSan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DSSachCoSan.Designer.cs">
+      <DependentUpon>DSSachCoSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DSSachMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DSSachMuon.Designer.cs">
+      <DependentUpon>DSSachMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DSSachVP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DSSachVP.Designer.cs">
+      <DependentUpon>DSSachVP.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
@@ -242,11 +289,53 @@
     <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FrmDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\FrmDangKy.Designer.cs">
       <DependentUpon>FrmDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDocGia.Designer.cs">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmLapBBVP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLapBBVP.Designer.cs">
+      <DependentUpon>frmLapBBVP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmThemDauSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmThemDauSach.Designer.cs">
+      <DependentUpon>FrmThemDauSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Hello_TacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Hello_TacGia.Designer.cs">
+      <DependentUpon>Hello_TacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Hello_TheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Hello_TheLoai.Designer.cs">
+      <DependentUpon>Hello_TheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HomeAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\HomeAdmin.Designer.cs">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\HomeHello.cs">
       <SubType>UserControl</SubType>
@@ -260,11 +349,29 @@
     <Compile Include="GUI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QLNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QLNhap.Designer.cs">
+      <DependentUpon>QLNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\test.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\test.Designer.cs">
       <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThemDocgia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ThemDocgia.Designer.cs">
+      <DependentUpon>ThemDocgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThongKeNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ThongKeNV.Designer.cs">
+      <DependentUpon>ThongKeNV.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ThongTin.cs">
       <SubType>UserControl</SubType>
@@ -272,22 +379,49 @@
     <Compile Include="GUI\ThongTin.Designer.cs">
       <DependentUpon>ThongTin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\TimKiem4Hello.cs">
+    <Compile Include="GUI\ThongTin_Sach.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ThongTin_Sach.Designer.cs">
+      <DependentUpon>ThongTin_Sach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TimKiem4Hello.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\TimKiem4Hello.Designer.cs">
       <DependentUpon>TimKiem4Hello.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\tk_sachnhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\tk_sachnhap.Designer.cs">
+      <DependentUpon>tk_sachnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Xu_ly_tra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Xu_ly_tra.Designer.cs">
+      <DependentUpon>Xu_ly_tra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\CreateDataDB.resx">
-      <DependentUpon>CreateDataDB.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrmDangKy.resx">
       <DependentUpon>FrmDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDocGia.resx">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Hello_TacGia.resx">
+      <DependentUpon>Hello_TacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Hello_TheLoai.resx">
+      <DependentUpon>Hello_TheLoai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\HomeHello.resx">
       <DependentUpon>HomeHello.cs</DependentUpon>
@@ -300,6 +434,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ThongTin.resx">
       <DependentUpon>ThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ThongTin_Sach.resx">
+      <DependentUpon>ThongTin_Sach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\TimKiem4Hello.resx">
       <DependentUpon>TimKiem4Hello.cs</DependentUpon>
@@ -329,9 +466,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="createDB\" />
     <Folder Include="DAO\" />
     <Folder Include="DTO\" />
+    <Folder Include="Report\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\155.jpg" />

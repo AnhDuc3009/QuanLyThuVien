@@ -39,10 +39,8 @@ namespace QLThuVien
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.btnDangKy = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnDangNhap = new Guna.UI2.WinForms.Guna2Button();
             this.btnThongtin = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCaiDat = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnLoginn = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -120,15 +118,13 @@ namespace QLThuVien
             this.panelButton.Controls.Add(this.btnHome);
             this.panelButton.Controls.Add(this.btnDangKy);
             this.panelButton.Controls.Add(this.guna2Button5);
-            this.panelButton.Controls.Add(this.guna2Button1);
             this.panelButton.Controls.Add(this.btnDangNhap);
             this.panelButton.Controls.Add(this.btnThongtin);
-            this.panelButton.Controls.Add(this.btnCaiDat);
             this.panelButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelButton.Location = new System.Drawing.Point(0, 84);
             this.panelButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelButton.Name = "panelButton";
-            this.panelButton.Size = new System.Drawing.Size(253, 380);
+            this.panelButton.Size = new System.Drawing.Size(253, 364);
             this.panelButton.TabIndex = 19;
             // 
             // btnHome
@@ -140,11 +136,11 @@ namespace QLThuVien
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHome.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnHome.Location = new System.Drawing.Point(0, 6);
+            this.btnHome.Location = new System.Drawing.Point(0, 2);
             this.btnHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(1);
-            this.btnHome.Size = new System.Drawing.Size(253, 48);
+            this.btnHome.Size = new System.Drawing.Size(253, 62);
             this.btnHome.TabIndex = 21;
             this.btnHome.Tag = "Home";
             this.btnHome.Text = "Home";
@@ -159,11 +155,11 @@ namespace QLThuVien
             this.btnDangKy.Image = ((System.Drawing.Image)(resources.GetObject("btnDangKy.Image")));
             this.btnDangKy.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDangKy.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDangKy.Location = new System.Drawing.Point(0, 113);
+            this.btnDangKy.Location = new System.Drawing.Point(3, 142);
             this.btnDangKy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Padding = new System.Windows.Forms.Padding(1);
-            this.btnDangKy.Size = new System.Drawing.Size(253, 50);
+            this.btnDangKy.Size = new System.Drawing.Size(253, 69);
             this.btnDangKy.TabIndex = 23;
             this.btnDangKy.Tag = "Đăng ký ";
             this.btnDangKy.Text = "Đăng ký ";
@@ -178,34 +174,15 @@ namespace QLThuVien
             this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
             this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button5.Location = new System.Drawing.Point(0, 167);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 215);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Padding = new System.Windows.Forms.Padding(1);
-            this.guna2Button5.Size = new System.Drawing.Size(253, 48);
+            this.guna2Button5.Size = new System.Drawing.Size(253, 71);
             this.guna2Button5.TabIndex = 21;
             this.guna2Button5.Tag = "Tìm kiếm sách";
             this.guna2Button5.Text = "Tìm kiếm sách";
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(224)))), ((int)(((byte)(197)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(224)))), ((int)(((byte)(197)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 220);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Padding = new System.Windows.Forms.Padding(1);
-            this.guna2Button1.Size = new System.Drawing.Size(253, 48);
-            this.guna2Button1.TabIndex = 15;
-            this.guna2Button1.Tag = "Tạo Data ";
-            this.guna2Button1.Text = "Tạo Data ";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btnDangNhap
             // 
@@ -216,11 +193,11 @@ namespace QLThuVien
             this.btnDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.Image")));
             this.btnDangNhap.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDangNhap.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDangNhap.Location = new System.Drawing.Point(0, 58);
+            this.btnDangNhap.Location = new System.Drawing.Point(3, 68);
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Padding = new System.Windows.Forms.Padding(1);
-            this.btnDangNhap.Size = new System.Drawing.Size(253, 50);
+            this.btnDangNhap.Size = new System.Drawing.Size(253, 70);
             this.btnDangNhap.TabIndex = 22;
             this.btnDangNhap.Tag = "Đăng nhập";
             this.btnDangNhap.Text = "Đăng nhập";
@@ -235,34 +212,15 @@ namespace QLThuVien
             this.btnThongtin.Image = ((System.Drawing.Image)(resources.GetObject("btnThongtin.Image")));
             this.btnThongtin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnThongtin.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnThongtin.Location = new System.Drawing.Point(0, 272);
+            this.btnThongtin.Location = new System.Drawing.Point(0, 290);
             this.btnThongtin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThongtin.Name = "btnThongtin";
             this.btnThongtin.Padding = new System.Windows.Forms.Padding(1);
-            this.btnThongtin.Size = new System.Drawing.Size(253, 46);
+            this.btnThongtin.Size = new System.Drawing.Size(253, 63);
             this.btnThongtin.TabIndex = 13;
             this.btnThongtin.Tag = "Thông tin";
             this.btnThongtin.Text = "Thông tin";
             this.btnThongtin.Click += new System.EventHandler(this.btnThongtin_Click);
-            // 
-            // btnCaiDat
-            // 
-            this.btnCaiDat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(224)))), ((int)(((byte)(197)))));
-            this.btnCaiDat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(224)))), ((int)(((byte)(197)))));
-            this.btnCaiDat.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCaiDat.ForeColor = System.Drawing.Color.Black;
-            this.btnCaiDat.Image = ((System.Drawing.Image)(resources.GetObject("btnCaiDat.Image")));
-            this.btnCaiDat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCaiDat.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCaiDat.Location = new System.Drawing.Point(0, 322);
-            this.btnCaiDat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCaiDat.Name = "btnCaiDat";
-            this.btnCaiDat.Padding = new System.Windows.Forms.Padding(1);
-            this.btnCaiDat.Size = new System.Drawing.Size(253, 46);
-            this.btnCaiDat.TabIndex = 14;
-            this.btnCaiDat.Tag = "Cài đặt";
-            this.btnCaiDat.Text = "Cài đặt";
-            this.btnCaiDat.Click += new System.EventHandler(this.btnCaiDat_Click);
             // 
             // panel2
             // 
@@ -332,10 +290,6 @@ namespace QLThuVien
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // sidebartick
-            // 
-            this.sidebartick.Tick += new System.EventHandler(this.sidebartick_Tick);
             // 
             // guna2DragControl1
             // 
@@ -410,6 +364,7 @@ namespace QLThuVien
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "THƯ VIỆN MTA";
             this.PanelMenuBar.ResumeLayout(false);
             this.panelButton.ResumeLayout(false);
@@ -433,12 +388,10 @@ namespace QLThuVien
         public System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button btnCaiDat;
         private Guna.UI2.WinForms.Guna2Button btnThongtin;
         private System.Windows.Forms.Timer sidebartick;
         private System.Windows.Forms.Timer LoginTick;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
 
 
         private System.Windows.Forms.Panel panelShow;

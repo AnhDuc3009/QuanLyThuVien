@@ -43,8 +43,6 @@ namespace QLThuVien.GUI
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.dragPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btnCreatePM = new Guna.UI2.WinForms.Guna2Button();
             this.btnClearAll = new Guna.UI2.WinForms.Guna2Button();
@@ -66,11 +64,11 @@ namespace QLThuVien.GUI
             // flowLayoutDS
             // 
             this.flowLayoutDS.AutoScroll = true;
-            this.flowLayoutDS.Location = new System.Drawing.Point(20, 228);
+            this.flowLayoutDS.Location = new System.Drawing.Point(20, 225);
             this.flowLayoutDS.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutDS.MaximumSize = new System.Drawing.Size(903, 673);
             this.flowLayoutDS.Name = "flowLayoutDS";
-            this.flowLayoutDS.Size = new System.Drawing.Size(869, 673);
+            this.flowLayoutDS.Size = new System.Drawing.Size(696, 589);
             this.flowLayoutDS.TabIndex = 41;
             // 
             // cbTheLoai
@@ -88,7 +86,7 @@ namespace QLThuVien.GUI
             this.cbTheLoai.Location = new System.Drawing.Point(37, 15);
             this.cbTheLoai.Margin = new System.Windows.Forms.Padding(4);
             this.cbTheLoai.Name = "cbTheLoai";
-            this.cbTheLoai.Size = new System.Drawing.Size(265, 36);
+            this.cbTheLoai.Size = new System.Drawing.Size(244, 36);
             this.cbTheLoai.TabIndex = 37;
             // 
             // btnSearch
@@ -96,7 +94,7 @@ namespace QLThuVien.GUI
             this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(701, 66);
+            this.btnSearch.Location = new System.Drawing.Point(547, 67);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(143, 49);
@@ -122,7 +120,7 @@ namespace QLThuVien.GUI
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Nhập tên sách để tôi tìm cho bạn";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(644, 49);
+            this.txtSearch.Size = new System.Drawing.Size(501, 49);
             this.txtSearch.TabIndex = 35;
             // 
             // btnFindAll
@@ -131,7 +129,7 @@ namespace QLThuVien.GUI
             this.btnFindAll.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnFindAll.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFindAll.ForeColor = System.Drawing.Color.White;
-            this.btnFindAll.Location = new System.Drawing.Point(507, 15);
+            this.btnFindAll.Location = new System.Drawing.Point(484, 15);
             this.btnFindAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnFindAll.Name = "btnFindAll";
             this.btnFindAll.Size = new System.Drawing.Size(100, 44);
@@ -152,13 +150,11 @@ namespace QLThuVien.GUI
             // dragPanel
             // 
             this.dragPanel.Controls.Add(this.label1);
-            this.dragPanel.Controls.Add(this.guna2ControlBox2);
-            this.dragPanel.Controls.Add(this.guna2ControlBox1);
             this.dragPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.dragPanel.Location = new System.Drawing.Point(0, 0);
             this.dragPanel.Margin = new System.Windows.Forms.Padding(4);
             this.dragPanel.Name = "dragPanel";
-            this.dragPanel.Size = new System.Drawing.Size(1541, 41);
+            this.dragPanel.Size = new System.Drawing.Size(1266, 41);
             this.dragPanel.TabIndex = 42;
             // 
             // label1
@@ -174,29 +170,6 @@ namespace QLThuVien.GUI
             this.label1.TabIndex = 36;
             this.label1.Text = "TÌM KIẾM ĐẦU SÁCH";
             // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1380, 4);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(60, 36);
-            this.guna2ControlBox2.TabIndex = 1;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1467, 4);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 36);
-            this.guna2ControlBox1.TabIndex = 0;
-            // 
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BorderRadius = 10;
@@ -205,10 +178,10 @@ namespace QLThuVien.GUI
             this.guna2CustomGradientPanel1.Controls.Add(this.label13);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnPreview);
             this.guna2CustomGradientPanel1.Controls.Add(this.dgvChooseBook);
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(913, 73);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(719, 74);
             this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(593, 828);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(541, 740);
             this.guna2CustomGradientPanel1.TabIndex = 43;
             // 
             // btnCreatePM
@@ -219,7 +192,7 @@ namespace QLThuVien.GUI
             this.btnCreatePM.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCreatePM.ForeColor = System.Drawing.Color.White;
             this.btnCreatePM.Image = ((System.Drawing.Image)(resources.GetObject("btnCreatePM.Image")));
-            this.btnCreatePM.Location = new System.Drawing.Point(314, 690);
+            this.btnCreatePM.Location = new System.Drawing.Point(290, 651);
             this.btnCreatePM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCreatePM.Name = "btnCreatePM";
             this.btnCreatePM.Size = new System.Drawing.Size(228, 44);
@@ -234,10 +207,9 @@ namespace QLThuVien.GUI
             this.btnClearAll.FillColor = System.Drawing.Color.LightCoral;
             this.btnClearAll.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClearAll.ForeColor = System.Drawing.Color.White;
-            this.btnClearAll.Image = ((System.Drawing.Image)(resources.GetObject("btnClearAll.Image")));
             this.btnClearAll.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClearAll.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnClearAll.Location = new System.Drawing.Point(397, 28);
+            this.btnClearAll.Location = new System.Drawing.Point(324, 17);
             this.btnClearAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClearAll.Name = "btnClearAll";
             this.btnClearAll.Size = new System.Drawing.Size(172, 44);
@@ -266,7 +238,7 @@ namespace QLThuVien.GUI
             this.btnPreview.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPreview.ForeColor = System.Drawing.Color.White;
             this.btnPreview.Image = ((System.Drawing.Image)(resources.GetObject("btnPreview.Image")));
-            this.btnPreview.Location = new System.Drawing.Point(25, 690);
+            this.btnPreview.Location = new System.Drawing.Point(25, 651);
             this.btnPreview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPreview.Name = "btnPreview";
             this.btnPreview.Size = new System.Drawing.Size(228, 44);
@@ -302,13 +274,13 @@ namespace QLThuVien.GUI
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvChooseBook.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvChooseBook.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvChooseBook.Location = new System.Drawing.Point(27, 90);
+            this.dgvChooseBook.Location = new System.Drawing.Point(13, 90);
             this.dgvChooseBook.Margin = new System.Windows.Forms.Padding(4);
             this.dgvChooseBook.Name = "dgvChooseBook";
             this.dgvChooseBook.RowHeadersVisible = false;
             this.dgvChooseBook.RowHeadersWidth = 51;
             this.dgvChooseBook.RowTemplate.Height = 40;
-            this.dgvChooseBook.Size = new System.Drawing.Size(543, 524);
+            this.dgvChooseBook.Size = new System.Drawing.Size(519, 525);
             this.dgvChooseBook.TabIndex = 36;
             this.dgvChooseBook.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvChooseBook.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -363,7 +335,7 @@ namespace QLThuVien.GUI
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(20, 73);
             this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(869, 135);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(696, 135);
             this.guna2CustomGradientPanel2.TabIndex = 44;
             // 
             // btnFindByTG
@@ -372,7 +344,7 @@ namespace QLThuVien.GUI
             this.btnFindByTG.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnFindByTG.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFindByTG.ForeColor = System.Drawing.Color.White;
-            this.btnFindByTG.Location = new System.Drawing.Point(312, 15);
+            this.btnFindByTG.Location = new System.Drawing.Point(289, 15);
             this.btnFindByTG.Margin = new System.Windows.Forms.Padding(4);
             this.btnFindByTG.Name = "btnFindByTG";
             this.btnFindByTG.Size = new System.Drawing.Size(187, 44);
@@ -398,16 +370,14 @@ namespace QLThuVien.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1541, 937);
             this.Controls.Add(this.lbSLBook);
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.dragPanel);
             this.Controls.Add(this.flowLayoutDS);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TimKiem4Hello";
-            this.Text = "TimKiem4Hello";
+            this.Size = new System.Drawing.Size(1266, 818);
             this.dragPanel.ResumeLayout(false);
             this.dragPanel.PerformLayout();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
@@ -429,8 +399,6 @@ namespace QLThuVien.GUI
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Panel dragPanel;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
