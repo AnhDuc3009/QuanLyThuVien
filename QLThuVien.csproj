@@ -228,6 +228,8 @@
     <Reference Include="System.Web.Services.Description, Version=4.9.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\System.Web.Services.Description.4.9.0\lib\net461\System.Web.Services.Description.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -241,58 +243,100 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\Home_BUS.cs" />
-    <Compile Include="GUI\Admin_ThemNV.cs">
+    <Compile Include="CuaToi\DateTimePickerNew.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CuaToi\PictureBoxNew.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI_Admin\Admin_ThemNV.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\Admin_ThemNV.Designer.cs">
+    <Compile Include="GUI_Admin\Admin_ThemNV.Designer.cs">
       <DependentUpon>Admin_ThemNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DanhSachDG.cs">
+    <Compile Include="GUI_Admin\DanhSachDG.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\DanhSachDG.Designer.cs">
+    <Compile Include="GUI_Admin\DanhSachDG.Designer.cs">
       <DependentUpon>DanhSachDG.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DanhsachNV.cs">
+    <Compile Include="GUI_Admin\DanhsachNV.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\DanhsachNV.Designer.cs">
+    <Compile Include="GUI_Admin\DanhsachNV.Designer.cs">
       <DependentUpon>DanhsachNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DSPhieuMuonNV.cs">
+    <Compile Include="GUI_Admin\DSPhieuMuonNV.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\DSPhieuMuonNV.Designer.cs">
+    <Compile Include="GUI_Admin\DSPhieuMuonNV.Designer.cs">
       <DependentUpon>DSPhieuMuonNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DSSachCoSan.cs">
+    <Compile Include="GUI_Admin\DSSachCoSan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\DSSachCoSan.Designer.cs">
+    <Compile Include="GUI_Admin\DSSachCoSan.Designer.cs">
       <DependentUpon>DSSachCoSan.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DSSachMuon.cs">
+    <Compile Include="GUI_Admin\DSSachMuon.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\DSSachMuon.Designer.cs">
+    <Compile Include="GUI_Admin\DSSachMuon.Designer.cs">
       <DependentUpon>DSSachMuon.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DSSachVP.cs">
+    <Compile Include="GUI_Admin\DSSachVP.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\DSSachVP.Designer.cs">
+    <Compile Include="GUI_Admin\DSSachVP.Designer.cs">
       <DependentUpon>DSSachVP.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Form1.cs">
+    <Compile Include="GUI_DocGia\FrmTimKiemForDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DocGia\FrmTimKiemForDG.Designer.cs">
+      <DependentUpon>FrmTimKiemForDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DocGia\HomeDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DocGia\HomeDG.Designer.cs">
+      <DependentUpon>HomeDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DocGia\InfoDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DocGia\InfoDG.Designer.cs">
+      <DependentUpon>InfoDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DocGia\PhieuMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DocGia\PhieuMuon.Designer.cs">
+      <DependentUpon>PhieuMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DocGia\TimKiem4HelloV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DocGia\TimKiem4HelloV2.Designer.cs">
+      <DependentUpon>TimKiem4HelloV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DocGia\TK_SachMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DocGia\TK_SachMuon.Designer.cs">
+      <DependentUpon>TK_SachMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Khach\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Form1.Designer.cs">
+    <Compile Include="GUI_Khach\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FormAdmin.cs">
+    <Compile Include="GUI_Admin\FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FormAdmin.Designer.cs">
+    <Compile Include="GUI_Admin\FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FrmDangKy.cs">
@@ -301,46 +345,46 @@
     <Compile Include="GUI\FrmDangKy.Designer.cs">
       <DependentUpon>FrmDangKy.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmDocGia.cs">
+    <Compile Include="GUI_DocGia\frmDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmDocGia.Designer.cs">
+    <Compile Include="GUI_DocGia\frmDocGia.Designer.cs">
       <DependentUpon>frmDocGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmLapBBVP.cs">
+    <Compile Include="GUI_Admin\frmLapBBVP.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\frmLapBBVP.Designer.cs">
+    <Compile Include="GUI_Admin\frmLapBBVP.Designer.cs">
       <DependentUpon>frmLapBBVP.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FrmThemDauSach.cs">
+    <Compile Include="GUI_Admin\FrmThemDauSach.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\FrmThemDauSach.Designer.cs">
+    <Compile Include="GUI_Admin\FrmThemDauSach.Designer.cs">
       <DependentUpon>FrmThemDauSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Hello_TacGia.cs">
+    <Compile Include="GUI_Khach\Hello_TacGia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Hello_TacGia.Designer.cs">
+    <Compile Include="GUI_Khach\Hello_TacGia.Designer.cs">
       <DependentUpon>Hello_TacGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Hello_TheLoai.cs">
+    <Compile Include="GUI_Khach\Hello_TheLoai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Hello_TheLoai.Designer.cs">
+    <Compile Include="GUI_Khach\Hello_TheLoai.Designer.cs">
       <DependentUpon>Hello_TheLoai.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\HomeAdmin.cs">
+    <Compile Include="GUI_Admin\HomeAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\HomeAdmin.Designer.cs">
+    <Compile Include="GUI_Admin\HomeAdmin.Designer.cs">
       <DependentUpon>HomeAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\HomeHello.cs">
+    <Compile Include="GUI_Khach\HomeHello.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\HomeHello.Designer.cs">
+    <Compile Include="GUI_Khach\HomeHello.Designer.cs">
       <DependentUpon>HomeHello.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmLogin.cs">
@@ -349,10 +393,10 @@
     <Compile Include="GUI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QLNhap.cs">
+    <Compile Include="GUI_Admin\QLNhap.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\QLNhap.Designer.cs">
+    <Compile Include="GUI_Admin\QLNhap.Designer.cs">
       <DependentUpon>QLNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\test.cs">
@@ -361,69 +405,138 @@
     <Compile Include="GUI\test.Designer.cs">
       <DependentUpon>test.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ThemDocgia.cs">
+    <Compile Include="GUI_Admin\ThemDocgia.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\ThemDocgia.Designer.cs">
+    <Compile Include="GUI_Admin\ThemDocgia.Designer.cs">
       <DependentUpon>ThemDocgia.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ThongKeNV.cs">
+    <Compile Include="GUI_Admin\ThongKeNV.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\ThongKeNV.Designer.cs">
+    <Compile Include="GUI_Admin\ThongKeNV.Designer.cs">
       <DependentUpon>ThongKeNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ThongTin.cs">
+    <Compile Include="GUI_Khach\ThongTin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\ThongTin.Designer.cs">
+    <Compile Include="GUI_Khach\ThongTin.Designer.cs">
       <DependentUpon>ThongTin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\ThongTin_Sach.cs">
+    <Compile Include="GUI_Khach\ThongTin_Sach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\ThongTin_Sach.Designer.cs">
+    <Compile Include="GUI_Khach\ThongTin_Sach.Designer.cs">
       <DependentUpon>ThongTin_Sach.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\TimKiem4Hello.cs">
+    <Compile Include="GUI_Khach\TimKiem4Hello.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\TimKiem4Hello.Designer.cs">
+    <Compile Include="GUI_Khach\TimKiem4Hello.Designer.cs">
       <DependentUpon>TimKiem4Hello.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\tk_sachnhap.cs">
+    <Compile Include="GUI_Admin\tk_sachnhap.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\tk_sachnhap.Designer.cs">
+    <Compile Include="GUI_Admin\tk_sachnhap.Designer.cs">
       <DependentUpon>tk_sachnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Xu_ly_tra.cs">
+    <Compile Include="GUI_Admin\Xu_ly_tra.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\Xu_ly_tra.Designer.cs">
+    <Compile Include="GUI_Admin\Xu_ly_tra.Designer.cs">
       <DependentUpon>Xu_ly_tra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\Form1.resx">
+    <EmbeddedResource Include="GUI_Admin\Admin_ThemNV.resx">
+      <DependentUpon>Admin_ThemNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\DanhSachDG.resx">
+      <DependentUpon>DanhSachDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\DanhsachNV.resx">
+      <DependentUpon>DanhsachNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\DSPhieuMuonNV.resx">
+      <DependentUpon>DSPhieuMuonNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\DSSachCoSan.resx">
+      <DependentUpon>DSSachCoSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\DSSachMuon.resx">
+      <DependentUpon>DSSachMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\DSSachVP.resx">
+      <DependentUpon>DSSachVP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\frmLapBBVP.resx">
+      <DependentUpon>frmLapBBVP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\QLNhap.resx">
+      <DependentUpon>QLNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\ThemDocgia.resx">
+      <DependentUpon>ThemDocgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\ThongKeNV.resx">
+      <DependentUpon>ThongKeNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\tk_sachnhap.resx">
+      <DependentUpon>tk_sachnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Admin\Xu_ly_tra.resx">
+      <DependentUpon>Xu_ly_tra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DocGia\FrmTimKiemForDG.resx">
+      <DependentUpon>FrmTimKiemForDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DocGia\HomeDG.resx">
+      <DependentUpon>HomeDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DocGia\InfoDG.resx">
+      <DependentUpon>InfoDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DocGia\PhieuMuon.resx">
+      <DependentUpon>PhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DocGia\TimKiem4HelloV2.resx">
+      <DependentUpon>TimKiem4HelloV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DocGia\TK_SachMuon.resx">
+      <DependentUpon>TK_SachMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Khach\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormAdmin.resx">
+    <EmbeddedResource Include="GUI_Admin\FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrmDangKy.resx">
       <DependentUpon>FrmDangKy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmDocGia.resx">
+    <EmbeddedResource Include="GUI_DocGia\frmDocGia.resx">
       <DependentUpon>frmDocGia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Hello_TacGia.resx">
+    <EmbeddedResource Include="GUI_Admin\FrmThemDauSach.resx">
+      <DependentUpon>FrmThemDauSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Khach\Hello_TacGia.resx">
       <DependentUpon>Hello_TacGia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Hello_TheLoai.resx">
+    <EmbeddedResource Include="GUI_Khach\Hello_TheLoai.resx">
       <DependentUpon>Hello_TheLoai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\HomeHello.resx">
+    <EmbeddedResource Include="GUI_Admin\HomeAdmin.resx">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Khach\HomeHello.resx">
       <DependentUpon>HomeHello.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmLogin.resx">
@@ -432,13 +545,13 @@
     <EmbeddedResource Include="GUI\test.resx">
       <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ThongTin.resx">
+    <EmbeddedResource Include="GUI_Khach\ThongTin.resx">
       <DependentUpon>ThongTin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\ThongTin_Sach.resx">
+    <EmbeddedResource Include="GUI_Khach\ThongTin_Sach.resx">
       <DependentUpon>ThongTin_Sach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\TimKiem4Hello.resx">
+    <EmbeddedResource Include="GUI_Khach\TimKiem4Hello.resx">
       <DependentUpon>TimKiem4Hello.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -472,7 +585,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\155.jpg" />
-    <Content Include="Resources\calendarDark.png" />
+    <None Include="Resources\calendarDark.png" />
     <Content Include="Resources\calendarDark1.png" />
     <Content Include="Resources\calendarWhite.png" />
     <Content Include="Resources\icons8-library-64 %282%29.png" />
@@ -482,9 +595,7 @@
     <Content Include="Resources\icons8_administrator_male_48px.png" />
     <Content Include="Resources\icons8_administrator_male_50px.png" />
     <Content Include="Resources\icons8_arrow_64px.png" />
-    <Content Include="Resources\icons8_back_24px.png" />
     <Content Include="Resources\icons8_back_24px_1.png" />
-    <Content Include="Resources\icons8_back_24px_2.png" />
     <Content Include="Resources\icons8_back_24px_3.png" />
     <Content Include="Resources\icons8_back_to_24px.png" />
     <Content Include="Resources\icons8_back_to_24px_1.png" />
