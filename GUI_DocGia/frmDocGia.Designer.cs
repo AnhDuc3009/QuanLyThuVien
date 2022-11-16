@@ -231,7 +231,6 @@ namespace QLThuVien.GUI_DocGia
             this.pictureAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureAvt.TabIndex = 5;
             this.pictureAvt.TabStop = false;
-            this.pictureAvt.Click += new System.EventHandler(this.pictureAvt_Click);
             // 
             // nameuser
             // 

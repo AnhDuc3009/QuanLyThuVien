@@ -29,15 +29,15 @@ namespace QLThuVien.GUI_Admin
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmThemDauSach));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmThemDauSach));
+            this.ofdOpenFile = new System.Windows.Forms.OpenFileDialog();
             this.panelShow = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.cbLoaiLoc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtTuKhoa = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.dgvDauSach = new Guna.UI2.WinForms.Guna2DataGridView();
             this.MaDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,11 +58,6 @@ namespace QLThuVien.GUI_Admin
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.imageBook = new System.Windows.Forms.PictureBox();
-            this.btnThemTacGia = new Guna.UI2.WinForms.Guna2Button();
-            this.btnThemTheLoai = new Guna.UI2.WinForms.Guna2Button();
-            this.btnThemNXB = new Guna.UI2.WinForms.Guna2Button();
             this.cbTenTheLoai = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbTenNXB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbTenTacGia = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -82,12 +77,21 @@ namespace QLThuVien.GUI_Admin
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaDauSach = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.ofdOpenFile = new System.Windows.Forms.OpenFileDialog();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThemTacGia = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThemTheLoai = new Guna.UI2.WinForms.Guna2Button();
+            this.btnThemNXB = new Guna.UI2.WinForms.Guna2Button();
+            this.imageBook = new System.Windows.Forms.PictureBox();
             this.panelShow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDauSach)).BeginInit();
             this.guna2CustomGradientPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBook)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ofdOpenFile
+            // 
+            this.ofdOpenFile.FileName = "openFileDialog1";
             // 
             // panelShow
             // 
@@ -102,7 +106,7 @@ namespace QLThuVien.GUI_Admin
             this.panelShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelShow.Name = "panelShow";
             this.panelShow.Size = new System.Drawing.Size(1427, 805);
-            this.panelShow.TabIndex = 0;
+            this.panelShow.TabIndex = 1;
             // 
             // label11
             // 
@@ -158,21 +162,11 @@ namespace QLThuVien.GUI_Admin
             this.txtTuKhoa.SelectedText = "";
             this.txtTuKhoa.Size = new System.Drawing.Size(963, 39);
             this.txtTuKhoa.TabIndex = 39;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.Location = new System.Drawing.Point(41, 18);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(71, 46);
-            this.btnBack.TabIndex = 38;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.txtTuKhoa.TextChanged += new System.EventHandler(this.txtTuKhoa_TextChanged);
             // 
             // dgvDauSach
             // 
+            this.dgvDauSach.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvDauSach.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -214,6 +208,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDauSach.Location = new System.Drawing.Point(41, 518);
             this.dgvDauSach.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDauSach.Name = "dgvDauSach";
+            this.dgvDauSach.ReadOnly = true;
             this.dgvDauSach.RowHeadersVisible = false;
             this.dgvDauSach.RowHeadersWidth = 51;
             this.dgvDauSach.RowTemplate.Height = 40;
@@ -233,7 +228,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDauSach.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvDauSach.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvDauSach.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvDauSach.ThemeStyle.ReadOnly = false;
+            this.dgvDauSach.ThemeStyle.ReadOnly = true;
             this.dgvDauSach.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDauSach.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDauSach.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -241,6 +236,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDauSach.ThemeStyle.RowsStyle.Height = 40;
             this.dgvDauSach.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDauSach.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvDauSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDauSach_CellContentClick);
             // 
             // MaDauSach
             // 
@@ -264,6 +260,7 @@ namespace QLThuVien.GUI_Admin
             this.SoLuong.HeaderText = "Số lượng";
             this.SoLuong.MinimumWidth = 6;
             this.SoLuong.Name = "SoLuong";
+            this.SoLuong.ReadOnly = true;
             // 
             // LanTaiBan
             // 
@@ -421,6 +418,7 @@ namespace QLThuVien.GUI_Admin
             this.btnXoa.Size = new System.Drawing.Size(120, 46);
             this.btnXoa.TabIndex = 42;
             this.btnXoa.Text = "Xoá ";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
             // 
             // btnSua
             // 
@@ -434,6 +432,7 @@ namespace QLThuVien.GUI_Admin
             this.btnSua.Size = new System.Drawing.Size(120, 46);
             this.btnSua.TabIndex = 41;
             this.btnSua.Text = "Sửa ";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click_1);
             // 
             // btnSubmit
             // 
@@ -447,79 +446,7 @@ namespace QLThuVien.GUI_Admin
             this.btnSubmit.Size = new System.Drawing.Size(120, 46);
             this.btnSubmit.TabIndex = 37;
             this.btnSubmit.Text = "Thêm";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 18;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(1086, 68);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(136, 52);
-            this.guna2Button1.TabIndex = 36;
-            this.guna2Button1.Text = "Load ảnh";
-            // 
-            // imageBook
-            // 
-            this.imageBook.BackColor = System.Drawing.Color.Transparent;
-            this.imageBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.imageBook.Image = ((System.Drawing.Image)(resources.GetObject("imageBook.Image")));
-            this.imageBook.Location = new System.Drawing.Point(888, 75);
-            this.imageBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.imageBook.Name = "imageBook";
-            this.imageBook.Size = new System.Drawing.Size(174, 185);
-            this.imageBook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imageBook.TabIndex = 35;
-            this.imageBook.TabStop = false;
-            // 
-            // btnThemTacGia
-            // 
-            this.btnThemTacGia.BackColor = System.Drawing.Color.Transparent;
-            this.btnThemTacGia.BorderRadius = 15;
-            this.btnThemTacGia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(149)))), ((int)(((byte)(79)))));
-            this.btnThemTacGia.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThemTacGia.ForeColor = System.Drawing.Color.White;
-            this.btnThemTacGia.Image = ((System.Drawing.Image)(resources.GetObject("btnThemTacGia.Image")));
-            this.btnThemTacGia.Location = new System.Drawing.Point(709, 121);
-            this.btnThemTacGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThemTacGia.Name = "btnThemTacGia";
-            this.btnThemTacGia.Size = new System.Drawing.Size(89, 39);
-            this.btnThemTacGia.TabIndex = 9;
-            this.btnThemTacGia.Text = "Thêm";
-            // 
-            // btnThemTheLoai
-            // 
-            this.btnThemTheLoai.BackColor = System.Drawing.Color.Transparent;
-            this.btnThemTheLoai.BorderRadius = 15;
-            this.btnThemTheLoai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(149)))), ((int)(((byte)(79)))));
-            this.btnThemTheLoai.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThemTheLoai.ForeColor = System.Drawing.Color.White;
-            this.btnThemTheLoai.Image = ((System.Drawing.Image)(resources.GetObject("btnThemTheLoai.Image")));
-            this.btnThemTheLoai.Location = new System.Drawing.Point(709, 224);
-            this.btnThemTheLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThemTheLoai.Name = "btnThemTheLoai";
-            this.btnThemTheLoai.Size = new System.Drawing.Size(89, 39);
-            this.btnThemTheLoai.TabIndex = 9;
-            this.btnThemTheLoai.Text = "Thêm";
-            // 
-            // btnThemNXB
-            // 
-            this.btnThemNXB.BackColor = System.Drawing.Color.Transparent;
-            this.btnThemNXB.BorderRadius = 15;
-            this.btnThemNXB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(149)))), ((int)(((byte)(79)))));
-            this.btnThemNXB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThemNXB.ForeColor = System.Drawing.Color.White;
-            this.btnThemNXB.Image = ((System.Drawing.Image)(resources.GetObject("btnThemNXB.Image")));
-            this.btnThemNXB.Location = new System.Drawing.Point(709, 172);
-            this.btnThemNXB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThemNXB.Name = "btnThemNXB";
-            this.btnThemNXB.Size = new System.Drawing.Size(89, 39);
-            this.btnThemNXB.TabIndex = 9;
-            this.btnThemNXB.Text = "Thêm";
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click_1);
             // 
             // cbTenTheLoai
             // 
@@ -830,9 +757,93 @@ namespace QLThuVien.GUI_Admin
             this.label5.TabIndex = 7;
             this.label5.Text = "Mã đầu sách";
             // 
-            // ofdOpenFile
+            // btnBack
             // 
-            this.ofdOpenFile.FileName = "openFileDialog1";
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.Location = new System.Drawing.Point(41, 18);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(71, 46);
+            this.btnBack.TabIndex = 38;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 18;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.Location = new System.Drawing.Point(1086, 68);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(136, 52);
+            this.guna2Button1.TabIndex = 36;
+            this.guna2Button1.Text = "Load ảnh";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
+            // btnThemTacGia
+            // 
+            this.btnThemTacGia.BackColor = System.Drawing.Color.Transparent;
+            this.btnThemTacGia.BorderRadius = 15;
+            this.btnThemTacGia.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(149)))), ((int)(((byte)(79)))));
+            this.btnThemTacGia.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThemTacGia.ForeColor = System.Drawing.Color.White;
+            this.btnThemTacGia.Image = ((System.Drawing.Image)(resources.GetObject("btnThemTacGia.Image")));
+            this.btnThemTacGia.Location = new System.Drawing.Point(709, 121);
+            this.btnThemTacGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemTacGia.Name = "btnThemTacGia";
+            this.btnThemTacGia.Size = new System.Drawing.Size(89, 39);
+            this.btnThemTacGia.TabIndex = 9;
+            this.btnThemTacGia.Text = "Thêm";
+            this.btnThemTacGia.Click += new System.EventHandler(this.btnThemTacGia_Click_1);
+            // 
+            // btnThemTheLoai
+            // 
+            this.btnThemTheLoai.BackColor = System.Drawing.Color.Transparent;
+            this.btnThemTheLoai.BorderRadius = 15;
+            this.btnThemTheLoai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(149)))), ((int)(((byte)(79)))));
+            this.btnThemTheLoai.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThemTheLoai.ForeColor = System.Drawing.Color.White;
+            this.btnThemTheLoai.Image = ((System.Drawing.Image)(resources.GetObject("btnThemTheLoai.Image")));
+            this.btnThemTheLoai.Location = new System.Drawing.Point(709, 224);
+            this.btnThemTheLoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemTheLoai.Name = "btnThemTheLoai";
+            this.btnThemTheLoai.Size = new System.Drawing.Size(89, 39);
+            this.btnThemTheLoai.TabIndex = 9;
+            this.btnThemTheLoai.Text = "Thêm";
+            this.btnThemTheLoai.Click += new System.EventHandler(this.btnThemTheLoai_Click_1);
+            // 
+            // btnThemNXB
+            // 
+            this.btnThemNXB.BackColor = System.Drawing.Color.Transparent;
+            this.btnThemNXB.BorderRadius = 15;
+            this.btnThemNXB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(149)))), ((int)(((byte)(79)))));
+            this.btnThemNXB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThemNXB.ForeColor = System.Drawing.Color.White;
+            this.btnThemNXB.Image = ((System.Drawing.Image)(resources.GetObject("btnThemNXB.Image")));
+            this.btnThemNXB.Location = new System.Drawing.Point(709, 172);
+            this.btnThemNXB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemNXB.Name = "btnThemNXB";
+            this.btnThemNXB.Size = new System.Drawing.Size(89, 39);
+            this.btnThemNXB.TabIndex = 9;
+            this.btnThemNXB.Text = "Thêm";
+            this.btnThemNXB.Click += new System.EventHandler(this.btnThemNXB_Click_1);
+            // 
+            // imageBook
+            // 
+            this.imageBook.BackColor = System.Drawing.Color.Transparent;
+            this.imageBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.imageBook.Location = new System.Drawing.Point(888, 75);
+            this.imageBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.imageBook.Name = "imageBook";
+            this.imageBook.Size = new System.Drawing.Size(174, 185);
+            this.imageBook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageBook.TabIndex = 35;
+            this.imageBook.TabStop = false;
             // 
             // FrmThemDauSach
             // 
@@ -842,6 +853,7 @@ namespace QLThuVien.GUI_Admin
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmThemDauSach";
             this.Size = new System.Drawing.Size(1427, 805);
+            this.Load += new System.EventHandler(this.FrmThemDauSach_Load);
             this.panelShow.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDauSach)).EndInit();
             this.guna2CustomGradientPanel3.ResumeLayout(false);
@@ -852,8 +864,11 @@ namespace QLThuVien.GUI_Admin
         }
 
         #endregion
-
+        private System.Windows.Forms.OpenFileDialog ofdOpenFile;
         private System.Windows.Forms.Panel panelShow;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2ComboBox cbLoaiLoc;
+        private Guna.UI2.WinForms.Guna2TextBox txtTuKhoa;
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDauSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDauSach;
@@ -876,7 +891,6 @@ namespace QLThuVien.GUI_Admin
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.PictureBox imageBook;
         private Guna.UI2.WinForms.Guna2Button btnThemTacGia;
         private Guna.UI2.WinForms.Guna2Button btnThemTheLoai;
         private Guna.UI2.WinForms.Guna2Button btnThemNXB;
@@ -899,9 +913,6 @@ namespace QLThuVien.GUI_Admin
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtMaDauSach;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.OpenFileDialog ofdOpenFile;
-        private Guna.UI2.WinForms.Guna2TextBox txtTuKhoa;
-        private Guna.UI2.WinForms.Guna2ComboBox cbLoaiLoc;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox imageBook;
     }
 }

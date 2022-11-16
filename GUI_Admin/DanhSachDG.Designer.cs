@@ -90,6 +90,7 @@ namespace QLThuVien.GUI_Admin
             this.btnXoa.Size = new System.Drawing.Size(115, 44);
             this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa ";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
@@ -103,6 +104,7 @@ namespace QLThuVien.GUI_Admin
             this.btnLuu.Size = new System.Drawing.Size(144, 44);
             this.btnLuu.TabIndex = 8;
             this.btnLuu.Text = "Lưu thay đổi";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnSearchNV
             // 
@@ -116,6 +118,7 @@ namespace QLThuVien.GUI_Admin
             this.btnSearchNV.Size = new System.Drawing.Size(129, 44);
             this.btnSearchNV.TabIndex = 5;
             this.btnSearchNV.Text = "Tìm kiếm";
+            this.btnSearchNV.Click += new System.EventHandler(this.btnSearchNV_Click);
             // 
             // label3
             // 
@@ -205,6 +208,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDG.Size = new System.Drawing.Size(879, 606);
             this.dgvDG.TabIndex = 5;
+            this.dgvDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDG_CellClick);
             // 
             // guna2CustomGradientPanel1
             // 
@@ -511,6 +515,7 @@ namespace QLThuVien.GUI_Admin
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DanhSachDG";
             this.Size = new System.Drawing.Size(1779, 986);
+            this.Load += new System.EventHandler(this.DanhSachDG_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDG)).EndInit();

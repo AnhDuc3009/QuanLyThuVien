@@ -1,7 +1,7 @@
 ﻿
 namespace QLThuVien.GUI_DocGia
 {
-    partial class TK_SachMuon
+    partial class TK_SachMuon_dg
     {
         /// <summary> 
         /// Required designer variable.

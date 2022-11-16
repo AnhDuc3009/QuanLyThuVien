@@ -35,9 +35,9 @@ namespace QLThuVien.GUI_Admin
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchNV = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddNV = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnAddNV = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.pickerBirthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
@@ -63,12 +63,14 @@ namespace QLThuVien.GUI_Admin
             // dgvNhanvien
             // 
             this.dgvNhanvien.AllowUserToAddRows = false;
+            this.dgvNhanvien.AllowUserToResizeColumns = false;
             this.dgvNhanvien.BackgroundColor = System.Drawing.Color.White;
             this.dgvNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanvien.GridColor = System.Drawing.Color.Black;
             this.dgvNhanvien.Location = new System.Drawing.Point(3, 174);
             this.dgvNhanvien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvNhanvien.Name = "dgvNhanvien";
+            this.dgvNhanvien.ReadOnly = true;
             this.dgvNhanvien.RowHeadersWidth = 51;
             this.dgvNhanvien.RowTemplate.Height = 24;
             this.dgvNhanvien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -142,6 +144,20 @@ namespace QLThuVien.GUI_Admin
             this.btnSearchNV.Text = "Tìm kiếm";
             this.btnSearchNV.Click += new System.EventHandler(this.btnSearchNV_Click);
             // 
+            // btnAddNV
+            // 
+            this.btnAddNV.BorderRadius = 18;
+            this.btnAddNV.FillColor = System.Drawing.Color.Red;
+            this.btnAddNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddNV.ForeColor = System.Drawing.Color.White;
+            this.btnAddNV.Location = new System.Drawing.Point(727, 55);
+            this.btnAddNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddNV.Name = "btnAddNV";
+            this.btnAddNV.Size = new System.Drawing.Size(115, 46);
+            this.btnAddNV.TabIndex = 3;
+            this.btnAddNV.Text = "Thêm NV";
+            this.btnAddNV.Click += new System.EventHandler(this.btnAddNV_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -172,20 +188,6 @@ namespace QLThuVien.GUI_Admin
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(553, 44);
             this.txtSearch.TabIndex = 2;
-            // 
-            // btnAddNV
-            // 
-            this.btnAddNV.BorderRadius = 18;
-            this.btnAddNV.FillColor = System.Drawing.Color.Red;
-            this.btnAddNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAddNV.ForeColor = System.Drawing.Color.White;
-            this.btnAddNV.Location = new System.Drawing.Point(727, 55);
-            this.btnAddNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddNV.Name = "btnAddNV";
-            this.btnAddNV.Size = new System.Drawing.Size(115, 46);
-            this.btnAddNV.TabIndex = 3;
-            this.btnAddNV.Text = "Thêm NV";
-            this.btnAddNV.Click += new System.EventHandler(this.btnAddNV_Click);
             // 
             // guna2CustomGradientPanel1
             // 

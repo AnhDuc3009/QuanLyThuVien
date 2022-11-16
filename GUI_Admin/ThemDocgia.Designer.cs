@@ -97,6 +97,7 @@ namespace QLThuVien.GUI_Admin
             this.btnClearLoad.Size = new System.Drawing.Size(209, 46);
             this.btnClearLoad.TabIndex = 19;
             this.btnClearLoad.Text = "Nhập lại";
+            this.btnClearLoad.Click += new System.EventHandler(this.btnClearLoad_Click);
             // 
             // guna2Panel2
             // 
@@ -190,6 +191,7 @@ namespace QLThuVien.GUI_Admin
             this.txtTaikhoan.SelectedText = "";
             this.txtTaikhoan.Size = new System.Drawing.Size(201, 42);
             this.txtTaikhoan.TabIndex = 16;
+            this.txtTaikhoan.TextChanged += new System.EventHandler(this.txtTaikhoan_TextChanged);
             // 
             // label9
             // 
@@ -215,6 +217,7 @@ namespace QLThuVien.GUI_Admin
             this.btnDeleteInfo.TabIndex = 17;
             this.btnDeleteInfo.Text = "Xóa dòng thông tin";
             this.btnDeleteInfo.Visible = false;
+            this.btnDeleteInfo.Click += new System.EventHandler(this.btnDeleteInfo_Click);
             // 
             // guna2Panel1
             // 
@@ -513,6 +516,7 @@ namespace QLThuVien.GUI_Admin
             this.btnEditInfo.TabIndex = 16;
             this.btnEditInfo.Text = "Sửa thông tin";
             this.btnEditInfo.Visible = false;
+            this.btnEditInfo.Click += new System.EventHandler(this.btnEditInfo_Click);
             // 
             // btnAddInfo
             // 
@@ -526,9 +530,11 @@ namespace QLThuVien.GUI_Admin
             this.btnAddInfo.Size = new System.Drawing.Size(209, 46);
             this.btnAddInfo.TabIndex = 15;
             this.btnAddInfo.Text = "Thêm thông tin";
+            this.btnAddInfo.Click += new System.EventHandler(this.btnAddInfo_Click);
             // 
             // dgvInfo
             // 
+            this.dgvInfo.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvInfo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -554,6 +560,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvInfo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgvInfo.Location = new System.Drawing.Point(21, 412);
             this.dgvInfo.Name = "dgvInfo";
+            this.dgvInfo.ReadOnly = true;
             this.dgvInfo.RowHeadersVisible = false;
             this.dgvInfo.RowHeadersWidth = 51;
             this.dgvInfo.RowTemplate.Height = 40;
@@ -572,7 +579,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvInfo.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvInfo.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvInfo.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvInfo.ThemeStyle.ReadOnly = false;
+            this.dgvInfo.ThemeStyle.ReadOnly = true;
             this.dgvInfo.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvInfo.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvInfo.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -580,6 +587,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvInfo.ThemeStyle.RowsStyle.Height = 40;
             this.dgvInfo.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvInfo.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvInfo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfo_CellClick);
             // 
             // Anh
             // 
@@ -588,6 +596,7 @@ namespace QLThuVien.GUI_Admin
             this.Anh.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Anh.MinimumWidth = 6;
             this.Anh.Name = "Anh";
+            this.Anh.ReadOnly = true;
             // 
             // label11
             // 
@@ -610,6 +619,7 @@ namespace QLThuVien.GUI_Admin
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ThemDocgia";
             this.Size = new System.Drawing.Size(1336, 727);
+            this.Load += new System.EventHandler(this.ThemDocgia_Load);
             this.panelInput.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();

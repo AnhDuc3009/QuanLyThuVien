@@ -50,7 +50,8 @@ namespace QLThuVien.GUI_Khach
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new GUI_Khach.TimKiem4Hello());
+            GUI_Khach.TimKiemHello newfrom = new GUI_Khach.TimKiemHello();
+            panelShow.Controls.Add(newfrom);
         }
 
         private void btnThongtin_Click(object sender, EventArgs e)

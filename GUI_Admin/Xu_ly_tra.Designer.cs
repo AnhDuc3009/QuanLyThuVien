@@ -113,6 +113,7 @@ namespace QLThuVien.GUI_Admin
             this.btnTK.Size = new System.Drawing.Size(125, 41);
             this.btnTK.TabIndex = 5;
             this.btnTK.Text = "Tìm kiếm";
+            this.btnTK.Click += new System.EventHandler(this.btnTK_Click);
             // 
             // txtTK
             // 
@@ -148,6 +149,7 @@ namespace QLThuVien.GUI_Admin
             this.btnCapnhat.Size = new System.Drawing.Size(387, 46);
             this.btnCapnhat.TabIndex = 8;
             this.btnCapnhat.Text = "Trả sách";
+            this.btnCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
             // 
             // cboxVi_pham
             // 
@@ -234,6 +236,7 @@ namespace QLThuVien.GUI_Admin
             // 
             // dgv_trasach
             // 
+            this.dgv_trasach.AllowUserToResizeColumns = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgv_trasach.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -266,6 +269,7 @@ namespace QLThuVien.GUI_Admin
             this.dgv_trasach.Location = new System.Drawing.Point(29, 156);
             this.dgv_trasach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_trasach.Name = "dgv_trasach";
+            this.dgv_trasach.ReadOnly = true;
             this.dgv_trasach.RowHeadersVisible = false;
             this.dgv_trasach.RowHeadersWidth = 51;
             this.dgv_trasach.RowTemplate.Height = 40;
@@ -284,7 +288,7 @@ namespace QLThuVien.GUI_Admin
             this.dgv_trasach.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_trasach.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_trasach.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgv_trasach.ThemeStyle.ReadOnly = false;
+            this.dgv_trasach.ThemeStyle.ReadOnly = true;
             this.dgv_trasach.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_trasach.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_trasach.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -292,6 +296,7 @@ namespace QLThuVien.GUI_Admin
             this.dgv_trasach.ThemeStyle.RowsStyle.Height = 40;
             this.dgv_trasach.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_trasach.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_trasach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_trasach_CellContentClick);
             // 
             // MaDocGia
             // 
@@ -353,6 +358,7 @@ namespace QLThuVien.GUI_Admin
             this.btnHoantat.Size = new System.Drawing.Size(164, 46);
             this.btnHoantat.TabIndex = 4;
             this.btnHoantat.Text = "Hoàn tất trả sách";
+            this.btnHoantat.Click += new System.EventHandler(this.btnHoantat_Click);
             // 
             // btnBbvp
             // 
@@ -366,6 +372,7 @@ namespace QLThuVien.GUI_Admin
             this.btnBbvp.Size = new System.Drawing.Size(204, 46);
             this.btnBbvp.TabIndex = 5;
             this.btnBbvp.Text = "Lập biên bản vi phạm";
+            this.btnBbvp.Click += new System.EventHandler(this.btnBbvp_Click);
             // 
             // guna2CustomGradientPanel1
             // 
@@ -400,6 +407,7 @@ namespace QLThuVien.GUI_Admin
             // dgvDs
             // 
             this.dgvDs.AllowUserToAddRows = false;
+            this.dgvDs.AllowUserToResizeColumns = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(236)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.dgvDs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
@@ -431,6 +439,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDs.Location = new System.Drawing.Point(733, 156);
             this.dgvDs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDs.Name = "dgvDs";
+            this.dgvDs.ReadOnly = true;
             this.dgvDs.RowHeadersVisible = false;
             this.dgvDs.RowHeadersWidth = 51;
             this.dgvDs.RowTemplate.Height = 40;
@@ -449,7 +458,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDs.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvDs.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvDs.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvDs.ThemeStyle.ReadOnly = false;
+            this.dgvDs.ThemeStyle.ReadOnly = true;
             this.dgvDs.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDs.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDs.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -457,6 +466,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDs.ThemeStyle.RowsStyle.Height = 40;
             this.dgvDs.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDs.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvDs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDs_CellContentClick);
             // 
             // clmMasach
             // 
@@ -464,6 +474,7 @@ namespace QLThuVien.GUI_Admin
             this.clmMasach.HeaderText = "Mã sách";
             this.clmMasach.MinimumWidth = 6;
             this.clmMasach.Name = "clmMasach";
+            this.clmMasach.ReadOnly = true;
             // 
             // clmMadg
             // 
@@ -471,6 +482,7 @@ namespace QLThuVien.GUI_Admin
             this.clmMadg.HeaderText = "Mã độc giả";
             this.clmMadg.MinimumWidth = 6;
             this.clmMadg.Name = "clmMadg";
+            this.clmMadg.ReadOnly = true;
             // 
             // clmNgaytra
             // 
@@ -478,6 +490,7 @@ namespace QLThuVien.GUI_Admin
             this.clmNgaytra.HeaderText = "Ngày trả";
             this.clmNgaytra.MinimumWidth = 6;
             this.clmNgaytra.Name = "clmNgaytra";
+            this.clmNgaytra.ReadOnly = true;
             // 
             // clmVP
             // 
@@ -485,12 +498,14 @@ namespace QLThuVien.GUI_Admin
             this.clmVP.HeaderText = "Vi Phạm";
             this.clmVP.MinimumWidth = 6;
             this.clmVP.Name = "clmVP";
+            this.clmVP.ReadOnly = true;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Loại bỏ";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // btnCleardgv
             // 
@@ -504,6 +519,7 @@ namespace QLThuVien.GUI_Admin
             this.btnCleardgv.Size = new System.Drawing.Size(117, 46);
             this.btnCleardgv.TabIndex = 10;
             this.btnCleardgv.Text = "Clear all";
+            this.btnCleardgv.Click += new System.EventHandler(this.btnCleardgv_Click);
             // 
             // Xu_ly_tra
             // 
@@ -521,6 +537,7 @@ namespace QLThuVien.GUI_Admin
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Xu_ly_tra";
             this.Size = new System.Drawing.Size(1277, 799);
+            this.Load += new System.EventHandler(this.Xu_ly_tra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_trasach)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();

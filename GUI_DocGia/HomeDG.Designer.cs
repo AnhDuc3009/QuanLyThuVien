@@ -34,17 +34,14 @@ namespace QLThuVien.GUI_DocGia
             this.label7 = new System.Windows.Forms.Label();
             this.lbTongDS = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.lbTongDG = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.lbTongSach = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.flowpanel = new System.Windows.Forms.FlowLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
@@ -64,17 +61,20 @@ namespace QLThuVien.GUI_DocGia
             this.lbTongTL = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel3
@@ -89,7 +89,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2Panel3.Controls.Add(this.guna2PictureBox3);
             this.guna2Panel3.FillColor = System.Drawing.Color.White;
             this.guna2Panel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel3.Location = new System.Drawing.Point(683, 50);
+            this.guna2Panel3.Location = new System.Drawing.Point(662, 50);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(264, 187);
@@ -134,21 +134,6 @@ namespace QLThuVien.GUI_DocGia
             this.label9.TabIndex = 17;
             this.label9.Text = "Đầu sách";
             // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.BorderRadius = 40;
-            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(11, 48);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(81, 81);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 17;
-            this.guna2PictureBox3.TabStop = false;
-            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -161,7 +146,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2Panel2.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel2.Location = new System.Drawing.Point(376, 50);
+            this.guna2Panel2.Location = new System.Drawing.Point(355, 50);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(258, 187);
@@ -206,21 +191,6 @@ namespace QLThuVien.GUI_DocGia
             this.label6.TabIndex = 17;
             this.label6.Text = "Số lượng độc giả";
             // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.BorderRadius = 40;
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(5, 57);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(81, 81);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 17;
-            this.guna2PictureBox2.TabStop = false;
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -233,7 +203,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
             this.guna2Panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel1.Location = new System.Drawing.Point(57, 50);
+            this.guna2Panel1.Location = new System.Drawing.Point(36, 50);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(269, 187);
@@ -278,21 +248,6 @@ namespace QLThuVien.GUI_DocGia
             this.label1.TabIndex = 17;
             this.label1.Text = "Tổng số sách";
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BorderRadius = 40;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(8, 52);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.guna2PictureBox1.TabIndex = 17;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // guna2Panel4
             // 
             this.guna2Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -303,18 +258,18 @@ namespace QLThuVien.GUI_DocGia
             this.guna2Panel4.Controls.Add(this.label10);
             this.guna2Panel4.FillColor = System.Drawing.Color.White;
             this.guna2Panel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel4.Location = new System.Drawing.Point(553, 443);
+            this.guna2Panel4.Location = new System.Drawing.Point(507, 443);
             this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(699, 366);
+            this.guna2Panel4.Size = new System.Drawing.Size(749, 366);
             this.guna2Panel4.TabIndex = 25;
             // 
             // flowpanel
             // 
-            this.flowpanel.Location = new System.Drawing.Point(14, 65);
+            this.flowpanel.Location = new System.Drawing.Point(4, 65);
             this.flowpanel.Margin = new System.Windows.Forms.Padding(4);
             this.flowpanel.Name = "flowpanel";
-            this.flowpanel.Size = new System.Drawing.Size(669, 273);
+            this.flowpanel.Size = new System.Drawing.Size(741, 273);
             this.flowpanel.TabIndex = 22;
             // 
             // label10
@@ -340,10 +295,10 @@ namespace QLThuVien.GUI_DocGia
             this.guna2Panel5.Controls.Add(this.txtSearch);
             this.guna2Panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(198)))), ((int)(((byte)(165)))));
             this.guna2Panel5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel5.Location = new System.Drawing.Point(67, 299);
+            this.guna2Panel5.Location = new System.Drawing.Point(21, 299);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(1185, 97);
+            this.guna2Panel5.Size = new System.Drawing.Size(1235, 97);
             this.guna2Panel5.TabIndex = 26;
             // 
             // btnSearch
@@ -386,7 +341,7 @@ namespace QLThuVien.GUI_DocGia
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label11.Location = new System.Drawing.Point(92, 270);
+            this.label11.Location = new System.Drawing.Point(46, 270);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(159, 28);
@@ -407,7 +362,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2Panel6.Controls.Add(this.label12);
             this.guna2Panel6.FillColor = System.Drawing.Color.White;
             this.guna2Panel6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel6.Location = new System.Drawing.Point(67, 443);
+            this.guna2Panel6.Location = new System.Drawing.Point(21, 443);
             this.guna2Panel6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(480, 266);
@@ -499,7 +454,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2Panel7.Controls.Add(this.guna2PictureBox4);
             this.guna2Panel7.FillColor = System.Drawing.Color.White;
             this.guna2Panel7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel7.Location = new System.Drawing.Point(1002, 50);
+            this.guna2Panel7.Location = new System.Drawing.Point(981, 50);
             this.guna2Panel7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(250, 187);
@@ -560,6 +515,51 @@ namespace QLThuVien.GUI_DocGia
             this.guna2PictureBox4.TabIndex = 17;
             this.guna2PictureBox4.TabStop = false;
             // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.BorderRadius = 40;
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(11, 48);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(81, 81);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox3.TabIndex = 17;
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.BorderRadius = 40;
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(5, 57);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(81, 81);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 17;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.BorderRadius = 40;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(8, 52);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.guna2PictureBox1.TabIndex = 17;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // HomeDG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -576,16 +576,14 @@ namespace QLThuVien.GUI_DocGia
             this.Controls.Add(this.guna2Panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HomeDG";
-            this.Size = new System.Drawing.Size(1264, 818);
+            this.Size = new System.Drawing.Size(1270, 818);
+            this.Load += new System.EventHandler(this.HomeDG_Load);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             this.guna2Panel5.ResumeLayout(false);
@@ -594,6 +592,9 @@ namespace QLThuVien.GUI_DocGia
             this.guna2Panel7.ResumeLayout(false);
             this.guna2Panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

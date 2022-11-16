@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QLThuVien.DTO;
+using QLThuVien.BUS;
 
 namespace QLThuVien.GUI
 {
@@ -33,6 +35,10 @@ namespace QLThuVien.GUI
 
             return true;
         }
+
+        public static string userstr;
+        TaiKhoan_BUS tkBus = new TaiKhoan_BUS();
+
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
             txtPassword.PasswordChar = '•';
@@ -47,7 +53,104 @@ namespace QLThuVien.GUI
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            string user = txtUsername.Text;
+            string pass = txtPassword.Text;
+            bool check1, check2, check3;
+            check1 = check2 = check3 = true;
+            if (user.Trim() == string.Empty)
+            {
 
+                errorProvider1.SetError(lbMsg, "Không được để trống!!");
+                lbMsg.Text = "Bạn phải nhập Tên đăng nhập!!";
+                check1 = false;
+            }
+            else
+            {
+                lbMsg.Text = "";
+                check1 = true;
+            }
+
+            if (pass.Trim() == string.Empty)
+            {
+                errorProvider1.SetError(lbMsg, "Không được để trống!!");
+                lbMsg.Text = "Bạn phải nhập mật khẩu!!";
+                check2 = false;
+            }
+            else if (!CheckPassword(pass))
+            {
+                errorProvider1.SetError(lbMsg, "Không được để trống!!");
+                check2 = false;
+            }
+            else
+            {
+                lbMsg.Text = "";
+                check2 = true;
+            }
+
+            if (btnToggle.Checked)
+            {
+                check3 = true;
+            }
+
+            if (check1 && check2 && check3)
+            {
+                if (tkBus.DangNhap(user, pass))
+                {
+                    GUI_Khach.Form1.isLogin = true;
+
+                    string loaitk = tkBus.LoadLoaiTK(user);
+
+
+                    switch (loaitk)
+                    {
+                        case "docgia":
+                            {
+                                MessageBox.Show("Đăng nhập thành công !!");
+                                this.Hide();
+                                userstr = user;
+                                if (GUI_Khach.TimKiem4Hello.DaTim)
+                                {
+                                    GUI_Khach.TimKiem4Hello.openAfterLog();
+                                }
+                                else
+                                {
+                                    GUI_DocGia.frmDocGia newdg = new GUI_DocGia.frmDocGia(user);
+                                    newdg.Show();
+                                }
+
+                                break;
+                            }
+                        case "nhanvien":
+                            {
+                                MessageBox.Show("Đăng nhập thành công !!");
+                                this.Hide();
+                                GUI_NhanVien.FrmNhanVien newnv = new GUI_NhanVien.FrmNhanVien(user);
+                                newnv.Show();
+                                break;
+                            }
+                        case "quanly":
+                            {
+                                MessageBox.Show("Đăng nhập thành công !!");
+                                this.Hide();
+                                GUI_Admin.FormAdmin newadmin = new GUI_Admin.FormAdmin();
+                                newadmin.Show();
+                                break;
+                            }
+                        case "vohieuhoa":
+                            {
+                                MessageBox.Show("Tài khoản của bạn đã bị vô hiệu hóa do vi phạm nhiều lần.");
+                                break;
+                            }
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Không tồn tại độc giả nào có mã " + user, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+            }
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)

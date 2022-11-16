@@ -51,11 +51,57 @@
     <Reference Include="Costura, Version=3.3.3.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
       <HintPath>packages\Costura.Fody.3.3.3\lib\net40\Costura.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Data.Desktop.22.1.6\lib\net452\DevExpress.Data.Desktop.v22.1.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>packages\DevExpress.Data.22.1.6\lib\net452\DevExpress.Data.v22.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Drawing.22.1.6\lib\net452\DevExpress.Drawing.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Office.Core.22.1.6\lib\net452\DevExpress.Office.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Pdf.Core.22.1.6\lib\net452\DevExpress.Pdf.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v22.1.Drawing, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Pdf.Drawing.22.1.6\lib\net452\DevExpress.Pdf.v22.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Printing.Core.22.1.6\lib\net452\DevExpress.Printing.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.RichEdit.Core.22.1.6\lib\net452\DevExpress.RichEdit.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Sparkline.Core.22.1.6\lib\net452\DevExpress.Sparkline.v22.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Utils.22.1.6\lib\net452\DevExpress.Utils.v22.1.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Xpo.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <HintPath>packages\DevExpress.Xpo.22.1.6\lib\net452\DevExpress.Xpo.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Win.Navigation.22.1.6\lib\net452\DevExpress.XtraBars.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v22.1.UI, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Win.Navigation.22.1.6\lib\net452\DevExpress.XtraEditors.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Win.Navigation.22.1.6\lib\net452\DevExpress.XtraLayout.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Win.Printing.22.1.6\lib\net452\DevExpress.XtraPrinting.v22.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.1.Extensions, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.1.Service, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v22.1, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.Win.TreeList.22.1.6\lib\net452\DevExpress.XtraTreeList.v22.1.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -65,6 +111,10 @@
     </Reference>
     <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
@@ -242,13 +292,60 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\BienbanVP_BUS.cs" />
+    <Compile Include="BUS\CuonSach_BUS.cs" />
+    <Compile Include="BUS\DauSach_BUS.cs" />
+    <Compile Include="BUS\DocGia_BUS.cs" />
     <Compile Include="BUS\Home_BUS.cs" />
-    <Compile Include="CuaToi\DateTimePickerNew.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CuaToi\PictureBoxNew.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="BUS\Image_BUS.cs" />
+    <Compile Include="BUS\MatKhau_BUS.cs" />
+    <Compile Include="BUS\MuonSach_BUS.cs" />
+    <Compile Include="BUS\NhanVien_BUS.cs" />
+    <Compile Include="BUS\NhapSach_BUS.cs" />
+    <Compile Include="BUS\NhaXuatBan_BUS.cs" />
+    <Compile Include="BUS\PhieuMuon_BUS.cs" />
+    <Compile Include="BUS\PhieuNhap_BUS.cs" />
+    <Compile Include="BUS\TacGia_BUS.cs" />
+    <Compile Include="BUS\TaiKhoan_BUS.cs" />
+    <Compile Include="BUS\TheLoai_BUS.cs" />
+    <Compile Include="BUS\ThongKe_BUS.cs" />
+    <Compile Include="BUS\Trasach_Bus.cs" />
+    <Compile Include="DAO\BienbanVP_DAO.cs" />
+    <Compile Include="DAO\CuonSach_DAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\DauSach_DAO.cs" />
+    <Compile Include="DAO\DocGia_DAO.cs" />
+    <Compile Include="DAO\Home_DAO.cs" />
+    <Compile Include="DAO\Image_DAO.cs" />
+    <Compile Include="DAO\LoadAll_DAO.cs" />
+    <Compile Include="DAO\MatKhau_DAO.cs" />
+    <Compile Include="DAO\MuonSach_DAO.cs" />
+    <Compile Include="DAO\NhanVien_DAO.cs" />
+    <Compile Include="DAO\NhapSach_DAO.cs" />
+    <Compile Include="DAO\NhaXuatBan_DAO.cs" />
+    <Compile Include="DAO\PhieuMuon_DAO.cs" />
+    <Compile Include="DAO\PhieuNhap_DAO.cs" />
+    <Compile Include="DAO\TacGia_DAO.cs" />
+    <Compile Include="DAO\TaiKhoan_DAO.cs" />
+    <Compile Include="DAO\TheLoai_DAO.cs" />
+    <Compile Include="DAO\Thongke_DAO.cs" />
+    <Compile Include="DAO\Trasach_DAO.cs" />
+    <Compile Include="DTO\BienBanViPham.cs" />
+    <Compile Include="DTO\CuonSach.cs" />
+    <Compile Include="DTO\DauSach.cs" />
+    <Compile Include="DTO\DocGia.cs" />
+    <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="DTO\NhaXuatBan.cs" />
+    <Compile Include="DTO\PhieuMuonTra.cs" />
+    <Compile Include="DTO\PhieuNhap.cs" />
+    <Compile Include="DTO\SangTac.cs" />
+    <Compile Include="DTO\TacGia.cs" />
+    <Compile Include="DTO\TaiKhoan.cs" />
+    <Compile Include="DTO\TheLoai.cs" />
+    <Compile Include="DTO\ThongTinMuonTra.cs" />
+    <Compile Include="DTO\ThongTinNhapSach.cs" />
+    <Compile Include="DTO\ViPham.cs" />
+    <Compile Include="DTO\XuatBan.cs" />
     <Compile Include="GUI_Admin\Admin_ThemNV.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -278,12 +375,6 @@
     </Compile>
     <Compile Include="GUI_Admin\DSSachCoSan.Designer.cs">
       <DependentUpon>DSSachCoSan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI_Admin\DSSachMuon.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI_Admin\DSSachMuon.Designer.cs">
-      <DependentUpon>DSSachMuon.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_Admin\DSSachVP.cs">
       <SubType>UserControl</SubType>
@@ -321,11 +412,11 @@
     <Compile Include="GUI_DocGia\TimKiem4HelloV2.Designer.cs">
       <DependentUpon>TimKiem4HelloV2.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI_DocGia\TK_SachMuon.cs">
+    <Compile Include="GUI_DocGia\TK_SachMuon_dg.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI_DocGia\TK_SachMuon.Designer.cs">
-      <DependentUpon>TK_SachMuon.cs</DependentUpon>
+    <Compile Include="GUI_DocGia\TK_SachMuon_dg.Designer.cs">
+      <DependentUpon>TK_SachMuon_dg.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_Khach\Form1.cs">
       <SubType>Form</SubType>
@@ -417,6 +508,12 @@
     <Compile Include="GUI_Admin\ThongKeNV.Designer.cs">
       <DependentUpon>ThongKeNV.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_Khach\OneBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_Khach\OneBook.Designer.cs">
+      <DependentUpon>OneBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_Khach\ThongTin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -430,7 +527,7 @@
       <DependentUpon>ThongTin_Sach.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_Khach\TimKiem4Hello.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI_Khach\TimKiem4Hello.Designer.cs">
       <DependentUpon>TimKiem4Hello.cs</DependentUpon>
@@ -447,14 +544,141 @@
     <Compile Include="GUI_Admin\Xu_ly_tra.Designer.cs">
       <DependentUpon>Xu_ly_tra.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_Khach\TimKiemHello.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_Khach\TimKiemHello.Designer.cs">
+      <DependentUpon>TimKiemHello.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmBienbanVP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmBienbanVP.Designer.cs">
+      <DependentUpon>FrmBienbanVP.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_NhanVien\FrmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI_NhanVien\FrmNhanVien.Designer.cs">
       <DependentUpon>FrmNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_NhanVien\FrmThemCuonSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmThemCuonSach.Designer.cs">
+      <DependentUpon>FrmThemCuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmThemNXB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmThemNXB.Designer.cs">
+      <DependentUpon>FrmThemNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmThemTacGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmThemTacGia.Designer.cs">
+      <DependentUpon>FrmThemTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmThemTheLoai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmThemTheLoai.Designer.cs">
+      <DependentUpon>FrmThemTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmThongTinDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\FrmThongTinDG.Designer.cs">
+      <DependentUpon>FrmThongTinDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\HomeNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\HomeNV.Designer.cs">
+      <DependentUpon>HomeNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\InfoNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\InfoNV.Designer.cs">
+      <DependentUpon>InfoNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\ThongKeNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\ThongKeNV.Designer.cs">
+      <DependentUpon>ThongKeNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\ThongTinDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\ThongTinDocGia.Designer.cs">
+      <DependentUpon>ThongTinDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\TimKiem4NV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\TimKiem4NV.Designer.cs">
+      <DependentUpon>TimKiem4NV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien\tk_sachmuon_nv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien\tk_sachmuon_nv.Designer.cs">
+      <DependentUpon>tk_sachmuon_nv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerBar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\BBvipham.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\BBvipham.Designer.cs">
+      <DependentUpon>BBvipham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BBViphamCreator.cs" />
+    <Compile Include="Report\BBVP_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BBVP_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PhieuMuonCreator.cs" />
+    <Compile Include="Report\PhieuMuonRP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PhieuMuonRP.Designer.cs">
+      <DependentUpon>PhieuMuonRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PhieuMuon_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhieuMuon_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PhieuNhapCreator.cs" />
+    <Compile Include="Report\PhieuNhapRP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PhieuNhapRP.Designer.cs">
+      <DependentUpon>PhieuNhapRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\PhieuNhap_Dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhieuNhap_Dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TKLuotMuonCreator.cs" />
+    <Compile Include="Report\TKLuotMuonRP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\TKLuotMuonRP.Designer.cs">
+      <DependentUpon>TKLuotMuonRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TKLuotMuon_Dataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TKLuotMuon_Dataset.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI_Admin\Admin_ThemNV.resx">
       <DependentUpon>Admin_ThemNV.cs</DependentUpon>
     </EmbeddedResource>
@@ -469,9 +693,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_Admin\DSSachCoSan.resx">
       <DependentUpon>DSSachCoSan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI_Admin\DSSachMuon.resx">
-      <DependentUpon>DSSachMuon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_Admin\DSSachVP.resx">
       <DependentUpon>DSSachVP.cs</DependentUpon>
@@ -509,8 +730,8 @@
     <EmbeddedResource Include="GUI_DocGia\TimKiem4HelloV2.resx">
       <DependentUpon>TimKiem4HelloV2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI_DocGia\TK_SachMuon.resx">
-      <DependentUpon>TK_SachMuon.cs</DependentUpon>
+    <EmbeddedResource Include="GUI_DocGia\TK_SachMuon_dg.resx">
+      <DependentUpon>TK_SachMuon_dg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_Khach\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -545,6 +766,9 @@
     <EmbeddedResource Include="GUI\test.resx">
       <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Khach\OneBook.resx">
+      <DependentUpon>OneBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_Khach\ThongTin.resx">
       <DependentUpon>ThongTin.cs</DependentUpon>
     </EmbeddedResource>
@@ -554,10 +778,56 @@
     <EmbeddedResource Include="GUI_Khach\TimKiem4Hello.resx">
       <DependentUpon>TimKiem4Hello.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Khach\TimKiemHello.resx">
+      <DependentUpon>TimKiemHello.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\FrmBienbanVP.resx">
+      <DependentUpon>FrmBienbanVP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\FrmNhanVien.resx">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\FrmThemCuonSach.resx">
+      <DependentUpon>FrmThemCuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\FrmThemNXB.resx">
+      <DependentUpon>FrmThemNXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\FrmThemTacGia.resx">
+      <DependentUpon>FrmThemTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\FrmThemTheLoai.resx">
+      <DependentUpon>FrmThemTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\FrmThongTinDG.resx">
+      <DependentUpon>FrmThongTinDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\HomeNV.resx">
+      <DependentUpon>HomeNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\InfoNV.resx">
+      <DependentUpon>InfoNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\ThongKeNV.resx">
+      <DependentUpon>ThongKeNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\ThongTinDocGia.resx">
+      <DependentUpon>ThongTinDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\TimKiem4NV.resx">
+      <DependentUpon>TimKiem4NV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien\tk_sachmuon_nv.resx">
+      <DependentUpon>tk_sachmuon_nv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\BBvipham.resx">
+      <DependentUpon>BBvipham.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -578,13 +848,53 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
-    <Folder Include="DTO\" />
-    <Folder Include="Report\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\155.jpg" />
+    <None Include="Report\BBVP_DataSet.xsc">
+      <DependentUpon>BBVP_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BBVP_DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BBVP_DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\BBVP_DataSet.xss">
+      <DependentUpon>BBVP_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Report\PhieuMuon_DataSet.xsc">
+      <DependentUpon>PhieuMuon_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Report\PhieuMuon_DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PhieuMuon_DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\PhieuMuon_DataSet.xss">
+      <DependentUpon>PhieuMuon_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Report\PhieuNhap_Dataset.xsc">
+      <DependentUpon>PhieuNhap_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Report\PhieuNhap_Dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PhieuNhap_Dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\PhieuNhap_Dataset.xss">
+      <DependentUpon>PhieuNhap_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Report\TKLuotMuon_Dataset.xsc">
+      <DependentUpon>TKLuotMuon_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Report\TKLuotMuon_Dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TKLuotMuon_Dataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\TKLuotMuon_Dataset.xss">
+      <DependentUpon>TKLuotMuon_Dataset.xsd</DependentUpon>
+    </None>
     <None Include="Resources\calendarDark.png" />
     <Content Include="Resources\calendarDark1.png" />
     <Content Include="Resources\calendarWhite.png" />

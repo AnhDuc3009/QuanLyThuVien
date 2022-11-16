@@ -8,25 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QLThuVien.GUI_DocGia
+namespace QLThuVien.Report
 {
-    public partial class TK_SachMuon : UserControl
+    public partial class BBvipham : DevExpress.XtraReports.UI.XtraReport
     {
-        public TK_SachMuon()
+        public BBvipham()
         {
             InitializeComponent();
         }
-
-        private void TK_sachmuon_dg_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnTK_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }

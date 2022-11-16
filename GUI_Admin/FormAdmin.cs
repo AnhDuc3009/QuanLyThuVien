@@ -132,7 +132,7 @@ namespace QLThuVien.GUI_Admin
         private void btnM_dsSDamuon_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new GUI_Admin.DSSachMuon());
+            panelShow.Controls.Add(new GUI_NhanVien.tk_sachmuon_nv());
 
         }
 
@@ -192,8 +192,8 @@ namespace QLThuVien.GUI_Admin
         string MaQL = "NV000000";
         private void btnM_ReportSLDS_Click(object sender, EventArgs e)
         {
-            //Report.TKLuotMuonCreator pmCreator = new Report.TKLuotMuonCreator(MaQL);
-            //pmCreator.ShowReportHoaDon();
+            Report.TKLuotMuonCreator pmCreator = new Report.TKLuotMuonCreator(MaQL);
+            pmCreator.ShowReportHoaDon();
         }
 
         private void btnM_tkChung_Click(object sender, EventArgs e)

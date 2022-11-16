@@ -29,9 +29,9 @@ namespace QLThuVien.GUI_Admin
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeAdmin));
             this.gunaPanel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -45,25 +45,25 @@ namespace QLThuVien.GUI_Admin
             this.chartDG = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label15 = new System.Windows.Forms.Label();
             this.gunaPanel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lbTongDS = new System.Windows.Forms.Label();
             this.gunaPictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaPanel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.lbTongDG = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.gunaPictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaPanel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.lbTongSach = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaPictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.lbTongTL = new System.Windows.Forms.Label();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.gunaPanel6.SuspendLayout();
             this.gunaPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartDG)).BeginInit();
@@ -134,6 +134,7 @@ namespace QLThuVien.GUI_Admin
             this.circleProcessPercent.Name = "circleProcessPercent";
             this.circleProcessPercent.ProgressColor = System.Drawing.Color.DodgerBlue;
             this.circleProcessPercent.ProgressColor2 = System.Drawing.Color.DodgerBlue;
+            this.circleProcessPercent.ShowText = true;
             this.circleProcessPercent.Size = new System.Drawing.Size(245, 245);
             this.circleProcessPercent.TabIndex = 16;
             this.circleProcessPercent.Text = "30";
@@ -210,18 +211,18 @@ namespace QLThuVien.GUI_Admin
             // 
             // chartDG
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartDG.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartDG.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartDG.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartDG.Legends.Add(legend2);
             this.chartDG.Location = new System.Drawing.Point(38, 52);
             this.chartDG.Margin = new System.Windows.Forms.Padding(4);
             this.chartDG.Name = "chartDG";
-            series1.ChartArea = "ChartArea1";
-            series1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.Legend = "Legend1";
-            series1.Name = "DocGia";
-            this.chartDG.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.Legend = "Legend1";
+            series2.Name = "DocGia";
+            this.chartDG.Series.Add(series2);
             this.chartDG.Size = new System.Drawing.Size(684, 369);
             this.chartDG.TabIndex = 21;
             this.chartDG.Text = "chart1";
@@ -255,6 +256,19 @@ namespace QLThuVien.GUI_Admin
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(250, 187);
             this.gunaPanel3.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label9.Location = new System.Drawing.Point(134, 123);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 28);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Đầu sách";
             // 
             // label7
             // 
@@ -314,6 +328,19 @@ namespace QLThuVien.GUI_Admin
             this.gunaPanel2.Size = new System.Drawing.Size(253, 187);
             this.gunaPanel2.TabIndex = 20;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label4.Location = new System.Drawing.Point(115, 123);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 28);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "độc giả";
+            // 
             // lbTongDG
             // 
             this.lbTongDG.AutoSize = true;
@@ -371,6 +398,19 @@ namespace QLThuVien.GUI_Admin
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(250, 187);
             this.gunaPanel1.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label3.Location = new System.Drawing.Point(117, 123);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 28);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "cuốn sách";
             // 
             // lbTongSach
             // 
@@ -456,6 +496,19 @@ namespace QLThuVien.GUI_Admin
             this.lbTongTL.TabIndex = 18;
             this.lbTongTL.Text = "15";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label8.Location = new System.Drawing.Point(136, 123);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(90, 28);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Thể loại";
+            // 
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -470,58 +523,6 @@ namespace QLThuVien.GUI_Admin
             this.guna2PictureBox4.TabIndex = 17;
             this.guna2PictureBox4.TabStop = false;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(117, 123);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 28);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "cuốn sách";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label4.Location = new System.Drawing.Point(115, 123);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 28);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "độc giả";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label8.Location = new System.Drawing.Point(136, 123);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 28);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Thể loại";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label9.Location = new System.Drawing.Point(134, 123);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 28);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Đầu sách";
-            // 
             // HomeAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -535,6 +536,7 @@ namespace QLThuVien.GUI_Admin
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HomeAdmin";
             this.Size = new System.Drawing.Size(1348, 737);
+            this.Load += new System.EventHandler(this.HomeAdmin_Load);
             this.gunaPanel6.ResumeLayout(false);
             this.gunaPanel6.PerformLayout();
             this.gunaPanel5.ResumeLayout(false);

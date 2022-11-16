@@ -39,6 +39,9 @@ namespace QLThuVien.GUI_Admin
             this.lbNgaynhap = new System.Windows.Forms.Label();
             this.lbMaNV = new System.Windows.Forms.Label();
             this.dgvDSPhieunhap = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaPhieuNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label19 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,9 +58,6 @@ namespace QLThuVien.GUI_Admin
             this.lbTenNV = new System.Windows.Forms.Label();
             this.btnCreateRP = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaPhieuNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhieunhap)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
@@ -98,6 +98,7 @@ namespace QLThuVien.GUI_Admin
             // 
             // dgvDSPhieunhap
             // 
+            this.dgvDSPhieunhap.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvDSPhieunhap.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -125,8 +126,9 @@ namespace QLThuVien.GUI_Admin
             this.dgvDSPhieunhap.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDSPhieunhap.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgvDSPhieunhap.Location = new System.Drawing.Point(13, 228);
-            this.dgvDSPhieunhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDSPhieunhap.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDSPhieunhap.Name = "dgvDSPhieunhap";
+            this.dgvDSPhieunhap.ReadOnly = true;
             this.dgvDSPhieunhap.RowHeadersVisible = false;
             this.dgvDSPhieunhap.RowHeadersWidth = 51;
             this.dgvDSPhieunhap.RowTemplate.Height = 40;
@@ -145,7 +147,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDSPhieunhap.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvDSPhieunhap.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvDSPhieunhap.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvDSPhieunhap.ThemeStyle.ReadOnly = false;
+            this.dgvDSPhieunhap.ThemeStyle.ReadOnly = true;
             this.dgvDSPhieunhap.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDSPhieunhap.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDSPhieunhap.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -153,6 +155,31 @@ namespace QLThuVien.GUI_Admin
             this.dgvDSPhieunhap.ThemeStyle.RowsStyle.Height = 40;
             this.dgvDSPhieunhap.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDSPhieunhap.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvDSPhieunhap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSPhieunhap_CellClick);
+            // 
+            // MaPhieuNhap
+            // 
+            this.MaPhieuNhap.DataPropertyName = "MaPhieuNhap";
+            this.MaPhieuNhap.HeaderText = "Mã phiếu nhập";
+            this.MaPhieuNhap.MinimumWidth = 6;
+            this.MaPhieuNhap.Name = "MaPhieuNhap";
+            this.MaPhieuNhap.ReadOnly = true;
+            // 
+            // MaNhanVien
+            // 
+            this.MaNhanVien.DataPropertyName = "MaNhanVien";
+            this.MaNhanVien.HeaderText = "Mã nhân viên";
+            this.MaNhanVien.MinimumWidth = 6;
+            this.MaNhanVien.Name = "MaNhanVien";
+            this.MaNhanVien.ReadOnly = true;
+            // 
+            // NgayNhap
+            // 
+            this.NgayNhap.DataPropertyName = "NgayNhap";
+            this.NgayNhap.HeaderText = "Ngày nhập";
+            this.NgayNhap.MinimumWidth = 6;
+            this.NgayNhap.Name = "NgayNhap";
+            this.NgayNhap.ReadOnly = true;
             // 
             // label19
             // 
@@ -194,7 +221,7 @@ namespace QLThuVien.GUI_Admin
             this.guna2GradientPanel1.Controls.Add(this.label4);
             this.guna2GradientPanel1.Controls.Add(this.txtSearch);
             this.guna2GradientPanel1.Location = new System.Drawing.Point(13, 79);
-            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(663, 127);
             this.guna2GradientPanel1.TabIndex = 76;
@@ -210,6 +237,7 @@ namespace QLThuVien.GUI_Admin
             this.btnSearch.Size = new System.Drawing.Size(114, 44);
             this.btnSearch.TabIndex = 12;
             this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -223,7 +251,7 @@ namespace QLThuVien.GUI_Admin
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.Location = new System.Drawing.Point(27, 62);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(5);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -247,13 +275,14 @@ namespace QLThuVien.GUI_Admin
             this.guna2GradientPanel2.Controls.Add(this.btnCreateRP);
             this.guna2GradientPanel2.Controls.Add(this.label5);
             this.guna2GradientPanel2.Location = new System.Drawing.Point(684, 79);
-            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.Size = new System.Drawing.Size(616, 734);
             this.guna2GradientPanel2.TabIndex = 77;
             // 
             // dgvDSDausach
             // 
+            this.dgvDSDausach.AllowUserToResizeRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.dgvDSDausach.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
@@ -281,8 +310,9 @@ namespace QLThuVien.GUI_Admin
             this.dgvDSDausach.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvDSDausach.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
             this.dgvDSDausach.Location = new System.Drawing.Point(15, 180);
-            this.dgvDSDausach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDSDausach.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDSDausach.Name = "dgvDSDausach";
+            this.dgvDSDausach.ReadOnly = true;
             this.dgvDSDausach.RowHeadersVisible = false;
             this.dgvDSDausach.RowHeadersWidth = 51;
             this.dgvDSDausach.RowTemplate.Height = 40;
@@ -301,7 +331,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDSDausach.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvDSDausach.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvDSDausach.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvDSDausach.ThemeStyle.ReadOnly = false;
+            this.dgvDSDausach.ThemeStyle.ReadOnly = true;
             this.dgvDSDausach.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDSDausach.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDSDausach.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -332,6 +362,7 @@ namespace QLThuVien.GUI_Admin
             this.ViTriSach.HeaderText = "Vị trí sách";
             this.ViTriSach.MinimumWidth = 6;
             this.ViTriSach.Name = "ViTriSach";
+            this.ViTriSach.ReadOnly = true;
             // 
             // lbMaPN
             // 
@@ -379,6 +410,7 @@ namespace QLThuVien.GUI_Admin
             this.btnCreateRP.Size = new System.Drawing.Size(203, 46);
             this.btnCreateRP.TabIndex = 13;
             this.btnCreateRP.Text = "Tạo báo cáo";
+            this.btnCreateRP.Click += new System.EventHandler(this.btnCreateRP_Click);
             // 
             // label5
             // 
@@ -389,27 +421,6 @@ namespace QLThuVien.GUI_Admin
             this.label5.Size = new System.Drawing.Size(163, 28);
             this.label5.TabIndex = 13;
             this.label5.Text = "Danh sách sách :";
-            // 
-            // NgayNhap
-            // 
-            this.NgayNhap.DataPropertyName = "NgayNhap";
-            this.NgayNhap.HeaderText = "Ngày nhập";
-            this.NgayNhap.MinimumWidth = 6;
-            this.NgayNhap.Name = "NgayNhap";
-            // 
-            // MaNhanVien
-            // 
-            this.MaNhanVien.DataPropertyName = "MaNhanVien";
-            this.MaNhanVien.HeaderText = "Mã nhân viên";
-            this.MaNhanVien.MinimumWidth = 6;
-            this.MaNhanVien.Name = "MaNhanVien";
-            // 
-            // MaPhieuNhap
-            // 
-            this.MaPhieuNhap.DataPropertyName = "MaPhieuNhap";
-            this.MaPhieuNhap.HeaderText = "Mã phiếu nhập";
-            this.MaPhieuNhap.MinimumWidth = 6;
-            this.MaPhieuNhap.Name = "MaPhieuNhap";
             // 
             // QLNhap
             // 
@@ -422,6 +433,7 @@ namespace QLThuVien.GUI_Admin
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QLNhap";
             this.Size = new System.Drawing.Size(1409, 833);
+            this.Load += new System.EventHandler(this.QLNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSPhieunhap)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();

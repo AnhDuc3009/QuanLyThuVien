@@ -84,6 +84,7 @@ namespace QLThuVien.GUI_Admin
             this.btnFindByTG.TabIndex = 40;
             this.btnFindByTG.Tag = "Tìm theo tên tác giả";
             this.btnFindByTG.Text = "Tìm theo tên tác giả";
+            this.btnFindByTG.Click += new System.EventHandler(this.btnFindByTG_Click);
             // 
             // btnFindAll
             // 
@@ -98,6 +99,7 @@ namespace QLThuVien.GUI_Admin
             this.btnFindAll.Size = new System.Drawing.Size(149, 44);
             this.btnFindAll.TabIndex = 39;
             this.btnFindAll.Text = "Tìm tất cả";
+            this.btnFindAll.Click += new System.EventHandler(this.btnFindAll_Click);
             // 
             // txtSearch
             // 
@@ -137,6 +139,7 @@ namespace QLThuVien.GUI_Admin
             this.cbTheLoai.Name = "cbTheLoai";
             this.cbTheLoai.Size = new System.Drawing.Size(237, 36);
             this.cbTheLoai.TabIndex = 37;
+            this.cbTheLoai.SelectedIndexChanged += new System.EventHandler(this.cbTheLoai_SelectedIndexChanged_1);
             // 
             // flowLayoutDS
             // 
@@ -159,6 +162,7 @@ namespace QLThuVien.GUI_Admin
             this.btnSearch.Size = new System.Drawing.Size(143, 49);
             this.btnSearch.TabIndex = 36;
             this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // DSSachCoSan
             // 
@@ -168,6 +172,7 @@ namespace QLThuVien.GUI_Admin
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DSSachCoSan";
             this.Size = new System.Drawing.Size(1493, 903);
+            this.Load += new System.EventHandler(this.DSSachCoSan_Load);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             this.guna2CustomGradientPanel2.PerformLayout();
             this.ResumeLayout(false);

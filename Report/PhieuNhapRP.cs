@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QLThuVien.GUI_Admin
+namespace QLThuVien.Report
 {
-    public partial class DSSachMuon : UserControl
+    public partial class PhieuNhapRP : DevExpress.XtraReports.UI.XtraReport
     {
-        public DSSachMuon()
+        public PhieuNhapRP()
         {
             InitializeComponent();
-        }
-
-        private void imageBook_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

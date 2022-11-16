@@ -36,9 +36,6 @@ namespace QLThuVien.GUI
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
-            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMatkhau = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMatkhau1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnToggle = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.label1 = new System.Windows.Forms.Label();
             this.checkShowPass = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -48,6 +45,9 @@ namespace QLThuVien.GUI
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtMatkhau1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMatkhau = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,82 +96,7 @@ namespace QLThuVien.GUI
             this.btnSubmit.Size = new System.Drawing.Size(287, 46);
             this.btnSubmit.TabIndex = 16;
             this.btnSubmit.Text = "Đăng ký";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.txtUsername.BorderRadius = 12;
-            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.DefaultText = "";
-            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtUsername.IconLeft")));
-            this.txtUsername.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txtUsername.Location = new System.Drawing.Point(122, 198);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtUsername.PlaceholderText = "      Username";
-            this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(287, 42);
-            this.txtUsername.TabIndex = 17;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
-            // 
-            // txtMatkhau
-            // 
-            this.txtMatkhau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.txtMatkhau.BorderRadius = 12;
-            this.txtMatkhau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMatkhau.DefaultText = "";
-            this.txtMatkhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMatkhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMatkhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMatkhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMatkhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatkhau.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatkhau.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtMatkhau.IconLeft")));
-            this.txtMatkhau.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txtMatkhau.Location = new System.Drawing.Point(122, 277);
-            this.txtMatkhau.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.PasswordChar = '•';
-            this.txtMatkhau.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtMatkhau.PlaceholderText = "      Password";
-            this.txtMatkhau.SelectedText = "";
-            this.txtMatkhau.Size = new System.Drawing.Size(288, 42);
-            this.txtMatkhau.TabIndex = 23;
-            // 
-            // txtMatkhau1
-            // 
-            this.txtMatkhau1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.txtMatkhau1.BorderRadius = 12;
-            this.txtMatkhau1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMatkhau1.DefaultText = "";
-            this.txtMatkhau1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMatkhau1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMatkhau1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMatkhau1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMatkhau1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatkhau1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMatkhau1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatkhau1.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtMatkhau1.IconLeft")));
-            this.txtMatkhau1.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.txtMatkhau1.Location = new System.Drawing.Point(123, 363);
-            this.txtMatkhau1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtMatkhau1.Name = "txtMatkhau1";
-            this.txtMatkhau1.PasswordChar = '•';
-            this.txtMatkhau1.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtMatkhau1.PlaceholderText = "      Password";
-            this.txtMatkhau1.SelectedText = "";
-            this.txtMatkhau1.Size = new System.Drawing.Size(288, 42);
-            this.txtMatkhau1.TabIndex = 24;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnToggle
             // 
@@ -265,9 +190,85 @@ namespace QLThuVien.GUI
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(118, 323);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(207, 36);
+            this.label5.Size = new System.Drawing.Size(207, 25);
             this.label5.TabIndex = 32;
             this.label5.Text = "Xác thực mật khẩu ";
+            // 
+            // txtMatkhau1
+            // 
+            this.txtMatkhau1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.txtMatkhau1.BorderRadius = 12;
+            this.txtMatkhau1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMatkhau1.DefaultText = "";
+            this.txtMatkhau1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMatkhau1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMatkhau1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatkhau1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatkhau1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatkhau1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMatkhau1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatkhau1.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtMatkhau1.IconLeft")));
+            this.txtMatkhau1.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.txtMatkhau1.Location = new System.Drawing.Point(121, 352);
+            this.txtMatkhau1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtMatkhau1.Name = "txtMatkhau1";
+            this.txtMatkhau1.PasswordChar = '•';
+            this.txtMatkhau1.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtMatkhau1.PlaceholderText = "      Password";
+            this.txtMatkhau1.SelectedText = "";
+            this.txtMatkhau1.Size = new System.Drawing.Size(288, 42);
+            this.txtMatkhau1.TabIndex = 24;
+            // 
+            // txtMatkhau
+            // 
+            this.txtMatkhau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.txtMatkhau.BorderRadius = 12;
+            this.txtMatkhau.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMatkhau.DefaultText = "";
+            this.txtMatkhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMatkhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMatkhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatkhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatkhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatkhau.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatkhau.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtMatkhau.IconLeft")));
+            this.txtMatkhau.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.txtMatkhau.Location = new System.Drawing.Point(122, 277);
+            this.txtMatkhau.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtMatkhau.Name = "txtMatkhau";
+            this.txtMatkhau.PasswordChar = '•';
+            this.txtMatkhau.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtMatkhau.PlaceholderText = "      Password";
+            this.txtMatkhau.SelectedText = "";
+            this.txtMatkhau.Size = new System.Drawing.Size(288, 42);
+            this.txtMatkhau.TabIndex = 23;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.txtUsername.BorderRadius = 12;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.DefaultText = "";
+            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtUsername.IconLeft")));
+            this.txtUsername.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.txtUsername.Location = new System.Drawing.Point(122, 198);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtUsername.PlaceholderText = "      Username";
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(287, 42);
+            this.txtUsername.TabIndex = 17;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // FrmDangKy
             // 

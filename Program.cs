@@ -17,7 +17,7 @@ namespace QLThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI_DocGia.frmDocGia());
+            Application.Run(new GUI_Khach.Form1());
         }
     }
 }

@@ -29,12 +29,12 @@ namespace QLThuVien.GUI_Admin
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.gunaPanel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.chartDG = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label14 = new System.Windows.Forms.Label();
@@ -73,18 +73,18 @@ namespace QLThuVien.GUI_Admin
             // 
             // chartDG
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartDG.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartDG.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.chartDG.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartDG.Legends.Add(legend5);
             this.chartDG.Location = new System.Drawing.Point(47, 57);
             this.chartDG.Margin = new System.Windows.Forms.Padding(4);
             this.chartDG.Name = "chartDG";
-            series1.ChartArea = "ChartArea1";
-            series1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.Legend = "Legend1";
-            series1.Name = "TienCoc";
-            this.chartDG.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series5.Legend = "Legend1";
+            series5.Name = "TienCoc";
+            this.chartDG.Series.Add(series5);
             this.chartDG.Size = new System.Drawing.Size(501, 319);
             this.chartDG.TabIndex = 22;
             this.chartDG.Text = "chart1";
@@ -119,20 +119,20 @@ namespace QLThuVien.GUI_Admin
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(47, 81);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series2.Legend = "Legend1";
-            series2.Name = "SoLuong";
-            series2.YValuesPerPoint = 2;
-            this.chart1.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series6.Legend = "Legend1";
+            series6.Name = "SoLuong";
+            series6.YValuesPerPoint = 2;
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(961, 283);
             this.chart1.TabIndex = 22;
             this.chart1.Text = "chart1";
@@ -179,6 +179,7 @@ namespace QLThuVien.GUI_Admin
             this.btnRp.Size = new System.Drawing.Size(547, 37);
             this.btnRp.TabIndex = 23;
             this.btnRp.Text = "Báo cáo thống kê lượt mượn trên mỗi đầu sách";
+            this.btnRp.Click += new System.EventHandler(this.btnRp_Click);
             // 
             // guna2CircleButton2
             // 
@@ -218,6 +219,7 @@ namespace QLThuVien.GUI_Admin
             this.circleProcessPercent.ProgressColor = System.Drawing.Color.DodgerBlue;
             this.circleProcessPercent.ProgressColor2 = System.Drawing.Color.DodgerBlue;
             this.circleProcessPercent.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.circleProcessPercent.ShowText = true;
             this.circleProcessPercent.Size = new System.Drawing.Size(245, 245);
             this.circleProcessPercent.TabIndex = 32;
             this.circleProcessPercent.Text = "30";
@@ -271,6 +273,7 @@ namespace QLThuVien.GUI_Admin
             this.Controls.Add(this.gunaPanel5);
             this.Name = "ThongKeNV";
             this.Size = new System.Drawing.Size(1211, 856);
+            this.Load += new System.EventHandler(this.ThongKeNV_Load);
             this.gunaPanel5.ResumeLayout(false);
             this.gunaPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartDG)).EndInit();

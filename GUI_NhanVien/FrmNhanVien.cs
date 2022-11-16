@@ -19,10 +19,13 @@ namespace QLThuVien.GUI_NhanVien
         {
             InitializeComponent();
         }
+        NhanVien_BUS nvBus = new NhanVien_BUS();
 
         public FrmNhanVien(string user)
         {
             InitializeComponent();
+            MaNhanVien = nvBus.loadMaNV_user(user);
+            UserName = user;
         }
 
         string MaNhanVien;
@@ -201,12 +204,9 @@ namespace QLThuVien.GUI_NhanVien
         {
             CloseDoc();
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.HomeNV());
-
-
+            panelShow.Controls.Add(new GUI_NhanVien.HomeNV());
             lbUsername.Text = UserName;
             imgAvatar.Image = nvBus.LoadAnh(MaNhanVien);
-
         }
 
         private void imgThuVienMTA_Click(object sender, EventArgs e)
@@ -218,20 +218,20 @@ namespace QLThuVien.GUI_NhanVien
         private void btnHome_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.HomeNV());
+            panelShow.Controls.Add(new GUI_NhanVien.HomeNV());
         }
 
 
         void TimKiem_MuonSach()
         {
             panelShow.Controls.Clear();
-            Template.TimKiem4NV usertimkiem = new Template.TimKiem4NV();
+            GUI_NhanVien.TimKiem4NV usertimkiem = new GUI_NhanVien.TimKiem4NV();
 
             usertimkiem.OnClick += (ss, ee) =>
             {
                 panelShow.Controls.Clear();
-                List<string> dsds = Template.TimKiem4NV.dsMuon;
-                panelShow.Controls.Add(new Template.PhieuMuon(dsds, MaNhanVien));
+                List<string> dsds = GUI_NhanVien.TimKiem4NV.dsMuon;
+                panelShow.Controls.Add(new GUI_DocGia.PhieuMuon(dsds, MaNhanVien));
 
             };
 
@@ -251,67 +251,67 @@ namespace QLThuVien.GUI_NhanVien
         private void btnM_ChangeInfo_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.InfoNV(MaNhanVien));
+            panelShow.Controls.Add(new GUI_NhanVien.InfoNV(MaNhanVien));
         }
 
         private void btnM_SConlai_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.DSSachCoSan());
+            panelShow.Controls.Add(new GUI_Admin.DSSachCoSan());
         }
 
         private void btnM_Nhapsach_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.FrmThemCuonSach());
+            panelShow.Controls.Add(new GUI_NhanVien.FrmThemCuonSach());
         }
 
         private void btnM_DSDG_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.FrmThongTinDG());
+            panelShow.Controls.Add(new GUI_NhanVien.FrmThongTinDG());
         }
 
         private void btnM_DSDausach_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.FrmThemDauSach());
+            panelShow.Controls.Add(new GUI_Admin.FrmThemDauSach());
         }
 
         private void btnM_Tra_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.Xu_ly_tra(MaNhanVien));
+            panelShow.Controls.Add(new GUI_Admin.Xu_ly_tra(MaNhanVien));
         }
 
         private void btnM_dsSDamuon_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.tk_sachmuon_nv());
+            panelShow.Controls.Add(new GUI_NhanVien.tk_sachmuon_nv());
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.DSPhieuMuonNV(MaNhanVien));
+            panelShow.Controls.Add(new GUI_Admin.DSPhieuMuonNV(MaNhanVien));
         }
 
         private void btnM_ThongKe_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.ThongKeNV(MaNhanVien));
+            panelShow.Controls.Add(new GUI_NhanVien.ThongKeNV(MaNhanVien));
         }
 
         private void btnM_LapBBvp_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.frmLapBBVP(MaNhanVien));
+            panelShow.Controls.Add(new GUI_Admin.frmLapBBVP(MaNhanVien));
         }
 
         private void btnM_DangkyDG_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.ThemDocgia());
+            panelShow.Controls.Add(new GUI_Admin.ThemDocgia());
 
         }
 
@@ -324,13 +324,13 @@ namespace QLThuVien.GUI_NhanVien
         {
 
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.DSSachVP());
+            panelShow.Controls.Add(new GUI_Admin.DSSachVP());
         }
 
         private void btnQLNhap_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new Template.QLNhap());
+            panelShow.Controls.Add(new GUI_Admin.QLNhap());
         }
     }
 }

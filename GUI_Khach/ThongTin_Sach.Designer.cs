@@ -30,7 +30,6 @@ namespace QLThuVien.GUI_Khach
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongTin_Sach));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelall = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -83,7 +82,7 @@ namespace QLThuVien.GUI_Khach
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox1.Location = new System.Drawing.Point(386, 19);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
@@ -139,7 +138,6 @@ namespace QLThuVien.GUI_Khach
             this.imageBook.BackColor = System.Drawing.Color.Transparent;
             this.imageBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.imageBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imageBook.Image = ((System.Drawing.Image)(resources.GetObject("imageBook.Image")));
             this.imageBook.Location = new System.Drawing.Point(147, 19);
             this.imageBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imageBook.Name = "imageBook";
