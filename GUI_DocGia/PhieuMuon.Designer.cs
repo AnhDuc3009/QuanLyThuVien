@@ -30,7 +30,6 @@ namespace QLThuVien.GUI_DocGia
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhieuMuon));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -69,9 +68,9 @@ namespace QLThuVien.GUI_DocGia
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bthHuy = new Guna.UI2.WinForms.Guna2Button();
             this.btnMuon = new Guna.UI2.WinForms.Guna2Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.bthHuy = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBook)).BeginInit();
             this.guna2CustomGradientPanel2.SuspendLayout();
@@ -147,6 +146,7 @@ namespace QLThuVien.GUI_DocGia
             this.txtTenDG.SelectedText = "";
             this.txtTenDG.Size = new System.Drawing.Size(188, 39);
             this.txtTenDG.TabIndex = 0;
+            this.txtTenDG.TextChanged += new System.EventHandler(this.txtTenDG_TextChanged);
             // 
             // lbMaMuonTra
             // 
@@ -184,7 +184,7 @@ namespace QLThuVien.GUI_DocGia
             // 
             this.lbInfoMota.BackColor = System.Drawing.Color.Transparent;
             this.lbInfoMota.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lbInfoMota.Location = new System.Drawing.Point(89, 313);
+            this.lbInfoMota.Location = new System.Drawing.Point(428, 744);
             this.lbInfoMota.Name = "lbInfoMota";
             this.lbInfoMota.Size = new System.Drawing.Size(331, 194);
             this.lbInfoMota.TabIndex = 25;
@@ -292,7 +292,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(198)))), ((int)(((byte)(165)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(244)))), ((int)(((byte)(197)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(790, 121);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(443, 636);
             this.guna2CustomGradientPanel1.TabIndex = 25;
@@ -316,7 +316,6 @@ namespace QLThuVien.GUI_DocGia
             // 
             this.imageBook.BackColor = System.Drawing.Color.Transparent;
             this.imageBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.imageBook.Image = ((System.Drawing.Image)(resources.GetObject("imageBook.Image")));
             this.imageBook.Location = new System.Drawing.Point(15, 46);
             this.imageBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imageBook.Name = "imageBook";
@@ -349,7 +348,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(198)))), ((int)(((byte)(165)))));
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(244)))), ((int)(((byte)(197)))));
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(545, 121);
-            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(228, 190);
             this.guna2CustomGradientPanel2.TabIndex = 27;
@@ -370,7 +369,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2CustomGradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(198)))), ((int)(((byte)(165)))));
             this.guna2CustomGradientPanel3.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(244)))), ((int)(((byte)(197)))));
             this.guna2CustomGradientPanel3.Location = new System.Drawing.Point(55, 117);
-            this.guna2CustomGradientPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CustomGradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel3.Name = "guna2CustomGradientPanel3";
             this.guna2CustomGradientPanel3.Size = new System.Drawing.Size(465, 194);
             this.guna2CustomGradientPanel3.TabIndex = 28;
@@ -431,7 +430,6 @@ namespace QLThuVien.GUI_DocGia
             this.dateHanTra.BorderRadius = 6;
             this.dateHanTra.Checked = true;
             this.dateHanTra.CustomFormat = "dd/MM/yyyy";
-            this.dateHanTra.Enabled = false;
             this.dateHanTra.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateHanTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateHanTra.Location = new System.Drawing.Point(256, 127);
@@ -450,7 +448,6 @@ namespace QLThuVien.GUI_DocGia
             this.DateMuon.BorderRadius = 6;
             this.DateMuon.Checked = true;
             this.DateMuon.CustomFormat = "dd/MM/yyyy";
-            this.DateMuon.Enabled = false;
             this.DateMuon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateMuon.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DateMuon.Location = new System.Drawing.Point(29, 127);
@@ -471,7 +468,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2CustomGradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
             this.guna2CustomGradientPanel4.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
             this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(53, 55);
-            this.guna2CustomGradientPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CustomGradientPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(325, 47);
             this.guna2CustomGradientPanel4.TabIndex = 29;
@@ -479,6 +476,7 @@ namespace QLThuVien.GUI_DocGia
             // dgvInfoBorrow
             // 
             this.dgvInfoBorrow.AllowUserToAddRows = false;
+            this.dgvInfoBorrow.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(224)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvInfoBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -508,8 +506,9 @@ namespace QLThuVien.GUI_DocGia
             this.dgvInfoBorrow.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInfoBorrow.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(184)))), ((int)(((byte)(218)))));
             this.dgvInfoBorrow.Location = new System.Drawing.Point(60, 386);
-            this.dgvInfoBorrow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvInfoBorrow.Margin = new System.Windows.Forms.Padding(4);
             this.dgvInfoBorrow.Name = "dgvInfoBorrow";
+            this.dgvInfoBorrow.ReadOnly = true;
             this.dgvInfoBorrow.RowHeadersVisible = false;
             this.dgvInfoBorrow.RowHeadersWidth = 51;
             this.dgvInfoBorrow.RowTemplate.Height = 40;
@@ -529,7 +528,7 @@ namespace QLThuVien.GUI_DocGia
             this.dgvInfoBorrow.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvInfoBorrow.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvInfoBorrow.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvInfoBorrow.ThemeStyle.ReadOnly = false;
+            this.dgvInfoBorrow.ThemeStyle.ReadOnly = true;
             this.dgvInfoBorrow.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvInfoBorrow.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvInfoBorrow.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -577,20 +576,7 @@ namespace QLThuVien.GUI_DocGia
             this.dataGridViewTextBoxColumn5.HeaderText = "Vị trí sách";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // bthHuy
-            // 
-            this.bthHuy.BackColor = System.Drawing.Color.Transparent;
-            this.bthHuy.BorderRadius = 18;
-            this.bthHuy.FillColor = System.Drawing.Color.LightCoral;
-            this.bthHuy.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bthHuy.ForeColor = System.Drawing.Color.White;
-            this.bthHuy.Location = new System.Drawing.Point(1061, 58);
-            this.bthHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bthHuy.Name = "bthHuy";
-            this.bthHuy.Size = new System.Drawing.Size(172, 44);
-            this.bthHuy.TabIndex = 33;
-            this.bthHuy.Text = "Hủy bỏ";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // btnMuon
             // 
@@ -610,6 +596,21 @@ namespace QLThuVien.GUI_DocGia
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this.txtTenDG;
+            // 
+            // bthHuy
+            // 
+            this.bthHuy.BackColor = System.Drawing.Color.Transparent;
+            this.bthHuy.BorderRadius = 18;
+            this.bthHuy.FillColor = System.Drawing.Color.LightCoral;
+            this.bthHuy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bthHuy.ForeColor = System.Drawing.Color.White;
+            this.bthHuy.Location = new System.Drawing.Point(1061, 58);
+            this.bthHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bthHuy.Name = "bthHuy";
+            this.bthHuy.Size = new System.Drawing.Size(172, 44);
+            this.bthHuy.TabIndex = 33;
+            this.bthHuy.Text = "Hủy bỏ";
+            this.bthHuy.Click += new System.EventHandler(this.bthHuy_Click);
             // 
             // PhieuMuon
             // 
@@ -674,7 +675,6 @@ namespace QLThuVien.GUI_DocGia
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel4;
         private Guna.UI2.WinForms.Guna2Button btnMuon;
         private Guna.UI2.WinForms.Guna2DataGridView dgvInfoBorrow;
-        private Guna.UI2.WinForms.Guna2Button bthHuy;
         private Guna.UI2.WinForms.Guna2TextBox txtMaDG;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ErrorProvider errorProvider1;
@@ -684,5 +684,6 @@ namespace QLThuVien.GUI_DocGia
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private Guna.UI2.WinForms.Guna2Button bthHuy;
     }
 }

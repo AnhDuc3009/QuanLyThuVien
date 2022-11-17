@@ -119,9 +119,6 @@ namespace QLThuVien.GUI
                 {
                     MessageBox.Show("Vui lòng kiểm tra lại thông tin !");
                 }
-
-
-
             }
         }
 

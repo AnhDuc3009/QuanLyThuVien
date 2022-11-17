@@ -115,5 +115,10 @@ namespace QLThuVien.GUI_NhanVien
             dgBus.MoKhoaTK(MaDocGia);
 
         }
+
+        private void btnWarning_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

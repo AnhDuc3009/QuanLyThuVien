@@ -47,7 +47,6 @@ namespace QLThuVien.GUI_NhanVien
             this.ViTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Remove = new System.Windows.Forms.DataGridViewButtonColumn();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.btnExportExcel = new Guna.UI2.WinForms.Guna2Button();
             this.btnCreatePM = new Guna.UI2.WinForms.Guna2Button();
             this.btnClearAll = new Guna.UI2.WinForms.Guna2Button();
             this.btnPreview = new Guna.UI2.WinForms.Guna2Button();
@@ -226,7 +225,7 @@ namespace QLThuVien.GUI_NhanVien
             this.dgvChooseBook.RowHeadersVisible = false;
             this.dgvChooseBook.RowHeadersWidth = 51;
             this.dgvChooseBook.RowTemplate.Height = 40;
-            this.dgvChooseBook.Size = new System.Drawing.Size(445, 524);
+            this.dgvChooseBook.Size = new System.Drawing.Size(445, 557);
             this.dgvChooseBook.TabIndex = 36;
             this.dgvChooseBook.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvChooseBook.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -284,7 +283,6 @@ namespace QLThuVien.GUI_NhanVien
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BorderRadius = 10;
-            this.guna2CustomGradientPanel1.Controls.Add(this.btnExportExcel);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnCreatePM);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnClearAll);
             this.guna2CustomGradientPanel1.Controls.Add(this.label13);
@@ -295,21 +293,6 @@ namespace QLThuVien.GUI_NhanVien
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(463, 828);
             this.guna2CustomGradientPanel1.TabIndex = 48;
-            // 
-            // btnExportExcel
-            // 
-            this.btnExportExcel.BackColor = System.Drawing.Color.Transparent;
-            this.btnExportExcel.BorderRadius = 18;
-            this.btnExportExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(198)))), ((int)(((byte)(165)))));
-            this.btnExportExcel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExportExcel.ForeColor = System.Drawing.Color.White;
-            this.btnExportExcel.Location = new System.Drawing.Point(286, 636);
-            this.btnExportExcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExportExcel.Name = "btnExportExcel";
-            this.btnExportExcel.Size = new System.Drawing.Size(163, 44);
-            this.btnExportExcel.TabIndex = 42;
-            this.btnExportExcel.Text = "Export Excel";
-            this.btnExportExcel.Click += new System.EventHandler(this.btnExportExcel_Click);
             // 
             // btnCreatePM
             // 
@@ -411,6 +394,5 @@ namespace QLThuVien.GUI_NhanVien
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDauSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn ViTri;
         private System.Windows.Forms.DataGridViewButtonColumn Remove;
-        private Guna.UI2.WinForms.Guna2Button btnExportExcel;
     }
 }

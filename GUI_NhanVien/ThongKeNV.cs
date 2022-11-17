@@ -59,8 +59,8 @@ namespace QLThuVien.GUI_NhanVien
 
         private void btnRp_Click(object sender, EventArgs e)
         {
-          //  Report.TKLuotMuonCreator newreport = new Report.TKLuotMuonCreator(MaNhanVien);
-          //  newreport.ShowReportHoaDon();
+          Report.TKLuotMuonCreator newreport = new Report.TKLuotMuonCreator(MaNhanVien);
+          newreport.ShowReportHoaDon();
         }
     }
 }

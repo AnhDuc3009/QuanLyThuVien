@@ -194,6 +194,14 @@ namespace QLThuVien.GUI_DocGia
             }
         }
 
+        private void txtTenDG_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void bthHuy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

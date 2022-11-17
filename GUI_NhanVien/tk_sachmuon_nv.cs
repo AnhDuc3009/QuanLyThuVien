@@ -33,7 +33,7 @@ namespace QLThuVien.GUI_NhanVien
 
 
             dateStart.Value = dateEnd.Value.Subtract(new TimeSpan(180, 0, 0, 0));
-            // dgvSachMoi.DataSource = tkBus.TK_muonnhieu(dateStart.ToString(), dateEnd.ToString());
+            dgvSachMoi.DataSource = tkBus.TK_muonnhieu(dateStart.ToString(), dateEnd.ToString());
         }
 
         private void rbtnMadocgia_CheckedChanged(object sender, EventArgs e)

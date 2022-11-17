@@ -502,12 +502,6 @@
     <Compile Include="GUI_Admin\ThemDocgia.Designer.cs">
       <DependentUpon>ThemDocgia.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI_Admin\ThongKeNV.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI_Admin\ThongKeNV.Designer.cs">
-      <DependentUpon>ThongKeNV.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI_Khach\OneBook.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -705,9 +699,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_Admin\ThemDocgia.resx">
       <DependentUpon>ThemDocgia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI_Admin\ThongKeNV.resx">
-      <DependentUpon>ThongKeNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_Admin\tk_sachnhap.resx">
       <DependentUpon>tk_sachnhap.cs</DependentUpon>

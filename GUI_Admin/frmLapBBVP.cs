@@ -127,18 +127,35 @@ namespace QLThuVien.GUI_Admin
             txtTongtienphat.Text = "";
             cmbMaDg.Enabled = true;
 
-           // Report.BBViphamCreator tkcreator = new Report.BBViphamCreator(bbvp.MaViPham);
+           Report.BBViphamCreator tkcreator = new Report.BBViphamCreator(bbvp.MaViPham);
 
-           // tkcreator.ShowReportHoaDon();
+           tkcreator.ShowReportHoaDon();
         }
 
-        private void cmbMasach_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void dgvSVP_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
+        {
+            long tienphat = 0;
+            for (int i = 0; i < dgvSVP.RowCount; i++)
+            {
+                tienphat += int.Parse(dgvSVP.Rows[i].Cells[3].Value.ToString());
+            }
+            txtTongtienphat.Text = tienphat.ToString();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            cmbMaDg.Enabled = true;
+            dgvSVP.Rows.Clear();
+            txtTongtienphat.Text = "";
+        }
+
+        private void cmbMasach_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtTenSach.Text = bb.get_tensach(cmbMasach.Text.Trim());
-            cmbLydo_SelectedIndexChanged_1(sender, e);
+            cmbLydo_SelectedIndexChanged(sender, e);
         }
 
-        private void cmbLydo_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void cmbLydo_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbLydo.Text == "trả sách trễ hạn")
             {
@@ -186,36 +203,6 @@ namespace QLThuVien.GUI_Admin
                     txtTienphat.Text = Math.Max(tienphat, tienhong).ToString();
                 }
             }
-        }
-
-        private void dgvSVP_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex == 4)
-            {
-
-                if (MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Xóa sách này ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    dgvSVP.Rows.RemoveAt(e.RowIndex);
-                }
-
-            }
-        }
-
-        private void dgvSVP_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
-        {
-            long tienphat = 0;
-            for (int i = 0; i < dgvSVP.RowCount; i++)
-            {
-                tienphat += int.Parse(dgvSVP.Rows[i].Cells[3].Value.ToString());
-            }
-            txtTongtienphat.Text = tienphat.ToString();
-        }
-
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-            cmbMaDg.Enabled = true;
-            dgvSVP.Rows.Clear();
-            txtTongtienphat.Text = "";
         }
     }
 }

@@ -309,7 +309,7 @@ namespace QLThuVien.GUI_NhanVien
             this.panelinfo.Controls.Add(this.label20);
             this.panelinfo.Controls.Add(this.lbTenDG);
             this.panelinfo.Location = new System.Drawing.Point(11, 9);
-            this.panelinfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelinfo.Margin = new System.Windows.Forms.Padding(4);
             this.panelinfo.Name = "panelinfo";
             this.panelinfo.Size = new System.Drawing.Size(563, 849);
             this.panelinfo.TabIndex = 11;
@@ -344,7 +344,7 @@ namespace QLThuVien.GUI_NhanVien
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(488, 11);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(60, 36);
             this.guna2ControlBox1.TabIndex = 73;
@@ -363,13 +363,14 @@ namespace QLThuVien.GUI_NhanVien
             this.btnWarning.Size = new System.Drawing.Size(129, 46);
             this.btnWarning.TabIndex = 72;
             this.btnWarning.Text = "Nhắc nhở ";
+            this.btnWarning.Click += new System.EventHandler(this.btnWarning_Click);
             // 
             // imageAvt
             // 
             this.imageAvt.BackColor = System.Drawing.Color.White;
             this.imageAvt.ImageRotate = 0F;
             this.imageAvt.Location = new System.Drawing.Point(19, 57);
-            this.imageAvt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imageAvt.Margin = new System.Windows.Forms.Padding(4);
             this.imageAvt.Name = "imageAvt";
             this.imageAvt.Size = new System.Drawing.Size(172, 159);
             this.imageAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

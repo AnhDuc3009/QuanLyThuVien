@@ -1,5 +1,4 @@
-﻿using QLThuVien.BUS;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QLThuVien.BUS;
+using QLThuVien.DTO;
 
 namespace QLThuVien.GUI_NhanVien
 {
@@ -17,63 +18,7 @@ namespace QLThuVien.GUI_NhanVien
         {
             InitializeComponent();
         }
-
         string MaDSCurrent = "";
-
-        private void ToExcel(DataGridView dataGridView1, string fileName)
-        {
-            //khai báo thư viện hỗ trợ Microsoft.Office.Interop.Excel
-            Microsoft.Office.Interop.Excel.Application excel;
-            Microsoft.Office.Interop.Excel.Workbook workbook;
-            Microsoft.Office.Interop.Excel.Worksheet worksheet;
-            try
-            {
-                //Tạo đối tượng COM.
-                excel = new Microsoft.Office.Interop.Excel.Application();
-                excel.Visible = false;
-                excel.DisplayAlerts = false;
-                //tạo mới một Workbooks bằng phương thức add()
-                workbook = excel.Workbooks.Add(Type.Missing);
-                worksheet = (Microsoft.Office.Interop.Excel.Worksheet)workbook.Sheets["Sheet1"];
-                //đặt tên cho sheet
-                worksheet.Name = "Quản lý học sinh";
-
-                // export header trong DataGridView
-                for (int i = 0; i < dataGridView1.ColumnCount - 1; i++)
-                {
-                    worksheet.Cells[1, i + 1] = dataGridView1.Columns[i].HeaderText;
-                }
-                // export nội dung trong DataGridView
-                for (int i = 0; i < dataGridView1.RowCount; i++)
-                {
-                    for (int j = 0; j < dataGridView1.ColumnCount - 1; j++)
-                    {
-                        worksheet.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
-                    }
-                }
-                // sử dụng phương thức SaveAs() để lưu workbook với filename
-                workbook.SaveAs(fileName);
-                //đóng workbook
-                workbook.Close();
-                excel.Quit();
-                MessageBox.Show("Xuất dữ liệu ra Excel thành công!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                workbook = null;
-                worksheet = null;
-            }
-        }
-
-        private void btnExportExcel_Click(object sender, EventArgs e)
-        {
-            ToExcel(dgvChooseBook, "book1.xlsx");
-        }
-
         public void AddItem(string MaDauSach)
         {
 
@@ -105,6 +50,7 @@ namespace QLThuVien.GUI_NhanVien
 
         private List<string> DSDauSach = new List<string>();
 
+
         private void LoadBookFlow()
         {
             flowLayoutDS.Controls.Clear();
@@ -119,15 +65,13 @@ namespace QLThuVien.GUI_NhanVien
         }
 
         DauSach_BUS dsBus = new DauSach_BUS();
-
-
-
-
         private void TimKiem4NV_Load(object sender, EventArgs e)
         {
+
             DSDauSach = dsBus.LoadMaDauSach();
             LoadBookFlow();
             LoadComboBoxTheLoai();
+
         }
 
         public void LoadComboBoxTheLoai()
@@ -137,10 +81,12 @@ namespace QLThuVien.GUI_NhanVien
             {
                 cbTheLoai.Items.Insert(i, dsTheLoai[i]);
             }
+
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+
             SearchByName();
             LoadBookFlow();
         }
@@ -190,9 +136,7 @@ namespace QLThuVien.GUI_NhanVien
 
             }
         }
-
         bool isSearchTG = false;
-
         private void btnFindByTG_Click(object sender, EventArgs e)
         {
             if (btnFindByTG.Text == btnFindByTG.Tag.ToString())
@@ -260,11 +204,22 @@ namespace QLThuVien.GUI_NhanVien
             }
         }
 
+
+
+        private void cbTheLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string key = cbTheLoai.Text;
+
+
+        }
+
         private void btnFindAll_Click(object sender, EventArgs e)
         {
             ShowAll();
             LoadBookFlow();
+
         }
+
 
         private void btnPreview_Click(object sender, EventArgs e)
         {
@@ -286,11 +241,8 @@ namespace QLThuVien.GUI_NhanVien
             }
 
             OnClick?.Invoke(this, e);
-        }
 
-        private void cbTheLoai_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string key = cbTheLoai.Text;
+
         }
     }
 }

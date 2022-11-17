@@ -126,7 +126,7 @@ namespace QLThuVien.DAO
 
         public DataTable DSPN_TTphieunhap_Ma(string MaPhieuNhap)
         {
-            string sql = $"SELECT cs.MaSach,ds.TenDauSach,cs.ViTriSach FROM dbo.THONGTINNHAPSACH tt INNER JOIN dbo.DAUSACH ds ON ds.MaDauSach = tt.MaDauSach INNER JOIN dbo.CUONSACH cs ON cs.MaDauSach = ds.MaDauSach  WHERE tt.MaPhieuNhap = '{MaPhieuNhap}'";
+            string sql = $"SELECT cs.MaSach,ds.TenDauSach,cs.ViTriSach FROM dbo.THONGTINNHAPSACH tt INNER JOIN dbo.CUONSACH cs ON cs.MaSach = tt.MaSach INNER JOIN dbo.DauSACH ds ON cs.MaDauSach = ds.MaDauSach WHERE tt.MaPhieuNhap = '{MaPhieuNhap}'";
             return GetData(sql);
         }
 

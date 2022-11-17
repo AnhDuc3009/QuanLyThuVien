@@ -47,7 +47,7 @@ namespace QLThuVien.DAO
         }
         public DataTable tkSachnhap(DateTime ngaybd, DateTime ngaykt)
         {
-            string sqlString = $"SELECT ds.TenDauSach, tt.SoLuongSach FROM dbo.DAUSACH ds INNER JOIN  dbo.THONGTINNHAPSACH tt ON tt.MaDauSach = ds.MaDauSach INNER JOIN dbo.PHIEUNHAP pn ON pn.MaPhieuNhap = tt.MaPhieuNhap WHERE pn.NgayNhap BETWEEN '{DateToString(ngaybd)}' AND '{DateToString(ngaykt)}'";
+            string sqlString = $"SELECT ds.TenDauSach, COUNT(tt.MaSach) soluong FROM dbo.DAUSACH ds INNER JOIN dbo.CUONSACH cs ON cs.MaDauSach = ds.MaDauSach INNER JOIN  dbo.THONGTINNHAPSACH tt ON tt.MaSach = cs.MaSach INNER JOIN dbo.PHIEUNHAP pn ON pn.MaPhieuNhap = tt.MaPhieuNhap WHERE pn.NgayNhap BETWEEN '{DateToString(ngaybd)}' AND '{DateToString(ngaykt)}' GROUP BY ds.TenDauSach";
 
             return GetData(sqlString);
         }

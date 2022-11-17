@@ -199,7 +199,7 @@ namespace QLThuVien.GUI_Admin
         private void btnM_tkChung_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new ThongKeNV(MaQL));
+            panelShow.Controls.Add(new GUI_NhanVien.ThongKeNV(MaQL));
         }
 
         private void btnM_LapBBvp_Click(object sender, EventArgs e)
