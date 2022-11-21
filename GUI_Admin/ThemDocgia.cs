@@ -145,6 +145,7 @@ namespace QLThuVien.GUI_Admin
                     "Thông báo",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+                    dgvInfo.DataSource = dgBus.GetList();
                 }
                 else
                 {
@@ -207,6 +208,7 @@ namespace QLThuVien.GUI_Admin
                 "Thông báo",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
+                dgvInfo.DataSource = dgBus.GetList();
             }
         }
 
@@ -214,6 +216,7 @@ namespace QLThuVien.GUI_Admin
         {
             if (MessageBox.Show("Bạn có chắc chắn xóa dòng dữ liệu này không ?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 dgvInfo.Rows.RemoveAt(rowCurrent);
+            dgvInfo.DataSource = dgBus.GetList();
         }
 
         TaiKhoan_BUS tkBus = new TaiKhoan_BUS();

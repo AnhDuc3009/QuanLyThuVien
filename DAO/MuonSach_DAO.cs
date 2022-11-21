@@ -55,7 +55,7 @@ namespace QLThuVien.DAO
 
             foreach (string i in ListMaSach)
             {
-                sql = $"SELECT top 1 cs.MaSach, ds.MaDauSach, ds.TenDauSach, cs.ViTriSach, ds.GiaTien FROM dbo.CUONSACH AS cs INNER JOIN dbo.DAUSACH AS ds ON ds.MaDauSach = cs.MaDauSach WHERE cs.MaDauSach = '{i}' AND cs.TrangThai = 1 GROUP BY cs.MaSach, ds.MaDauSach, ds.TenDauSach, cs.ViTriSach, ds.GiaTien";
+                sql = $"SELECT top 1 cs.MaSach, ds.MaDauSach, ds.TenDauSach, cs.ViTriSach, ds.GiaTien, ds.MoTa FROM dbo.CUONSACH AS cs INNER JOIN dbo.DAUSACH AS ds ON ds.MaDauSach = cs.MaDauSach WHERE cs.MaDauSach = '{i}' AND cs.TrangThai = 1 GROUP BY cs.MaSach, ds.MaDauSach, ds.TenDauSach, cs.ViTriSach, ds.GiaTien, ds.MoTa";
                 SqlDataAdapter temp = GetDataSet(sql);
                 temp.Fill(rs);
             }

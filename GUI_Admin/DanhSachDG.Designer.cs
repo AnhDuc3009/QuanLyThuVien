@@ -197,12 +197,14 @@ namespace QLThuVien.GUI_Admin
             // 
             // dgvDG
             // 
+            this.dgvDG.AllowUserToResizeRows = false;
             this.dgvDG.BackgroundColor = System.Drawing.Color.White;
             this.dgvDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDG.GridColor = System.Drawing.Color.Black;
             this.dgvDG.Location = new System.Drawing.Point(16, 182);
             this.dgvDG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvDG.Name = "dgvDG";
+            this.dgvDG.ReadOnly = true;
             this.dgvDG.RowHeadersWidth = 51;
             this.dgvDG.RowTemplate.Height = 24;
             this.dgvDG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

@@ -94,11 +94,11 @@ namespace QLThuVien.DAO
             string sql;
             if (isNV)
             {
-                sql = $"INSERT INTO dbo.PHIEUMUONTRA VALUES ('{pm.MaMuonTra}','{pm.MaDocGia}', '{pm.MaNhanVien}', '{DateToString(pm.NgayMuon) }', '{DateToString(pm.HanTra)}', '{pm.TienCoc}')";
+                sql = $"INSERT INTO dbo.PHIEUMUONTRA VALUES ('{pm.MaMuonTra}','{pm.MaDocGia}', '{pm.MaNhanVien}', '{DateToString(pm.NgayMuon) }', '{DateToString(pm.HanTra)}', 'true', '{pm.TienCoc}')";
             }
             else
             {
-                sql = $"INSERT INTO dbo.PHIEUMUONTRA VALUES ('{pm.MaMuonTra}','{pm.MaDocGia}', NULL, '{DateToString(pm.NgayMuon) }', '{DateToString(pm.HanTra)}' , '{pm.TienCoc}')";
+                sql = $"INSERT INTO dbo.PHIEUMUONTRA VALUES ('{pm.MaMuonTra}','{pm.MaDocGia}', NULL, '{DateToString(pm.NgayMuon) }', '{DateToString(pm.HanTra)}', 'false' , '{pm.TienCoc}')";
 
             }
 

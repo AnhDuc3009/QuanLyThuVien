@@ -28,7 +28,7 @@ namespace QLThuVien.DAO
             if (GetData("select * from NHANVIEN where MaNhanVien = '" + nv.MaNhanVien + "'").Rows.Count > 0)
                 return false;
 
-            string sql = $"INSERT INTO dbo.NHANVIEN VALUES ('{nv.MaNhanVien}',N'{nv.TenNhanVien}',N'{nv.ChucVu}','{DateToString(nv.NgaySinh)}',N'{nv.GioiTinh}',N'{nv.DiaChi}','{nv.Email}','{nv.SDT}','{nv.CMND}','{nv.TenDangNhap}',NULL)";
+            string sql = $"INSERT INTO dbo.NHANVIEN VALUES ('{nv.MaNhanVien}',N'{nv.TenNhanVien}',N'{nv.ChucVu}','{DateToString(nv.NgaySinh)}',N'{nv.GioiTinh}',N'{nv.DiaChi}','{nv.Email}','{nv.SDT}','{nv.CMND}','{nv.TenDangNhap}',NULL, NULL)";
             Excute(sql);
 
 
@@ -42,8 +42,7 @@ namespace QLThuVien.DAO
 
         public void Update(NhanVien nv)
         {
-            string sql = string.Format("update NHANVIEN set TenNhanVien = N'{0}', GioiTinh = N'{1}', NgaySinh = '{2}', DiaChi = N'{3}', TenDangNhap = '{4}' where MaNhanVien = '{5}'",
-                nv.TenNhanVien, nv.GioiTinh, nv.NgaySinh, nv.DiaChi, nv.TenDangNhap, nv.MaNhanVien);
+            string sql = $"update NHANVIEN set TenNhanVien = N'{nv.TenNhanVien}', GioiTinh = N'{nv.GioiTinh}', NgaySinh = '{nv.NgaySinh}', DiaChi = N'{nv.DiaChi}', Email = '{nv.Email}', SDT = '{nv.SDT}', CMND = {nv.CMND}  where MaNhanVien = '{nv.MaNhanVien}'";
             Excute(sql);
 
 

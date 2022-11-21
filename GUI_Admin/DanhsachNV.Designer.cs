@@ -35,7 +35,6 @@ namespace QLThuVien.GUI_Admin
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchNV = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAddNV = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -93,7 +92,6 @@ namespace QLThuVien.GUI_Admin
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.btnSearchNV);
-            this.panel1.Controls.Add(this.btnAddNV);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Location = new System.Drawing.Point(3, 57);
@@ -143,20 +141,6 @@ namespace QLThuVien.GUI_Admin
             this.btnSearchNV.TabIndex = 5;
             this.btnSearchNV.Text = "Tìm kiếm";
             this.btnSearchNV.Click += new System.EventHandler(this.btnSearchNV_Click);
-            // 
-            // btnAddNV
-            // 
-            this.btnAddNV.BorderRadius = 18;
-            this.btnAddNV.FillColor = System.Drawing.Color.Red;
-            this.btnAddNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAddNV.ForeColor = System.Drawing.Color.White;
-            this.btnAddNV.Location = new System.Drawing.Point(727, 55);
-            this.btnAddNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddNV.Name = "btnAddNV";
-            this.btnAddNV.Size = new System.Drawing.Size(115, 46);
-            this.btnAddNV.TabIndex = 3;
-            this.btnAddNV.Text = "Thêm NV";
-            this.btnAddNV.Click += new System.EventHandler(this.btnAddNV_Click);
             // 
             // label2
             // 
@@ -498,7 +482,6 @@ namespace QLThuVien.GUI_Admin
         private System.Windows.Forms.DataGridView dgvNhanvien;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private Guna.UI2.WinForms.Guna2Button btnAddNV;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnSearchNV;
         private System.Windows.Forms.Label label2;

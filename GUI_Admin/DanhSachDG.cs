@@ -60,25 +60,34 @@ namespace QLThuVien.GUI_Admin
                 txtTendangnhap.Text = row.Cells[9].Value.ToString();
 
                 dg.MaDocGia = row.Cells["MaDocGia"].Value.ToString();
-                dg.TenDocGia = row.Cells["TenDocGia"].Value.ToString();
-                dg.DiaChi = row.Cells["DiaChi"].Value.ToString();
-                dg.NgaySinh = DateTime.Parse(row.Cells["NgaySinh"].Value.ToString());
+                dg.TenDocGia = txtName.Text;
+                dg.DiaChi = txtDiachi.Text;
+                dg.NgaySinh = pickerBirthday.Value;
                 dg.NgayDangKi = DateTime.Parse(row.Cells["NgaySinh"].Value.ToString());
-                dg.CMND = row.Cells["MaDocGia"].Value.ToString();
+                dg.CMND = txtCMND.Text;
                 dg.TenDangNhap = row.Cells["TenDangNhap"].Value.ToString();
-                dg.SDT = row.Cells["SDT"].Value.ToString();
-                dg.GioiTinh = row.Cells["GioiTinh"].Value.ToString();
+                dg.SDT = txtSDT.Text;
+                dg.GioiTinh = cbGender.Text;
 
             }
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            dg.TenDocGia = txtName.Text;
+            dg.DiaChi = txtDiachi.Text;
+            dg.NgaySinh = pickerBirthday.Value;
+            dg.CMND = txtCMND.Text;
+            dg.SDT = txtSDT.Text;
+            dg.GioiTinh = cbGender.Text;
+
             if (MessageBox.Show("Bạn có chắc chắn muốn lưu?", "Lưu thông tin độc giả?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (dgBus.Sua(dg))
                 {
+                    
                     MessageBox.Show("Lưu thông tin thành công!");
+                    dgvDG.DataSource = dgBus.GetList();
                 }
                 else
                 {
@@ -96,7 +105,7 @@ namespace QLThuVien.GUI_Admin
             {
                 dgBus.Xoa(dg.MaDocGia);
                 MessageBox.Show("Xóa thông tin thành công!");
-
+                dgvDG.DataSource = dgBus.GetList();
             }
         }
     }

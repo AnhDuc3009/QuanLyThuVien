@@ -98,6 +98,7 @@ namespace QLThuVien.GUI_NhanVien
                 txtViTriSach.Clear();
                 txtMaCuonSach.Text = csBus.CreateNext_MaSach();
                 //Load lai len dgv
+                dgvChonDauSach.DataSource = dsBus.LoadListSLDS(cs);
             }
         }
 

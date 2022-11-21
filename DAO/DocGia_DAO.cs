@@ -113,7 +113,7 @@ namespace QLThuVien.DAO
 
         public DocGia GetMotDG(string maDG)
         {
-
+            
             string NameProc = "proc_DG_loadDocGia";
 
             SqlParameter[] sParams = new SqlParameter[1];

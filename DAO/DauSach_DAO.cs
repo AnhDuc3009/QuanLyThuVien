@@ -87,6 +87,12 @@ namespace QLThuVien.DAO
             return GetData(sqlString);
         }
 
+        public DataTable LoadSLDauSach(CuonSach cs)
+        {
+            string sqlString = @"declare @MaDauSach char(10) = '" + cs.MaDauSach  + "'update DAUSACH set SoLuong = (select count(MaSach) from CuonSach where MaDauSach = @MaDauSach) where MaDauSach = @MaDauSach select DAUSACH.MaDauSach, TenDauSach, SoLuong,  LanTaiBan,  NamXuatBan,  GiaTien,   MoTa, Anh, TACGIA.MaTacGia, TenTacGia,  NHAXUATBAN.MaNhaXuatBan,  TenNhaXuatBan,  DiaChi,THELOAI.MaTheLoai,  TenTheLoai from DAUSACH, TACGIA, NHAXUATBAN,SANGTAC, XUATBAN, THELOAI where  DAUSACH.MaDauSach = SANGTAC.MaDauSach and SANGTAC.MaTacGia = TACGIA.MaTacGia and DAUSACH.MaDauSach = XUATBAN.MaDauSach and XUATBAN.MaNhaXuatBan = NHAXUATBAN.MaNhaXuatBan and DAUSACH.MaTheLoai = THELOAI.MaTheLoai";
+            return GetData(sqlString);
+        }
+
         #region ThongTinSach
 
         public DataTable GetInfo2(string MaDauSach)

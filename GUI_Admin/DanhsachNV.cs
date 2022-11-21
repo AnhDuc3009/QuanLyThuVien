@@ -1,4 +1,5 @@
 ﻿using QLThuVien.BUS;
+using QLThuVien.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,21 +50,46 @@ namespace QLThuVien.GUI_Admin
             txtSDT.Text = row.Cells["SDT"].Value.ToString();
             txtCMND.Text = row.Cells["CMND"].Value.ToString();
             txtEmail.Text = row.Cells["Email"].Value.ToString();
+            nv.MaNhanVien = row.Cells["MaNhanVien"].Value.ToString();
+            nv.TenDangNhap = row.Cells["TenDangNhap"].Value.ToString();
         }
 
-        private void btnAddNV_Click(object sender, EventArgs e)
-        {
 
-        }
-
+        NhanVien nv = new NhanVien();
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            nv.TenNhanVien = txtName.Text;
+            nv.NgaySinh = pickerBirthday.Value;
+            nv.GioiTinh = cbGioitinh.Text;
+            nv.Email = txtEmail.Text;
+            nv.SDT = txtSDT.Text;
+            nv.DiaChi = txtDiaChi.Text;
+            nv.CMND = txtCMND.Text;
 
+            if (MessageBox.Show("Bạn có chắc chắn muốn lưu?", "Lưu thông tin nhân viên?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (nvbus.Sua(nv))
+                {
+                    MessageBox.Show("Lưu thông tin thành công!");
+                    dgvNhanvien.DataSource = nvbus.GetList();
+                }
+                else
+                {
+                    MessageBox.Show("Lưu thông tin không thành công! Hãy kiểm tra lại");
+
+                }
+
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Hệ thống sẽ xóa hết thông tin của nhân viên \nBạn có chắc chắn muốn xóa?", "Xóa thông tin nhân viên?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                nvbus.Xoa(nv.MaNhanVien);
+                MessageBox.Show("Xóa thông tin thành công!");
+                dgvNhanvien.DataSource = nvbus.GetList();
+            }
         }
     }
 }

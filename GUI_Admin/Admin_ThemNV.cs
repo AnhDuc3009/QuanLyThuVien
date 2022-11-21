@@ -128,7 +128,7 @@ namespace QLThuVien.GUI_Admin
             }
             else
             {
-                MessageBox.Show("Thêm thành công một nhân viên");
+                MessageBox.Show("Bị lỗi");
             }
         }
 

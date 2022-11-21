@@ -88,8 +88,8 @@ namespace QLThuVien.GUI_DocGia
         private void LoadTTDocGia()
         {
             txtMaDG.Text = MaDocGia;
-            DocGia onedg = dgBus.GetOne(MaDocGia);
-            txtTenDG.Text = onedg.TenDocGia;
+            //DocGia onedg = dgBus.GetOne(MaDocGia);
+            // txtTenDG.Text = onedg.TenDocGia;
         }
 
         private void TinhTienCoc(DataTable InfoBorrow)

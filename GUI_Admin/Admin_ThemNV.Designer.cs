@@ -445,7 +445,7 @@ namespace QLThuVien.GUI_Admin
             this.pickerBirthday.BorderRadius = 5;
             this.pickerBirthday.Checked = true;
             this.pickerBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.pickerBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.pickerBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.pickerBirthday.Location = new System.Drawing.Point(22, 185);
             this.pickerBirthday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.pickerBirthday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -607,6 +607,7 @@ namespace QLThuVien.GUI_Admin
             // 
             // dgvThongTin
             // 
+            this.dgvThongTin.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(223)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvThongTin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -632,6 +633,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvThongTin.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(216)))));
             this.dgvThongTin.Location = new System.Drawing.Point(122, 442);
             this.dgvThongTin.Name = "dgvThongTin";
+            this.dgvThongTin.ReadOnly = true;
             this.dgvThongTin.RowHeadersVisible = false;
             this.dgvThongTin.RowHeadersWidth = 51;
             this.dgvThongTin.RowTemplate.Height = 40;
@@ -650,7 +652,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvThongTin.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvThongTin.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvThongTin.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvThongTin.ThemeStyle.ReadOnly = false;
+            this.dgvThongTin.ThemeStyle.ReadOnly = true;
             this.dgvThongTin.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvThongTin.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvThongTin.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -666,6 +668,7 @@ namespace QLThuVien.GUI_Admin
             this.Anh.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Anh.MinimumWidth = 6;
             this.Anh.Name = "Anh";
+            this.Anh.ReadOnly = true;
             // 
             // errorProvider1
             // 
