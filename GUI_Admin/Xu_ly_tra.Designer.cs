@@ -53,7 +53,6 @@ namespace QLThuVien.GUI_Admin
             this.NgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HanTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnHoantat = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBbvp = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.dgvDs = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -352,27 +351,13 @@ namespace QLThuVien.GUI_Admin
             this.btnHoantat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(198)))), ((int)(((byte)(165)))));
             this.btnHoantat.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnHoantat.ForeColor = System.Drawing.Color.White;
-            this.btnHoantat.Location = new System.Drawing.Point(1090, 730);
+            this.btnHoantat.Location = new System.Drawing.Point(818, 730);
             this.btnHoantat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHoantat.Name = "btnHoantat";
             this.btnHoantat.Size = new System.Drawing.Size(164, 46);
             this.btnHoantat.TabIndex = 4;
             this.btnHoantat.Text = "Hoàn tất trả sách";
             this.btnHoantat.Click += new System.EventHandler(this.btnHoantat_Click);
-            // 
-            // btnBbvp
-            // 
-            this.btnBbvp.BorderRadius = 15;
-            this.btnBbvp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnBbvp.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnBbvp.ForeColor = System.Drawing.Color.White;
-            this.btnBbvp.Location = new System.Drawing.Point(733, 730);
-            this.btnBbvp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBbvp.Name = "btnBbvp";
-            this.btnBbvp.Size = new System.Drawing.Size(204, 46);
-            this.btnBbvp.TabIndex = 5;
-            this.btnBbvp.Text = "Lập biên bản vi phạm";
-            this.btnBbvp.Click += new System.EventHandler(this.btnBbvp_Click);
             // 
             // guna2CustomGradientPanel1
             // 
@@ -513,7 +498,7 @@ namespace QLThuVien.GUI_Admin
             this.btnCleardgv.FillColor = System.Drawing.Color.DarkViolet;
             this.btnCleardgv.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnCleardgv.ForeColor = System.Drawing.Color.White;
-            this.btnCleardgv.Location = new System.Drawing.Point(957, 730);
+            this.btnCleardgv.Location = new System.Drawing.Point(1090, 730);
             this.btnCleardgv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCleardgv.Name = "btnCleardgv";
             this.btnCleardgv.Size = new System.Drawing.Size(117, 46);
@@ -530,7 +515,6 @@ namespace QLThuVien.GUI_Admin
             this.Controls.Add(this.btnCapnhat);
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.Controls.Add(this.btnBbvp);
             this.Controls.Add(this.btnHoantat);
             this.Controls.Add(this.dgv_trasach);
             this.Controls.Add(this.lbMuontra);
@@ -561,7 +545,6 @@ namespace QLThuVien.GUI_Admin
         private System.Windows.Forms.Label lbMasach;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_trasach;
         private Guna.UI2.WinForms.Guna2Button btnHoantat;
-        private Guna.UI2.WinForms.Guna2Button btnBbvp;
         private Guna.UI2.WinForms.Guna2ComboBox cmbTKiem;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
