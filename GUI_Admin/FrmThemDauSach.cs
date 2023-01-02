@@ -104,7 +104,7 @@ namespace QLThuVien.GUI_Admin
                 xb.MaNhaXuatBan = cbTenNXB.SelectedValue.ToString();
                 dsBus.ThemThongtinNhap(ds, st, xb);
                 dsBus.LuuAnh(ds.MaDauSach, ofdOpenFile.FileName);
-
+                MessageBox.Show("Thêm đầu sách thành công");
                 dgvDauSach.DataSource = dsBus.LoadListDSMini();
 
 

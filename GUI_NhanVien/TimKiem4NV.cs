@@ -18,6 +18,21 @@ namespace QLThuVien.GUI_NhanVien
         {
             InitializeComponent();
         }
+
+        private int index = 0;
+        private int limit = 6;
+
+        public TimKiem4NV(string Keyword)
+        {
+            InitializeComponent();
+            txtSearch.Text = Keyword;
+            cbTheLoai.Text = "Tất cả thể loại";
+            SearchByName();
+            index = 0;
+            label2.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+            LoadBookFlow(index * limit);
+        }
+
         string MaDSCurrent = "";
         public void AddItem(string MaDauSach)
         {
@@ -51,15 +66,15 @@ namespace QLThuVien.GUI_NhanVien
         private List<string> DSDauSach = new List<string>();
 
 
-        private void LoadBookFlow()
+        private void LoadBookFlow(int offset)
         {
             flowLayoutDS.Controls.Clear();
             lbSLBook.Text = $"Danh sách này có {DSDauSach.Count.ToString()} đầu sách.";
             if (DSDauSach.Count > 0)
             {
-                foreach (var item in DSDauSach)
+                for (int i = offset; i < offset + limit; i++)
                 {
-                    AddItem(item);
+                    AddItem(DSDauSach[i]);
                 }
             }
         }
@@ -68,8 +83,17 @@ namespace QLThuVien.GUI_NhanVien
         private void TimKiem4NV_Load(object sender, EventArgs e)
         {
 
-            DSDauSach = dsBus.LoadMaDauSach();
-            LoadBookFlow();
+            if (txtSearch.Text == "")
+            {
+                DSDauSach = dsBus.LoadMaDauSach();
+                index = 0;
+                label2.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+                LoadBookFlow(index * limit);
+            }
+
+
+
+
             LoadComboBoxTheLoai();
 
         }
@@ -88,7 +112,9 @@ namespace QLThuVien.GUI_NhanVien
         {
 
             SearchByName();
-            LoadBookFlow();
+            index = 0;
+            label2.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+            LoadBookFlow(index * limit);
         }
 
         private void btnClearAll_Click(object sender, EventArgs e)
@@ -216,7 +242,7 @@ namespace QLThuVien.GUI_NhanVien
         private void btnFindAll_Click(object sender, EventArgs e)
         {
             ShowAll();
-            LoadBookFlow();
+            LoadBookFlow(index * limit);
 
         }
 
@@ -243,6 +269,46 @@ namespace QLThuVien.GUI_NhanVien
             OnClick?.Invoke(this, e);
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (index > 0)
+            {
+                index--;
+                label2.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+                LoadBookFlow(index * limit);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (index < Math.Ceiling((double)DSDauSach.Count() / limit) - 1)
+            {
+                index++;
+                label2.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+                LoadBookFlow(index * limit);
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if (index < Math.Ceiling((double)DSDauSach.Count() / limit) - 1)
+            {
+                index++;
+                label2.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+                LoadBookFlow(index * limit);
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (index > 0)
+            {
+                index--;
+                label2.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+                LoadBookFlow(index * limit);
+            }
         }
     }
 }

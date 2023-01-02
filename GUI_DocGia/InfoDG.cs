@@ -29,7 +29,7 @@ namespace QLThuVien.GUI_DocGia
 
         string imgPath = @"";
 
-        string MaDocGia = "DG000001";
+        string MaDocGia = "";
 
         DocGia dg = new DocGia();
 

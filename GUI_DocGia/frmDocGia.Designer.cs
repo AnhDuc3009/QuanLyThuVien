@@ -34,6 +34,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.PanelMenuBar = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnTk_Sach = new Guna.UI2.WinForms.Guna2Button();
             this.btnTimKiemSach = new Guna.UI2.WinForms.Guna2Button();
             this.btnMuonSach = new Guna.UI2.WinForms.Guna2Button();
@@ -82,6 +83,7 @@ namespace QLThuVien.GUI_DocGia
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.guna2Button1);
             this.panel4.Controls.Add(this.btnTk_Sach);
             this.panel4.Controls.Add(this.btnTimKiemSach);
             this.panel4.Controls.Add(this.btnMuonSach);
@@ -93,6 +95,25 @@ namespace QLThuVien.GUI_DocGia
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(285, 486);
             this.panel4.TabIndex = 11;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(224)))), ((int)(((byte)(197)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(224)))), ((int)(((byte)(197)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 248);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Padding = new System.Windows.Forms.Padding(1);
+            this.guna2Button1.Size = new System.Drawing.Size(285, 46);
+            this.guna2Button1.TabIndex = 17;
+            this.guna2Button1.Tag = "Chỉnh sửa thông tin ";
+            this.guna2Button1.Text = "Đăng xuất";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btnTk_Sach
             // 
@@ -160,7 +181,7 @@ namespace QLThuVien.GUI_DocGia
             this.btnCaiDat.Image = ((System.Drawing.Image)(resources.GetObject("btnCaiDat.Image")));
             this.btnCaiDat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCaiDat.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnCaiDat.Location = new System.Drawing.Point(0, 200);
+            this.btnCaiDat.Location = new System.Drawing.Point(0, 199);
             this.btnCaiDat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCaiDat.Name = "btnCaiDat";
             this.btnCaiDat.Padding = new System.Windows.Forms.Padding(1);
@@ -261,7 +282,7 @@ namespace QLThuVien.GUI_DocGia
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(84, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 30);
+            this.label2.Size = new System.Drawing.Size(163, 30);
             this.label2.TabIndex = 11;
             this.label2.Text = "THƯ VIỆN MTA";
             // 
@@ -306,6 +327,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 30);
             this.guna2ControlBox2.TabIndex = 1;
+            this.guna2ControlBox2.Click += new System.EventHandler(this.guna2ControlBox2_Click);
             // 
             // guna2ControlBox1
             // 
@@ -376,5 +398,6 @@ namespace QLThuVien.GUI_DocGia
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private System.Windows.Forms.Panel panelShow;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

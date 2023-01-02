@@ -61,7 +61,6 @@ namespace QLThuVien.GUI_Admin
             this.MaDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ViTriSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnXoaPM = new Guna.UI2.WinForms.Guna2Button();
             this.btnDone = new Guna.UI2.WinForms.Guna2Button();
             this.btnXemInfoDG = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -233,7 +232,6 @@ namespace QLThuVien.GUI_Admin
             this.guna2GradientPanel2.Controls.Add(this.label20);
             this.guna2GradientPanel2.Controls.Add(this.lbTenDG);
             this.guna2GradientPanel2.Controls.Add(this.dgvDSDausach);
-            this.guna2GradientPanel2.Controls.Add(this.btnXoaPM);
             this.guna2GradientPanel2.Controls.Add(this.btnDone);
             this.guna2GradientPanel2.Controls.Add(this.btnXemInfoDG);
             this.guna2GradientPanel2.Controls.Add(this.label5);
@@ -440,27 +438,13 @@ namespace QLThuVien.GUI_Admin
             this.ViTriSach.MinimumWidth = 6;
             this.ViTriSach.Name = "ViTriSach";
             // 
-            // btnXoaPM
-            // 
-            this.btnXoaPM.BorderRadius = 15;
-            this.btnXoaPM.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnXoaPM.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnXoaPM.ForeColor = System.Drawing.Color.White;
-            this.btnXoaPM.Location = new System.Drawing.Point(213, 650);
-            this.btnXoaPM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnXoaPM.Name = "btnXoaPM";
-            this.btnXoaPM.Size = new System.Drawing.Size(180, 46);
-            this.btnXoaPM.TabIndex = 15;
-            this.btnXoaPM.Text = "Xóa phiếu mượn";
-            this.btnXoaPM.Click += new System.EventHandler(this.btnXoaPM_Click);
-            // 
             // btnDone
             // 
             this.btnDone.BorderRadius = 15;
             this.btnDone.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(86)))), ((int)(((byte)(136)))));
             this.btnDone.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnDone.ForeColor = System.Drawing.Color.White;
-            this.btnDone.Location = new System.Drawing.Point(399, 650);
+            this.btnDone.Location = new System.Drawing.Point(362, 641);
             this.btnDone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(123, 46);
@@ -474,10 +458,10 @@ namespace QLThuVien.GUI_Admin
             this.btnXemInfoDG.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(149)))), ((int)(((byte)(79)))));
             this.btnXemInfoDG.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnXemInfoDG.ForeColor = System.Drawing.Color.White;
-            this.btnXemInfoDG.Location = new System.Drawing.Point(15, 639);
+            this.btnXemInfoDG.Location = new System.Drawing.Point(47, 641);
             this.btnXemInfoDG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXemInfoDG.Name = "btnXemInfoDG";
-            this.btnXemInfoDG.Size = new System.Drawing.Size(192, 68);
+            this.btnXemInfoDG.Size = new System.Drawing.Size(236, 46);
             this.btnXemInfoDG.TabIndex = 13;
             this.btnXemInfoDG.Text = "Xem thông tin độc giả";
             this.btnXemInfoDG.Click += new System.EventHandler(this.btnXemInfoDG_Click);
@@ -645,7 +629,6 @@ namespace QLThuVien.GUI_Admin
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button btnXemInfoDG;
-        private Guna.UI2.WinForms.Guna2Button btnXoaPM;
         private Guna.UI2.WinForms.Guna2Button btnDone;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDSDausach;
         private System.Windows.Forms.Label label6;

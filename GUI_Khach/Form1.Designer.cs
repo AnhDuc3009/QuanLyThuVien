@@ -327,11 +327,12 @@ namespace QLThuVien.GUI_Khach
             this.guna2ControlBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.guna2ControlBox4.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox4.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox4.Location = new System.Drawing.Point(1226, 16);
+            this.guna2ControlBox4.Location = new System.Drawing.Point(1227, 16);
             this.guna2ControlBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ControlBox4.Name = "guna2ControlBox4";
             this.guna2ControlBox4.Size = new System.Drawing.Size(61, 30);
             this.guna2ControlBox4.TabIndex = 9;
+            this.guna2ControlBox4.Click += new System.EventHandler(this.guna2ControlBox4_Click);
             // 
             // panelShow
             // 

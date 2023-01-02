@@ -30,6 +30,9 @@ namespace QLThuVien.GUI_Admin
         private void InitializeComponent()
         {
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.lbSLBook = new System.Windows.Forms.Label();
             this.btnFindByTG = new Guna.UI2.WinForms.Guna2Button();
             this.btnFindAll = new Guna.UI2.WinForms.Guna2Button();
@@ -43,6 +46,9 @@ namespace QLThuVien.GUI_Admin
             // guna2CustomGradientPanel2
             // 
             this.guna2CustomGradientPanel2.BorderRadius = 10;
+            this.guna2CustomGradientPanel2.Controls.Add(this.label1);
+            this.guna2CustomGradientPanel2.Controls.Add(this.button2);
+            this.guna2CustomGradientPanel2.Controls.Add(this.button1);
             this.guna2CustomGradientPanel2.Controls.Add(this.lbSLBook);
             this.guna2CustomGradientPanel2.Controls.Add(this.btnFindByTG);
             this.guna2CustomGradientPanel2.Controls.Add(this.btnFindAll);
@@ -55,6 +61,35 @@ namespace QLThuVien.GUI_Admin
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1255, 761);
             this.guna2CustomGradientPanel2.TabIndex = 50;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(618, 722);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "label1";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(744, 719);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 49;
+            this.button2.Text = "Sau";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(527, 719);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Trước";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lbSLBook
             // 
@@ -147,7 +182,7 @@ namespace QLThuVien.GUI_Admin
             this.flowLayoutDS.Location = new System.Drawing.Point(20, 123);
             this.flowLayoutDS.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutDS.Name = "flowLayoutDS";
-            this.flowLayoutDS.Size = new System.Drawing.Size(1177, 615);
+            this.flowLayoutDS.Size = new System.Drawing.Size(1177, 571);
             this.flowLayoutDS.TabIndex = 46;
             // 
             // btnSearch
@@ -189,5 +224,8 @@ namespace QLThuVien.GUI_Admin
         private System.Windows.Forms.FlowLayoutPanel flowLayoutDS;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private System.Windows.Forms.Label lbSLBook;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

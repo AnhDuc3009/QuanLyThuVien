@@ -18,6 +18,19 @@ namespace QLThuVien.GUI_DocGia
             InitializeComponent();
         }
 
+        private int index = 0;
+        private int limit = 6;
+
+        public TimKiem4HelloV2(string Keyword)
+        {
+            InitializeComponent();
+            txtSearch.Text = Keyword;
+            cbTheLoai.Text = "Tất cả thể loại";
+            SearchByName();
+            index = 0;
+            label1.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+            LoadBookFlow(index * limit);
+        }
 
         string MaDSCurrent = "";
 
@@ -53,15 +66,15 @@ namespace QLThuVien.GUI_DocGia
         }
 
         private List<string> DSDauSach = new List<string>();
-        private void LoadBookFlow()
+        private void LoadBookFlow(int offset)
         {
             flowLayoutDS.Controls.Clear();
             lbSLBook.Text = $"Danh sách này có {DSDauSach.Count.ToString()} đầu sách.";
             if (DSDauSach.Count > 0)
             {
-                foreach (var item in DSDauSach)
+                for (int i = offset; i < offset + limit; i++)
                 {
-                    AddItem(item);
+                    AddItem(DSDauSach[i]);
                 }
             }
         }
@@ -80,7 +93,9 @@ namespace QLThuVien.GUI_DocGia
         private void btnSearch_Click(object sender, EventArgs e)
         {
             SearchByName();
-            LoadBookFlow();
+            index = 0;
+            label1.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+            LoadBookFlow(index*limit);
         }
 
         private void btnClearAll_Click(object sender, EventArgs e)
@@ -143,7 +158,6 @@ namespace QLThuVien.GUI_DocGia
                 btnFindByTG.Text = btnFindByTG.Tag.ToString();
                 txtSearch.PlaceholderText = "Nhập tên sách để tôi tìm cho bạn ";
                 isSearchTG = false;
-
             }
         }
 
@@ -198,10 +212,19 @@ namespace QLThuVien.GUI_DocGia
             }
         }
 
+        private void cbTheLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string key = cbTheLoai.Text;
+
+
+        }
+
         private void btnFindAll_Click(object sender, EventArgs e)
         {
             ShowAll();
-            LoadBookFlow();
+            index = 0;
+            label1.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+            LoadBookFlow(index*limit);
         }
 
         private void btnPreview_Click(object sender, EventArgs e)
@@ -230,11 +253,38 @@ namespace QLThuVien.GUI_DocGia
 
         private void TimKiem4HelloV2_Load(object sender, EventArgs e)
         {
-            DSDauSach = dsBus.LoadMaDauSach();
-            //LoadBookFlow();
+            if (txtSearch.Text == "")
+            {
+                DSDauSach = dsBus.LoadMaDauSach();
+                index = 0;
+                label2.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+                LoadBookFlow(index * limit);
+            }
+
+
+
+
             LoadComboBoxTheLoai();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (index > 0)
+            {
+                index--;
+                label2.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+                LoadBookFlow(index * limit);
+            }
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (index < Math.Ceiling((double)DSDauSach.Count() / limit) - 1)
+            {
+                index++;
+                label2.Text = $"Trang {index + 1}/{Math.Ceiling((double)DSDauSach.Count / limit)}";
+                LoadBookFlow(index * limit);
+            }
+        }
     }
 }

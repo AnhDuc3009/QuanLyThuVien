@@ -96,7 +96,7 @@ namespace QLThuVien.GUI_DocGia
         {
             panelShow.Controls.Clear();
 
-            panelShow.Controls.Add(new GUI_DocGia.InfoDG());
+            panelShow.Controls.Add(new GUI_DocGia.InfoDG(Madocgia));
         }
 
         private void btnTk_Sach_Click(object sender, EventArgs e)
@@ -140,5 +140,26 @@ namespace QLThuVien.GUI_DocGia
             }
         }
 
+        private void guna2ControlBox2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private event EventHandler logOut;
+        public event EventHandler LogOut
+        {
+            add { logOut += value; }
+            remove { logOut -= value; }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if (logOut != null)
+            {
+                logOut(this, new EventArgs());
+            }
+            Close();
+        }
     }
 }

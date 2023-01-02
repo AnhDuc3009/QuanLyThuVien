@@ -120,14 +120,14 @@ namespace QLThuVien.GUI_Admin
 
         private void dgvDs_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            /* int i;
+             int i;
              i = dgvDs.CurrentRow.Index;
              txtMasach.Text = dgvDs.Rows[i].Cells[0].Value.ToString();
              txtMadg.Text = dgvDs.Rows[i].Cells[1].Value.ToString();
              if (dgvDs.Rows[i].Cells[0].Value.ToString() == "Có")
              {
                  cboxVi_pham.Checked =true;
-             }*/
+             }
             if (e.ColumnIndex == 4)
             {
 
@@ -147,9 +147,10 @@ namespace QLThuVien.GUI_Admin
                 if (dgvDs.Rows[i].Cells[3].Value.ToString() == "Không")// chỉ set những cuốn sách không vi phạm những cuốn sách vi phạm thì sẽ set ở bên vi phạm
                 {
                     ts_bus.update(dgvDs.Rows[i].Cells[0].Value.ToString());
+                    MessageBox.Show("Trả sách thành công!!");
                 }
             }
-            MessageBox.Show("Trả sách thành công!!");
+
             dgvDs.Rows.Clear();
             dgv_trasach.DataSource = ts_bus.Loadls();
         }
@@ -184,7 +185,7 @@ namespace QLThuVien.GUI_Admin
                     return;
                 }
 
-                if (dgvDs.Rows.Count > 0 && dgvDs.Rows[0].Cells["MaDocGia"].Value.ToString() != dgv_trasach.Rows[i].Cells["MaDocGia"].Value.ToString())
+                if (dgvDs.Rows.Count > 0 && (dgvDs.Rows[0].Cells[1].Value.ToString() != dgv_trasach.Rows[i].Cells["MaDocGia"].Value.ToString()))
                 {
                     MessageBox.Show("Hãy trả sách của một độc giả trong một lượt trả!");
                     return;

@@ -34,6 +34,8 @@ namespace QLThuVien.GUI_NhanVien
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.PanelMenuBar = new System.Windows.Forms.Panel();
             this.panelScroll = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.panelSetting = new System.Windows.Forms.Panel();
             this.btnM_ChangeInfo = new Guna.UI2.WinForms.Guna2Button();
             this.btnM_Caidat = new Guna.UI2.WinForms.Guna2Button();
@@ -85,6 +87,7 @@ namespace QLThuVien.GUI_NhanVien
             this.CaiDatTick = new System.Windows.Forms.Timer(this.components);
             this.PanelMenuBar.SuspendLayout();
             this.panelScroll.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panelSetting.SuspendLayout();
             this.panelXLViPham.SuspendLayout();
             this.panelQLDocGia.SuspendLayout();
@@ -120,6 +123,7 @@ namespace QLThuVien.GUI_NhanVien
             // 
             // panelScroll
             // 
+            this.panelScroll.Controls.Add(this.panel3);
             this.panelScroll.Controls.Add(this.panelSetting);
             this.panelScroll.Controls.Add(this.panelXLViPham);
             this.panelScroll.Controls.Add(this.panelQLDocGia);
@@ -131,8 +135,38 @@ namespace QLThuVien.GUI_NhanVien
             this.panelScroll.Location = new System.Drawing.Point(0, 160);
             this.panelScroll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelScroll.Name = "panelScroll";
-            this.panelScroll.Size = new System.Drawing.Size(239, 1370);
+            this.panelScroll.Size = new System.Drawing.Size(239, 1301);
             this.panelScroll.TabIndex = 13;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.guna2Button3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 1166);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.MaximumSize = new System.Drawing.Size(253, 161);
+            this.panel3.MinimumSize = new System.Drawing.Size(253, 55);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(253, 57);
+            this.panel3.TabIndex = 22;
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(224)))), ((int)(((byte)(197)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(224)))), ((int)(((byte)(197)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
+            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button3.Location = new System.Drawing.Point(-3, 2);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Padding = new System.Windows.Forms.Padding(1);
+            this.guna2Button3.Size = new System.Drawing.Size(253, 49);
+            this.guna2Button3.TabIndex = 12;
+            this.guna2Button3.Text = "Đăng xuất";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // panelSetting
             // 
@@ -755,6 +789,7 @@ namespace QLThuVien.GUI_NhanVien
             this.guna2ControlBox4.Name = "guna2ControlBox4";
             this.guna2ControlBox4.Size = new System.Drawing.Size(45, 30);
             this.guna2ControlBox4.TabIndex = 9;
+            this.guna2ControlBox4.Click += new System.EventHandler(this.guna2ControlBox4_Click);
             // 
             // QuanLyTickTime
             // 
@@ -815,6 +850,7 @@ namespace QLThuVien.GUI_NhanVien
             this.Load += new System.EventHandler(this.frmNhanvien_Load);
             this.PanelMenuBar.ResumeLayout(false);
             this.panelScroll.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.panelSetting.ResumeLayout(false);
             this.panelXLViPham.ResumeLayout(false);
             this.panelQLDocGia.ResumeLayout(false);
@@ -886,5 +922,7 @@ namespace QLThuVien.GUI_NhanVien
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button btnQLNhap;
+        private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

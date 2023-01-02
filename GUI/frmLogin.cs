@@ -115,7 +115,8 @@ namespace QLThuVien.GUI
                                 else
                                 {
                                     GUI_DocGia.frmDocGia newdg = new GUI_DocGia.frmDocGia(user);
-                                    newdg.Show();
+                                    newdg.LogOut += F_LogOut;
+                                    newdg.ShowDialog();
                                 }
 
                                 break;
@@ -125,7 +126,8 @@ namespace QLThuVien.GUI
                                 MessageBox.Show("Đăng nhập thành công !!");
                                 this.Hide();
                                 GUI_NhanVien.FrmNhanVien newnv = new GUI_NhanVien.FrmNhanVien(user);
-                                newnv.Show();
+                                newnv.LogOut += F_LogOut;
+                                newnv.ShowDialog();
                                 break;
                             }
                         case "quanly":
@@ -133,7 +135,8 @@ namespace QLThuVien.GUI
                                 MessageBox.Show("Đăng nhập thành công !!");
                                 this.Hide();
                                 GUI_Admin.FormAdmin newadmin = new GUI_Admin.FormAdmin();
-                                newadmin.Show();
+                                newadmin.LogOut += F_LogOut;
+                                newadmin.ShowDialog();
                                 break;
                             }
                         case "vohieuhoa":
@@ -151,6 +154,11 @@ namespace QLThuVien.GUI
                 }
 
             }
+        }
+
+        private void F_LogOut(object sender, EventArgs e)
+        {
+            this.Show();
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)

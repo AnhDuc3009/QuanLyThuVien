@@ -73,7 +73,7 @@ namespace QLThuVien.GUI_DocGia
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(479, 36);
+            this.label2.Location = new System.Drawing.Point(640, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 19);
             this.label2.TabIndex = 3;

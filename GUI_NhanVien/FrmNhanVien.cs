@@ -332,5 +332,30 @@ namespace QLThuVien.GUI_NhanVien
             panelShow.Controls.Clear();
             panelShow.Controls.Add(new GUI_Admin.QLNhap());
         }
+
+        private void guna2ControlBox4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private event EventHandler logOut;
+        public event EventHandler LogOut
+        {
+            add { logOut += value; }
+            remove { logOut -= value; }
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn đăng xuất không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (logOut != null)
+                {
+                    logOut(this, new EventArgs());
+                }
+                Close();
+            } 
+        }
     }
 }

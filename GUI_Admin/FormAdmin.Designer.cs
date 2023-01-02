@@ -100,9 +100,9 @@ namespace QLThuVien.GUI_Admin
             this.paneldrag.Controls.Add(this.guna2ControlBox2);
             this.paneldrag.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneldrag.Location = new System.Drawing.Point(253, 0);
-            this.paneldrag.Margin = new System.Windows.Forms.Padding(10, 4, 10, 4);
+            this.paneldrag.Margin = new System.Windows.Forms.Padding(11, 4, 11, 4);
             this.paneldrag.Name = "paneldrag";
-            this.paneldrag.Size = new System.Drawing.Size(1547, 66);
+            this.paneldrag.Size = new System.Drawing.Size(1303, 66);
             this.paneldrag.TabIndex = 3;
             // 
             // guna2ControlBox1
@@ -112,11 +112,12 @@ namespace QLThuVien.GUI_Admin
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.ForeColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1472, 4);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(10, 4, 10, 4);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1228, 4);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(11, 4, 11, 4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(56, 36);
             this.guna2ControlBox1.TabIndex = 1;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // guna2ControlBox2
             // 
@@ -124,10 +125,10 @@ namespace QLThuVien.GUI_Admin
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1411, 4);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(10, 4, 10, 4);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1167, 4);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(11, 4, 11, 4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(54, 36);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(53, 36);
             this.guna2ControlBox2.TabIndex = 2;
             // 
             // PanelMenuBar
@@ -172,7 +173,7 @@ namespace QLThuVien.GUI_Admin
             this.panelThongke.MaximumSize = new System.Drawing.Size(563, 164);
             this.panelThongke.MinimumSize = new System.Drawing.Size(200, 57);
             this.panelThongke.Name = "panelThongke";
-            this.panelThongke.Size = new System.Drawing.Size(232, 164);
+            this.panelThongke.Size = new System.Drawing.Size(232, 157);
             this.panelThongke.TabIndex = 19;
             // 
             // btnM_tkChung
@@ -509,7 +510,7 @@ namespace QLThuVien.GUI_Admin
             this.btnM_DSSachVP.ForeColor = System.Drawing.Color.Black;
             this.btnM_DSSachVP.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnM_DSSachVP.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnM_DSSachVP.Location = new System.Drawing.Point(0, 205);
+            this.btnM_DSSachVP.Location = new System.Drawing.Point(0, 206);
             this.btnM_DSSachVP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnM_DSSachVP.Name = "btnM_DSSachVP";
             this.btnM_DSSachVP.Size = new System.Drawing.Size(229, 46);
@@ -705,7 +706,7 @@ namespace QLThuVien.GUI_Admin
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(86, 20);
+            this.label1.Location = new System.Drawing.Point(85, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 55);
             this.label1.TabIndex = 14;
@@ -730,7 +731,7 @@ namespace QLThuVien.GUI_Admin
             this.label3.BackColor = System.Drawing.Color.Firebrick;
             this.label3.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(111, 45);
+            this.label3.Location = new System.Drawing.Point(111, 46);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 20);
             this.label3.TabIndex = 13;
@@ -755,7 +756,7 @@ namespace QLThuVien.GUI_Admin
             this.nameuser.AutoSize = true;
             this.nameuser.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.nameuser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nameuser.Location = new System.Drawing.Point(114, 8);
+            this.nameuser.Location = new System.Drawing.Point(115, 7);
             this.nameuser.Name = "nameuser";
             this.nameuser.Size = new System.Drawing.Size(78, 28);
             this.nameuser.TabIndex = 12;
@@ -790,14 +791,14 @@ namespace QLThuVien.GUI_Admin
             this.panelShow.Location = new System.Drawing.Point(253, 66);
             this.panelShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelShow.Name = "panelShow";
-            this.panelShow.Size = new System.Drawing.Size(1547, 818);
+            this.panelShow.Size = new System.Drawing.Size(1303, 818);
             this.panelShow.TabIndex = 9;
             // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1800, 884);
+            this.ClientSize = new System.Drawing.Size(1556, 884);
             this.Controls.Add(this.panelShow);
             this.Controls.Add(this.paneldrag);
             this.Controls.Add(this.PanelMenuBar);

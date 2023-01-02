@@ -247,5 +247,23 @@ namespace QLThuVien.GUI_Admin
         {
 
         }
+
+        private event EventHandler logOut;
+        public event EventHandler LogOut
+        {
+            add { logOut += value; }
+            remove { logOut -= value; }
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

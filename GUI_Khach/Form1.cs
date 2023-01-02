@@ -69,5 +69,11 @@ namespace QLThuVien.GUI_Khach
         {
             sidebartick.Start();
         }
+
+        private void guna2ControlBox4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+        }
     }
 }

@@ -65,5 +65,10 @@ namespace QLThuVien.GUI_Admin
             DataTable sachvp = svp.LoadSachVP();
             dgvChonDauSach.DataSource = sachvp;
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
