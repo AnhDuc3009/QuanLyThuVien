@@ -155,11 +155,14 @@ namespace QLThuVien.GUI_DocGia
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (logOut != null)
+            if (MessageBox.Show("Bạn có muốn đăng xuất không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                logOut(this, new EventArgs());
+                if (logOut != null)
+                {
+                    logOut(this, new EventArgs());
+                }
+                Close();
             }
-            Close();
         }
     }
 }

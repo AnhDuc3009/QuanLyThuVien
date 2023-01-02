@@ -36,6 +36,8 @@ namespace QLThuVien.GUI_Admin
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.PanelMenuBar = new System.Windows.Forms.Panel();
             this.panelAll = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.panelThongke = new System.Windows.Forms.Panel();
             this.btnM_tkChung = new Guna.UI2.WinForms.Guna2Button();
             this.btnM_ReportSLDS = new Guna.UI2.WinForms.Guna2Button();
@@ -80,6 +82,7 @@ namespace QLThuVien.GUI_Admin
             this.paneldrag.SuspendLayout();
             this.PanelMenuBar.SuspendLayout();
             this.panelAll.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panelThongke.SuspendLayout();
             this.panelQLDocGia.SuspendLayout();
             this.panelXLViPham.SuspendLayout();
@@ -147,6 +150,7 @@ namespace QLThuVien.GUI_Admin
             // 
             // panelAll
             // 
+            this.panelAll.Controls.Add(this.panel1);
             this.panelAll.Controls.Add(this.panelThongke);
             this.panelAll.Controls.Add(this.panelQLDocGia);
             this.panelAll.Controls.Add(this.panelXLViPham);
@@ -159,8 +163,38 @@ namespace QLThuVien.GUI_Admin
             this.panelAll.Location = new System.Drawing.Point(0, 160);
             this.panelAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelAll.Name = "panelAll";
-            this.panelAll.Size = new System.Drawing.Size(232, 1268);
+            this.panelAll.Size = new System.Drawing.Size(232, 1317);
             this.panelAll.TabIndex = 11;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.guna2Button3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 1204);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.MaximumSize = new System.Drawing.Size(563, 164);
+            this.panel1.MinimumSize = new System.Drawing.Size(200, 57);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(232, 58);
+            this.panel1.TabIndex = 24;
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(224)))), ((int)(((byte)(197)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(246)))), ((int)(((byte)(197)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
+            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button3.Location = new System.Drawing.Point(-3, 5);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Padding = new System.Windows.Forms.Padding(1);
+            this.guna2Button3.Size = new System.Drawing.Size(232, 49);
+            this.guna2Button3.TabIndex = 15;
+            this.guna2Button3.Text = "Đăng xuất";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // panelThongke
             // 
@@ -811,6 +845,7 @@ namespace QLThuVien.GUI_Admin
             this.paneldrag.ResumeLayout(false);
             this.PanelMenuBar.ResumeLayout(false);
             this.panelAll.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panelThongke.ResumeLayout(false);
             this.panelQLDocGia.ResumeLayout(false);
             this.panelXLViPham.ResumeLayout(false);
@@ -875,5 +910,7 @@ namespace QLThuVien.GUI_Admin
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Panel panelShow;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

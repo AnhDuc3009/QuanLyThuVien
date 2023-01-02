@@ -142,7 +142,7 @@ namespace QLThuVien.GUI_Admin
 
         private void btnHoantat_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < dgvDs.Rows.Count - 1; i++)
+            for (int i = 0; i < dgvDs.Rows.Count; i++)
             {
                 if (dgvDs.Rows[i].Cells[3].Value.ToString() == "Không")// chỉ set những cuốn sách không vi phạm những cuốn sách vi phạm thì sẽ set ở bên vi phạm
                 {
@@ -185,7 +185,9 @@ namespace QLThuVien.GUI_Admin
                     return;
                 }
 
-                if (dgvDs.Rows.Count > 0 && (dgvDs.Rows[0].Cells[1].Value.ToString() != dgv_trasach.Rows[i].Cells["MaDocGia"].Value.ToString()))
+                int j = dgv_trasach.CurrentRow.Index;
+
+                if (dgvDs.Rows.Count > 0 && (dgvDs.Rows[0].Cells[1].Value.ToString() != dgv_trasach.Rows[j].Cells["MaDocGia"].Value.ToString()))
                 {
                     MessageBox.Show("Hãy trả sách của một độc giả trong một lượt trả!");
                     return;

@@ -306,10 +306,5 @@ namespace QLThuVien.GUI_Khach
                 LoadBookFlow(index * limit);
             }
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

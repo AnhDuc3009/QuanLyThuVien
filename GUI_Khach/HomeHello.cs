@@ -37,7 +37,13 @@ namespace QLThuVien.GUI_Khach
             newform.Show();
         }
 
-        private void HomeHello_Load(object sender, EventArgs e)
+        private void btnTheLoai_Click(object sender, EventArgs e)
+        {
+            GUI_Khach.Hello_TheLoai newform = new GUI_Khach.Hello_TheLoai();
+            newform.Show();
+        }
+
+        private void HomeHello_Load_1(object sender, EventArgs e)
         {
             long ts = homeHello.GetTongSach();
             int ts1 = Convert.ToInt32(ts);
@@ -63,9 +69,9 @@ namespace QLThuVien.GUI_Khach
             }
         }
 
-        private void btnTheLoai_Click(object sender, EventArgs e)
+        private void guna2Button5_Click(object sender, EventArgs e)
         {
-            GUI_Khach.Hello_TheLoai newform = new GUI_Khach.Hello_TheLoai();
+            GUI_Khach.Hello_DauSach newform = new GUI_Khach.Hello_DauSach();
             newform.Show();
         }
     }

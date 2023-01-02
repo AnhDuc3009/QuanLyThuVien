@@ -83,7 +83,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2CustomGradientPanel2.Controls.Add(this.cbTheLoai);
             this.guna2CustomGradientPanel2.Controls.Add(this.btnSearch);
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(20, 46);
-            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(763, 135);
             this.guna2CustomGradientPanel2.TabIndex = 49;
@@ -97,7 +97,7 @@ namespace QLThuVien.GUI_DocGia
             this.btnFindByTG.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFindByTG.ForeColor = System.Drawing.Color.White;
             this.btnFindByTG.Location = new System.Drawing.Point(312, 15);
-            this.btnFindByTG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFindByTG.Margin = new System.Windows.Forms.Padding(4);
             this.btnFindByTG.Name = "btnFindByTG";
             this.btnFindByTG.Size = new System.Drawing.Size(187, 44);
             this.btnFindByTG.TabIndex = 40;
@@ -113,7 +113,7 @@ namespace QLThuVien.GUI_DocGia
             this.btnFindAll.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFindAll.ForeColor = System.Drawing.Color.White;
             this.btnFindAll.Location = new System.Drawing.Point(507, 15);
-            this.btnFindAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFindAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnFindAll.Name = "btnFindAll";
             this.btnFindAll.Size = new System.Drawing.Size(100, 44);
             this.btnFindAll.TabIndex = 39;
@@ -133,7 +133,7 @@ namespace QLThuVien.GUI_DocGia
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.Location = new System.Drawing.Point(37, 66);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(5);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Nhập tên sách để tôi tìm cho bạn";
@@ -154,7 +154,7 @@ namespace QLThuVien.GUI_DocGia
             this.cbTheLoai.Items.AddRange(new object[] {
             "Tất cả thể loại"});
             this.cbTheLoai.Location = new System.Drawing.Point(37, 15);
-            this.cbTheLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTheLoai.Margin = new System.Windows.Forms.Padding(4);
             this.cbTheLoai.Name = "cbTheLoai";
             this.cbTheLoai.Size = new System.Drawing.Size(265, 36);
             this.cbTheLoai.TabIndex = 37;
@@ -166,7 +166,7 @@ namespace QLThuVien.GUI_DocGia
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Location = new System.Drawing.Point(580, 66);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(143, 49);
             this.btnSearch.TabIndex = 36;
@@ -236,7 +236,7 @@ namespace QLThuVien.GUI_DocGia
             this.dgvChooseBook.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvChooseBook.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgvChooseBook.Location = new System.Drawing.Point(15, 79);
-            this.dgvChooseBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvChooseBook.Margin = new System.Windows.Forms.Padding(4);
             this.dgvChooseBook.Name = "dgvChooseBook";
             this.dgvChooseBook.RowHeadersVisible = false;
             this.dgvChooseBook.RowHeadersWidth = 51;
@@ -275,7 +275,7 @@ namespace QLThuVien.GUI_DocGia
             this.guna2CustomGradientPanel1.Controls.Add(this.btnPreview);
             this.guna2CustomGradientPanel1.Controls.Add(this.dgvChooseBook);
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(789, 46);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(476, 766);
             this.guna2CustomGradientPanel1.TabIndex = 48;
@@ -347,7 +347,7 @@ namespace QLThuVien.GUI_DocGia
             // 
             this.flowLayoutDS.AutoScroll = true;
             this.flowLayoutDS.Location = new System.Drawing.Point(20, 201);
-            this.flowLayoutDS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutDS.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutDS.MaximumSize = new System.Drawing.Size(903, 673);
             this.flowLayoutDS.Name = "flowLayoutDS";
             this.flowLayoutDS.Size = new System.Drawing.Size(763, 534);
@@ -356,7 +356,7 @@ namespace QLThuVien.GUI_DocGia
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(421, 773);
+            this.label2.Location = new System.Drawing.Point(388, 773);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 17);
             this.label2.TabIndex = 53;
@@ -364,7 +364,7 @@ namespace QLThuVien.GUI_DocGia
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(551, 769);
+            this.button2.Location = new System.Drawing.Point(518, 769);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -375,7 +375,7 @@ namespace QLThuVien.GUI_DocGia
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(331, 769);
+            this.button1.Location = new System.Drawing.Point(298, 769);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -396,7 +396,7 @@ namespace QLThuVien.GUI_DocGia
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.flowLayoutDS);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TimKiem4HelloV2";
             this.Size = new System.Drawing.Size(1367, 901);
             this.Load += new System.EventHandler(this.TimKiem4HelloV2_Load);

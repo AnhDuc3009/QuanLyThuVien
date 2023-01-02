@@ -261,9 +261,17 @@ namespace QLThuVien.GUI_Admin
                 Application.Exit();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
 
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn đăng xuất không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (logOut != null)
+                {
+                    logOut(this, new EventArgs());
+                }
+                Close();
+            }
         }
     }
 }

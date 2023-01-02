@@ -147,6 +147,7 @@ namespace QLThuVien.GUI_Khach
             this.dgvDs.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(178)))), ((int)(((byte)(216)))));
             this.dgvDs.Location = new System.Drawing.Point(15, 150);
             this.dgvDs.Name = "dgvDs";
+            this.dgvDs.ReadOnly = true;
             this.dgvDs.RowHeadersVisible = false;
             this.dgvDs.RowHeadersWidth = 51;
             this.dgvDs.RowTemplate.Height = 40;
@@ -165,7 +166,7 @@ namespace QLThuVien.GUI_Khach
             this.dgvDs.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvDs.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvDs.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvDs.ThemeStyle.ReadOnly = false;
+            this.dgvDs.ThemeStyle.ReadOnly = true;
             this.dgvDs.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDs.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDs.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -189,6 +190,7 @@ namespace QLThuVien.GUI_Khach
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Hello_TheLoai";
             this.Text = "Hello_TheLoai";
+            this.Load += new System.EventHandler(this.Hello_TheLoai_Load);
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDs)).EndInit();

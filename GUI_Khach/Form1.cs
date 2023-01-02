@@ -18,13 +18,6 @@ namespace QLThuVien.GUI_Khach
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            sidebartick.Start();
-            panelShow.Controls.Clear();
-            panelShow.Controls.Add(new GUI_Khach.HomeHello());
-        }
-
         public static bool isLogin = false;
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -74,6 +67,13 @@ namespace QLThuVien.GUI_Khach
         {
             if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Exit();
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            sidebartick.Start();
+            panelShow.Controls.Clear();
+            panelShow.Controls.Add(new GUI_Khach.HomeHello());
         }
     }
 }

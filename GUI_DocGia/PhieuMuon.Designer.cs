@@ -30,9 +30,9 @@ namespace QLThuVien.GUI_DocGia
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,6 +50,7 @@ namespace QLThuVien.GUI_DocGia
             this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.lbInfoMota = new System.Windows.Forms.Label();
             this.btnLoaiBo = new Guna.UI2.WinForms.Guna2Button();
             this.imageBook = new System.Windows.Forms.PictureBox();
             this.btnPreview = new Guna.UI2.WinForms.Guna2Button();
@@ -69,8 +70,6 @@ namespace QLThuVien.GUI_DocGia
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnMuon = new Guna.UI2.WinForms.Guna2Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.bthHuy = new Guna.UI2.WinForms.Guna2Button();
-            this.lbInfoMota = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBook)).BeginInit();
             this.guna2CustomGradientPanel2.SuspendLayout();
@@ -288,6 +287,15 @@ namespace QLThuVien.GUI_DocGia
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(443, 636);
             this.guna2CustomGradientPanel1.TabIndex = 25;
             // 
+            // lbInfoMota
+            // 
+            this.lbInfoMota.BackColor = System.Drawing.Color.Transparent;
+            this.lbInfoMota.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lbInfoMota.Location = new System.Drawing.Point(89, 313);
+            this.lbInfoMota.Name = "lbInfoMota";
+            this.lbInfoMota.Size = new System.Drawing.Size(331, 225);
+            this.lbInfoMota.TabIndex = 27;
+            // 
             // btnLoaiBo
             // 
             this.btnLoaiBo.BackColor = System.Drawing.Color.Transparent;
@@ -468,18 +476,18 @@ namespace QLThuVien.GUI_DocGia
             // 
             this.dgvInfoBorrow.AllowUserToAddRows = false;
             this.dgvInfoBorrow.AllowUserToResizeRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            this.dgvInfoBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvInfoBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvInfoBorrow.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.MediumVioletRed;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(16)))), ((int)(((byte)(106)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInfoBorrow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MediumVioletRed;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(16)))), ((int)(((byte)(106)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInfoBorrow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvInfoBorrow.ColumnHeadersHeight = 40;
             this.dgvInfoBorrow.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -487,14 +495,14 @@ namespace QLThuVien.GUI_DocGia
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(208)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(114)))), ((int)(((byte)(181)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvInfoBorrow.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(208)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(114)))), ((int)(((byte)(181)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvInfoBorrow.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInfoBorrow.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(184)))), ((int)(((byte)(218)))));
             this.dgvInfoBorrow.Location = new System.Drawing.Point(60, 386);
             this.dgvInfoBorrow.Margin = new System.Windows.Forms.Padding(4);
@@ -588,36 +596,11 @@ namespace QLThuVien.GUI_DocGia
             // 
             this.errorProvider1.ContainerControl = this.txtTenDG;
             // 
-            // bthHuy
-            // 
-            this.bthHuy.BackColor = System.Drawing.Color.Transparent;
-            this.bthHuy.BorderRadius = 18;
-            this.bthHuy.FillColor = System.Drawing.Color.LightCoral;
-            this.bthHuy.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bthHuy.ForeColor = System.Drawing.Color.White;
-            this.bthHuy.Location = new System.Drawing.Point(1061, 58);
-            this.bthHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bthHuy.Name = "bthHuy";
-            this.bthHuy.Size = new System.Drawing.Size(172, 44);
-            this.bthHuy.TabIndex = 33;
-            this.bthHuy.Text = "Hủy bỏ";
-            this.bthHuy.Click += new System.EventHandler(this.bthHuy_Click);
-            // 
-            // lbInfoMota
-            // 
-            this.lbInfoMota.BackColor = System.Drawing.Color.Transparent;
-            this.lbInfoMota.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lbInfoMota.Location = new System.Drawing.Point(89, 313);
-            this.lbInfoMota.Name = "lbInfoMota";
-            this.lbInfoMota.Size = new System.Drawing.Size(331, 225);
-            this.lbInfoMota.TabIndex = 27;
-            // 
             // PhieuMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.bthHuy);
             this.Controls.Add(this.dgvInfoBorrow);
             this.Controls.Add(this.btnMuon);
             this.Controls.Add(this.guna2CustomGradientPanel4);
@@ -683,7 +666,6 @@ namespace QLThuVien.GUI_DocGia
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private Guna.UI2.WinForms.Guna2Button bthHuy;
         private System.Windows.Forms.Label lbInfoMota;
     }
 }

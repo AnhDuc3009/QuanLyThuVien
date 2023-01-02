@@ -174,9 +174,18 @@ namespace QLThuVien.GUI_DocGia
                 if (tempmds != "") DSMaSach.Add(tempmds);
             }
 
-            pmBus.InsertMuon(pmtnew, DSMaSach, isNV);
+            if (pmtnew.MaDocGia == "")
+            {
+                MessageBox.Show("Mời nhập mã độc giả");
+                return;
+            }
+            else
+            {
+                pmBus.InsertMuon(pmtnew, DSMaSach, isNV);
 
-            MessageBox.Show("Tạo phiếu mượn thành công!!\nĐộc giả vui lòng ra quầy để nhân viên tiếp tục xử lý");
+                MessageBox.Show("Tạo phiếu mượn thành công!!\nĐộc giả vui lòng ra quầy để nhân viên tiếp tục xử lý");
+            }
+            
         }
 
         private void txtMaDG_TextChanged(object sender, EventArgs e)

@@ -22,11 +22,18 @@ namespace QLThuVien.GUI_Khach
             InitializeComponent();
         }
 
+        TacGia_BUS tgBus = new TacGia_BUS();
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string timkiem = txtSearch.Text;
             DataTable tg = hellotg.TimKiemTG(timkiem);
             dgvDs.DataSource = tg;
+        }
+
+        private void Hello_TacGia_Load(object sender, EventArgs e)
+        {
+            dgvDs.DataSource = tgBus.LoadListTGMini();
         }
     }
 }

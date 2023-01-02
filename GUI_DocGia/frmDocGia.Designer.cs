@@ -93,7 +93,7 @@ namespace QLThuVien.GUI_DocGia
             this.panel4.Location = new System.Drawing.Point(0, 154);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(285, 486);
+            this.panel4.Size = new System.Drawing.Size(285, 299);
             this.panel4.TabIndex = 11;
             // 
             // guna2Button1
@@ -397,7 +397,7 @@ namespace QLThuVien.GUI_DocGia
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private System.Windows.Forms.Panel panelShow;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Panel panelShow;
     }
 }

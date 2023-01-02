@@ -40,6 +40,11 @@ namespace QLThuVien.BUS
             return tgDao.LoadTacGia();
         }
 
+        public DataTable LoadListTGMini()
+        {
+            return tgDao.LoadTacGiaMini();
+        }
+
         public void ThemThongtinNhap(TacGia tg)
         {
             tgDao.InsertTacGia(tg);

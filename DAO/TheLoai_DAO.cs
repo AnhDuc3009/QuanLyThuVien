@@ -29,6 +29,12 @@ namespace QLThuVien.DAO
             return GetData(sqlString);
         }
 
+        public DataTable LoadTheLoaiMini()
+        {
+            string sqlString = @"SELECT TENTHELOAI N'Tên thể loại', COUNT(MASACH) N'Số lượng cuốn sách' FROM dbo.CUONSACH CS, dbo.THELOAI TL, dbo.DAUSACH DS WHERE CS.MaDauSach = DS.MaDauSach AND DS.MaTheLoai = TL.MaTheLoai GROUP BY TL.TenTheLoai";
+            return GetData(sqlString);
+        }
+
         public string GetMaTheLoai(string ten)
         {
             string sql = "SELECT MaTheLoai FROM dbo.THELOAI WHERE TenTheLoai = N'" + ten + "'";

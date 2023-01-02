@@ -31,6 +31,12 @@ namespace QLThuVien.DAO
             return GetData(sqlString);
         }
 
+        public DataTable LoadTacGiaMini()
+        {
+            string sqlString = @"select TenTacgia as N'Tên tác giả', SLtacpham as N'Số lượng tác phẩm' from TacGia";
+            return GetData(sqlString);
+        }
+
         public void InsertTacGia(TacGia tg)
         {
             string sql = $"EXEC PROC_THEMTACGIA '{tg.MaTacGia}','{tg.TenTacGia}'";

@@ -79,6 +79,11 @@ namespace QLThuVien.BUS
             return dsDao.Search(TuKhoa, MucTimKiem);
         }
 
+        public DataTable GetminiDS()
+        {
+            return dsDao.LoadminiDS();
+        }
+
 
         public DataTable LoadListDS()
         {

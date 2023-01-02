@@ -19,7 +19,7 @@ namespace QLThuVien.DAO
         public void Update(string masach)
         {
             string sqlString = "update THONGTINMUONTRA set Ngaytra = getdate() where masach = '" + masach + "'";
-            string sqlString2 = "update CUONSACH set TrangThai = true where masach = '" + masach + "'";
+            string sqlString2 = "update CUONSACH set TrangThai = 1 where masach = '" + masach + "'";
             Excute(sqlString);
             Excute(sqlString2);
         }

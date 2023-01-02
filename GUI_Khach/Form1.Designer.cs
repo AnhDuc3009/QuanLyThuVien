@@ -53,8 +53,8 @@ namespace QLThuVien.GUI_Khach
             this.Paneltoolbar = new System.Windows.Forms.Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox4 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.panelShow = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelShow = new System.Windows.Forms.Panel();
             this.PanelMenuBar.SuspendLayout();
             this.panelButton.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -334,15 +334,6 @@ namespace QLThuVien.GUI_Khach
             this.guna2ControlBox4.TabIndex = 9;
             this.guna2ControlBox4.Click += new System.EventHandler(this.guna2ControlBox4_Click);
             // 
-            // panelShow
-            // 
-            this.panelShow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelShow.Location = new System.Drawing.Point(253, 52);
-            this.panelShow.Margin = new System.Windows.Forms.Padding(4);
-            this.panelShow.Name = "panelShow";
-            this.panelShow.Size = new System.Drawing.Size(1299, 828);
-            this.panelShow.TabIndex = 13;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -353,6 +344,15 @@ namespace QLThuVien.GUI_Khach
             this.pictureBox1.Size = new System.Drawing.Size(259, 68);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panelShow
+            // 
+            this.panelShow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelShow.Location = new System.Drawing.Point(253, 52);
+            this.panelShow.Margin = new System.Windows.Forms.Padding(4);
+            this.panelShow.Name = "panelShow";
+            this.panelShow.Size = new System.Drawing.Size(1299, 828);
+            this.panelShow.TabIndex = 14;
             // 
             // Form1
             // 
@@ -367,6 +367,7 @@ namespace QLThuVien.GUI_Khach
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "THƯ VIỆN MTA";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.PanelMenuBar.ResumeLayout(false);
             this.panelButton.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -394,8 +395,6 @@ namespace QLThuVien.GUI_Khach
         private System.Windows.Forms.Timer LoginTick;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
 
-
-        private System.Windows.Forms.Panel panelShow;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button btnLoginn;
         private System.Windows.Forms.Panel panel2;
@@ -406,6 +405,6 @@ namespace QLThuVien.GUI_Khach
         private System.Windows.Forms.Panel Paneltoolbar;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox4;
-
+        private System.Windows.Forms.Panel panelShow;
     }
 }

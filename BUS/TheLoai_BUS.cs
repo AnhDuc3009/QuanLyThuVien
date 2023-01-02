@@ -35,6 +35,12 @@ namespace QLThuVien.BUS
 
             return Ma;
         }
+
+        public DataTable LoadListTLMini()
+        {
+            return tlDao.LoadTheLoaiMini();
+        }
+
         public DataTable LoadListTL()
         {
             return tlDao.LoadTheLoai();
