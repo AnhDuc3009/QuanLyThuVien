@@ -38,6 +38,76 @@ namespace QLThuVien.GUI_Admin
             return true;
         }
 
+        private bool validateAll(ref string MaDocGia, string HoTen, string gender, string DiaChi, string sdt, string soCMND, string username)
+        {
+            if (string.IsNullOrEmpty(HoTen))
+            {
+                MessageBox.Show(
+                "Vui lòng nhập họ và tên",
+                "Lỗi",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+                return false;
+
+            }
+            else if (int.Parse(DateTime.UtcNow.ToString("yyyy")) - pickerBirthday.Value.Year < 18)
+            {
+                MessageBox.Show(
+                "Vui lòng chọn ngày sinh chính xác!",
+                "Lỗi",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+                return false;
+
+            }
+            else if (string.IsNullOrEmpty(DiaChi))
+            {
+                MessageBox.Show(
+                "Vui lòng nhập địa chỉ của bạn!",
+                "Lỗi",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+                return false;
+
+            }
+            else if (string.IsNullOrEmpty(sdt) || sdt.Length > 10)
+            {
+                MessageBox.Show(
+                "Vui lòng nhập chính xác số điện thoại của bạn!",
+                "Lỗi",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+                return false;
+
+            }
+            else if (string.IsNullOrEmpty(soCMND))
+            {
+                MessageBox.Show(
+                "Vui lòng nhập số cmnd của bạn!",
+                "Lỗi",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+                return false;
+
+            }
+            else if (string.IsNullOrEmpty(username))
+            {
+                MessageBox.Show(
+                "Vui lòng nhập tên đăng nhập !",
+                "Lỗi",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+                return false;
+
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
+
         private void btnThemTK_Click(object sender, EventArgs e)
         {
             string user = txtUsername.Text;
@@ -109,27 +179,42 @@ namespace QLThuVien.GUI_Admin
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            NhanVien nv1 = new NhanVien();
-            nv1.TenNhanVien = txtTenNV.Text;
-            nv1.MaNhanVien = txtMaNV.Text;
-            nv1.NgaySinh = pickerBirthday.Value;
-            nv1.GioiTinh = cbGioitinh.Text;
-            nv1.Email = txtEmail.Text;
-            nv1.SDT = txtSDT.Text;
-            nv1.DiaChi = txtDiaChi.Text;
-            nv1.CMND = txtCMND.Text;
-            nv1.TenDangNhap = txtUsername.Text;
-            nv1.ChucVu = "nhân viên";
+            string MaNhanVien  = txtMaNV.Text;
+            string TenNhanVien = txtTenNV.Text;
+            DateTime NgaySinh = pickerBirthday.Value;
+            string gender = cbGioitinh.Text;
+            string DiaChi = txtDiaChi.Text;
+            string sdt = txtSDT.Text;
+            string soCMND = txtCMND.Text; ;
+            string username = txtUsername.Text; 
 
-            if (nvBus.Them(nv1))
+
+            if (validateAll(ref MaNhanVien, TenNhanVien, gender, DiaChi, sdt, soCMND, username))
             {
-                MessageBox.Show("Thêm thành công một nhân viên");
-                dgvThongTin.DataSource = nvBus.GetList();
+                NhanVien nv1 = new NhanVien();
+                nv1.TenNhanVien = txtTenNV.Text;
+                nv1.MaNhanVien = txtMaNV.Text;
+                nv1.NgaySinh = pickerBirthday.Value;
+                nv1.GioiTinh = cbGioitinh.Text;
+                nv1.Email = txtEmail.Text;
+                nv1.SDT = txtSDT.Text;
+                nv1.DiaChi = txtDiaChi.Text;
+                nv1.CMND = txtCMND.Text;
+                nv1.TenDangNhap = txtUsername.Text;
+                nv1.ChucVu = "nhân viên";
+
+                if (nvBus.Them(nv1))
+                {
+                    MessageBox.Show("Thêm thành công một nhân viên");
+                    dgvThongTin.DataSource = nvBus.GetList();
+                }
+                else
+                {
+                    MessageBox.Show("Bị lỗi");
+                }
             }
-            else
-            {
-                MessageBox.Show("Bị lỗi");
-            }
+
+
         }
 
         private void Admin_ThemNV_Load(object sender, EventArgs e)

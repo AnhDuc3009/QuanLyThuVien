@@ -129,12 +129,12 @@ namespace QLThuVien.DAO
                 dg.MaDocGia = maDG;
                 dg.TenDocGia = res.Rows[0][2].ToString();
                 dg.DiaChi = res.Rows[0][3].ToString();
-                dg.NgaySinh = DateTime.Parse(res.Rows[0][4].ToString());
-                dg.GioiTinh = res.Rows[0][5].ToString();
-                dg.SDT = res.Rows[0][6].ToString();
-                dg.CMND = res.Rows[0][7].ToString();
-                dg.NgayDangKi = DateTime.Parse(res.Rows[0][8].ToString());
-                dg.TenDangNhap = res.Rows[0][9].ToString();
+                dg.NgaySinh = DateTime.Parse(res.Rows[0][5].ToString());
+                dg.GioiTinh = res.Rows[0][6].ToString();
+                dg.SDT = res.Rows[0][7].ToString();
+                dg.CMND = res.Rows[0][8].ToString();
+                dg.NgayDangKi = DateTime.Parse(res.Rows[0][9].ToString());
+                dg.TenDangNhap = res.Rows[0][10].ToString();
 
             }
 

@@ -205,7 +205,7 @@ namespace QLThuVien.GUI_Admin
         private void btnM_LapBBvp_Click(object sender, EventArgs e)
         {
             panelShow.Controls.Clear();
-            panelShow.Controls.Add(new GUI_Admin.frmLapBBVP(MaQL));
+            panelShow.Controls.Add(new GUI_Admin.DSSachVP());
         }
 
         private void btnM_regtkdg_Click(object sender, EventArgs e)

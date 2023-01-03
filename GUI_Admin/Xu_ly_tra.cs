@@ -170,10 +170,12 @@ namespace QLThuVien.GUI_Admin
             if (txtMadg.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập mã độc giả");
+                return;
             }
             else if (txtMasach.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập mã sách trả");
+                return;
             }
 
 

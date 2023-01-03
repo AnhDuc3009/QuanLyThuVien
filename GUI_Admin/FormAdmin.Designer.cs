@@ -58,7 +58,6 @@ namespace QLThuVien.GUI_Admin
             this.btnM_QLsachnhap = new Guna.UI2.WinForms.Guna2Button();
             this.btnM_Nhapsach = new Guna.UI2.WinForms.Guna2Button();
             this.panelQLsach = new System.Windows.Forms.Panel();
-            this.btnM_DSSachVP = new Guna.UI2.WinForms.Guna2Button();
             this.btnM_QLsach = new Guna.UI2.WinForms.Guna2Button();
             this.btnM_SConlai = new Guna.UI2.WinForms.Guna2Button();
             this.btnM_dsSDamuon = new Guna.UI2.WinForms.Guna2Button();
@@ -163,14 +162,14 @@ namespace QLThuVien.GUI_Admin
             this.panelAll.Location = new System.Drawing.Point(0, 160);
             this.panelAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelAll.Name = "panelAll";
-            this.panelAll.Size = new System.Drawing.Size(232, 1317);
+            this.panelAll.Size = new System.Drawing.Size(232, 1243);
             this.panelAll.TabIndex = 11;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.guna2Button3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 1204);
+            this.panel1.Location = new System.Drawing.Point(0, 1155);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.MaximumSize = new System.Drawing.Size(563, 164);
             this.panel1.MinimumSize = new System.Drawing.Size(200, 57);
@@ -202,7 +201,7 @@ namespace QLThuVien.GUI_Admin
             this.panelThongke.Controls.Add(this.btnM_ReportSLDS);
             this.panelThongke.Controls.Add(this.btnThongKe);
             this.panelThongke.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelThongke.Location = new System.Drawing.Point(0, 1047);
+            this.panelThongke.Location = new System.Drawing.Point(0, 998);
             this.panelThongke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelThongke.MaximumSize = new System.Drawing.Size(563, 164);
             this.panelThongke.MinimumSize = new System.Drawing.Size(200, 57);
@@ -270,7 +269,7 @@ namespace QLThuVien.GUI_Admin
             this.panelQLDocGia.Controls.Add(this.btnM_QLDG);
             this.panelQLDocGia.Controls.Add(this.btnM_DSDG);
             this.panelQLDocGia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelQLDocGia.Location = new System.Drawing.Point(0, 885);
+            this.panelQLDocGia.Location = new System.Drawing.Point(0, 836);
             this.panelQLDocGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelQLDocGia.MaximumSize = new System.Drawing.Size(563, 162);
             this.panelQLDocGia.MinimumSize = new System.Drawing.Size(200, 55);
@@ -337,7 +336,7 @@ namespace QLThuVien.GUI_Admin
             this.panelXLViPham.Controls.Add(this.btnM_LapBBvp);
             this.panelXLViPham.Controls.Add(this.btnM_XLViPham);
             this.panelXLViPham.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelXLViPham.Location = new System.Drawing.Point(0, 777);
+            this.panelXLViPham.Location = new System.Drawing.Point(0, 728);
             this.panelXLViPham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelXLViPham.MaximumSize = new System.Drawing.Size(563, 108);
             this.panelXLViPham.MinimumSize = new System.Drawing.Size(200, 55);
@@ -360,7 +359,7 @@ namespace QLThuVien.GUI_Admin
             this.btnM_LapBBvp.Name = "btnM_LapBBvp";
             this.btnM_LapBBvp.Size = new System.Drawing.Size(229, 46);
             this.btnM_LapBBvp.TabIndex = 18;
-            this.btnM_LapBBvp.Text = "Lập biên bản vi phạm";
+            this.btnM_LapBBvp.Text = "Danh sách vi phạm";
             this.btnM_LapBBvp.Click += new System.EventHandler(this.btnM_LapBBvp_Click);
             // 
             // btnM_XLViPham
@@ -387,7 +386,7 @@ namespace QLThuVien.GUI_Admin
             this.panelXLMuontra.Controls.Add(this.btnM_Muon);
             this.panelXLMuontra.Controls.Add(this.btnM_Tra);
             this.panelXLMuontra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelXLMuontra.Location = new System.Drawing.Point(0, 623);
+            this.panelXLMuontra.Location = new System.Drawing.Point(0, 574);
             this.panelXLMuontra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelXLMuontra.MaximumSize = new System.Drawing.Size(563, 154);
             this.panelXLMuontra.MinimumSize = new System.Drawing.Size(200, 54);
@@ -455,7 +454,7 @@ namespace QLThuVien.GUI_Admin
             this.panelQLSachNhap.Controls.Add(this.btnM_QLsachnhap);
             this.panelQLSachNhap.Controls.Add(this.btnM_Nhapsach);
             this.panelQLSachNhap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelQLSachNhap.Location = new System.Drawing.Point(0, 468);
+            this.panelQLSachNhap.Location = new System.Drawing.Point(0, 419);
             this.panelQLSachNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelQLSachNhap.MaximumSize = new System.Drawing.Size(563, 155);
             this.panelQLSachNhap.MinimumSize = new System.Drawing.Size(200, 54);
@@ -520,7 +519,6 @@ namespace QLThuVien.GUI_Admin
             // 
             // panelQLsach
             // 
-            this.panelQLsach.Controls.Add(this.btnM_DSSachVP);
             this.panelQLsach.Controls.Add(this.btnM_QLsach);
             this.panelQLsach.Controls.Add(this.btnM_SConlai);
             this.panelQLsach.Controls.Add(this.btnM_dsSDamuon);
@@ -528,29 +526,11 @@ namespace QLThuVien.GUI_Admin
             this.panelQLsach.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelQLsach.Location = new System.Drawing.Point(0, 213);
             this.panelQLsach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelQLsach.MaximumSize = new System.Drawing.Size(563, 255);
+            this.panelQLsach.MaximumSize = new System.Drawing.Size(563, 208);
             this.panelQLsach.MinimumSize = new System.Drawing.Size(200, 55);
             this.panelQLsach.Name = "panelQLsach";
-            this.panelQLsach.Size = new System.Drawing.Size(232, 255);
+            this.panelQLsach.Size = new System.Drawing.Size(232, 206);
             this.panelQLsach.TabIndex = 20;
-            // 
-            // btnM_DSSachVP
-            // 
-            this.btnM_DSSachVP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(224)))), ((int)(((byte)(197)))));
-            this.btnM_DSSachVP.BorderColor = System.Drawing.Color.Transparent;
-            this.btnM_DSSachVP.BorderThickness = 1;
-            this.btnM_DSSachVP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(247)))), ((int)(((byte)(212)))));
-            this.btnM_DSSachVP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnM_DSSachVP.ForeColor = System.Drawing.Color.Black;
-            this.btnM_DSSachVP.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnM_DSSachVP.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnM_DSSachVP.Location = new System.Drawing.Point(0, 206);
-            this.btnM_DSSachVP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnM_DSSachVP.Name = "btnM_DSSachVP";
-            this.btnM_DSSachVP.Size = new System.Drawing.Size(229, 46);
-            this.btnM_DSSachVP.TabIndex = 20;
-            this.btnM_DSSachVP.Text = "DS Sách bị vi phạm";
-            this.btnM_DSSachVP.Click += new System.EventHandler(this.btnM_DSSachVP_Click);
             // 
             // btnM_QLsach
             // 
@@ -896,7 +876,6 @@ namespace QLThuVien.GUI_Admin
         private Guna.UI2.WinForms.Guna2Button btnM_QLsachnhap;
         private Guna.UI2.WinForms.Guna2Button btnM_Nhapsach;
         private System.Windows.Forms.Panel panelQLsach;
-        private Guna.UI2.WinForms.Guna2Button btnM_DSSachVP;
         private Guna.UI2.WinForms.Guna2Button btnM_QLsach;
         private Guna.UI2.WinForms.Guna2Button btnM_SConlai;
         private Guna.UI2.WinForms.Guna2Button btnM_dsSDamuon;
