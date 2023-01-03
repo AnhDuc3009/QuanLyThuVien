@@ -188,5 +188,19 @@ namespace QLThuVien.GUI_Admin
             UserControl temp = new GUI_NhanVien.FrmThemCuonSach();
             panelShow.Controls.Add(temp);
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            string TuKhoa = txtTuKhoa.Text;
+            if (cbLoaiLoc.Text == "Mã đầu sách")
+                dgvDauSach.DataSource = dsBus.SearchDS(TuKhoa, "MaDauSach");
+            else if (cbLoaiLoc.Text == "Tên đầu sách")
+                dgvDauSach.DataSource = dsBus.SearchDS(TuKhoa, "TenDauSach");
+        }
+
+        private void cbLoaiLoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

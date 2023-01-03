@@ -22,6 +22,11 @@ namespace QLThuVien.BUS
             return tvDao.signup(_tv, isNV);
         }
 
+        public string GetTenTK(string username)
+        {
+            return tvDao.GetTenTK(username);
+        }
+
         public bool checkTonTaiTK(string username)
         {
             return tvDao.checkExistTK(username);

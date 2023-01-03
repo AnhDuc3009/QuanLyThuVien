@@ -52,7 +52,6 @@ namespace QLThuVien.GUI_Khach
             this.TenDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Remove = new System.Windows.Forms.DataGridViewButtonColumn();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.btnFindByTG = new Guna.UI2.WinForms.Guna2Button();
             this.lbSLBook = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -131,7 +130,7 @@ namespace QLThuVien.GUI_Khach
             this.btnFindAll.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnFindAll.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnFindAll.ForeColor = System.Drawing.Color.White;
-            this.btnFindAll.Location = new System.Drawing.Point(484, 15);
+            this.btnFindAll.Location = new System.Drawing.Point(311, 13);
             this.btnFindAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnFindAll.Name = "btnFindAll";
             this.btnFindAll.Size = new System.Drawing.Size(100, 44);
@@ -327,7 +326,6 @@ namespace QLThuVien.GUI_Khach
             // guna2CustomGradientPanel2
             // 
             this.guna2CustomGradientPanel2.BorderRadius = 10;
-            this.guna2CustomGradientPanel2.Controls.Add(this.btnFindByTG);
             this.guna2CustomGradientPanel2.Controls.Add(this.btnFindAll);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtSearch);
             this.guna2CustomGradientPanel2.Controls.Add(this.cbTheLoai);
@@ -337,21 +335,6 @@ namespace QLThuVien.GUI_Khach
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(708, 135);
             this.guna2CustomGradientPanel2.TabIndex = 44;
-            // 
-            // btnFindByTG
-            // 
-            this.btnFindByTG.BackColor = System.Drawing.Color.Transparent;
-            this.btnFindByTG.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnFindByTG.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnFindByTG.ForeColor = System.Drawing.Color.White;
-            this.btnFindByTG.Location = new System.Drawing.Point(289, 15);
-            this.btnFindByTG.Margin = new System.Windows.Forms.Padding(4);
-            this.btnFindByTG.Name = "btnFindByTG";
-            this.btnFindByTG.Size = new System.Drawing.Size(187, 44);
-            this.btnFindByTG.TabIndex = 40;
-            this.btnFindByTG.Tag = "Tìm theo tên tác giả";
-            this.btnFindByTG.Text = "Tìm theo tên tác giả";
-            this.btnFindByTG.Click += new System.EventHandler(this.btnFindByTG_Click);
             // 
             // lbSLBook
             // 
@@ -439,7 +422,6 @@ namespace QLThuVien.GUI_Khach
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2Button btnPreview;
         private Guna.UI2.WinForms.Guna2DataGridView dgvChooseBook;
-        private Guna.UI2.WinForms.Guna2Button btnFindByTG;
         private Guna.UI2.WinForms.Guna2Button btnClearAll;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDauSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDauSach;

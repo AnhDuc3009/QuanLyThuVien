@@ -141,7 +141,7 @@ namespace QLThuVien.GUI
                             }
                         case "vohieuhoa":
                             {
-                                MessageBox.Show("Tài khoản của bạn đã bị vô hiệu hóa do vi phạm nhiều lần.");
+                                MessageBox.Show("Tài khoản của bạn đã bị vô hiệu hóa");
                                 break;
                             }
                     }

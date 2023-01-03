@@ -59,9 +59,11 @@ namespace QLThuVien.DAO
             return true;
         }
 
-        public void Delete(string mDG)
+
+        public void Delete(string tDN)
         {
-            Excute("Delete from DOCGIA where MaDocGia = '" + mDG + "'");
+            Excute("Update DOCGIA set TrangThai = 0 where TenDangNhap = '" + tDN + "'");
+            Excute("Update TaiKhoan set LoaiTK = 'vohieuhoa' where TenDangNhap = '" + tDN + "'");
         }
 
         public bool Update(DocGia dg)

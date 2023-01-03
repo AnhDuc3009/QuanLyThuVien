@@ -53,11 +53,9 @@ namespace QLThuVien.GUI_Khach
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.btnTheLoai = new Guna.UI2.WinForms.Guna2Button();
             this.btnTacGia = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.label12 = new System.Windows.Forms.Label();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.label13 = new System.Windows.Forms.Label();
@@ -400,38 +398,24 @@ namespace QLThuVien.GUI_Khach
             this.guna2Panel6.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel6.BorderRadius = 30;
             this.guna2Panel6.BorderThickness = 1;
-            this.guna2Panel6.Controls.Add(this.guna2Button6);
             this.guna2Panel6.Controls.Add(this.guna2Button5);
             this.guna2Panel6.Controls.Add(this.btnTheLoai);
             this.guna2Panel6.Controls.Add(this.btnTacGia);
-            this.guna2Panel6.Controls.Add(this.guna2Button2);
             this.guna2Panel6.Controls.Add(this.label12);
             this.guna2Panel6.FillColor = System.Drawing.Color.White;
             this.guna2Panel6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.guna2Panel6.Location = new System.Drawing.Point(31, 443);
             this.guna2Panel6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(480, 266);
+            this.guna2Panel6.Size = new System.Drawing.Size(480, 154);
             this.guna2Panel6.TabIndex = 26;
-            // 
-            // guna2Button6
-            // 
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(209)))), ((int)(((byte)(98)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(290, 65);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(181, 55);
-            this.guna2Button6.TabIndex = 32;
-            this.guna2Button6.Text = "Năm xuất bản";
             // 
             // guna2Button5
             // 
             this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(131, 65);
+            this.guna2Button5.Location = new System.Drawing.Point(150, 65);
             this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(148, 55);
@@ -444,10 +428,10 @@ namespace QLThuVien.GUI_Khach
             this.btnTheLoai.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(149)))), ((int)(((byte)(79)))));
             this.btnTheLoai.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTheLoai.ForeColor = System.Drawing.Color.White;
-            this.btnTheLoai.Location = new System.Drawing.Point(14, 129);
+            this.btnTheLoai.Location = new System.Drawing.Point(317, 65);
             this.btnTheLoai.Margin = new System.Windows.Forms.Padding(4);
             this.btnTheLoai.Name = "btnTheLoai";
-            this.btnTheLoai.Size = new System.Drawing.Size(144, 97);
+            this.btnTheLoai.Size = new System.Drawing.Size(144, 55);
             this.btnTheLoai.TabIndex = 30;
             this.btnTheLoai.Text = "Thể loại";
             this.btnTheLoai.Click += new System.EventHandler(this.btnTheLoai_Click);
@@ -457,25 +441,13 @@ namespace QLThuVien.GUI_Khach
             this.btnTacGia.FillColor = System.Drawing.Color.LightSeaGreen;
             this.btnTacGia.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTacGia.ForeColor = System.Drawing.Color.White;
-            this.btnTacGia.Location = new System.Drawing.Point(14, 65);
+            this.btnTacGia.Location = new System.Drawing.Point(20, 65);
             this.btnTacGia.Margin = new System.Windows.Forms.Padding(4);
             this.btnTacGia.Name = "btnTacGia";
             this.btnTacGia.Size = new System.Drawing.Size(109, 55);
             this.btnTacGia.TabIndex = 29;
             this.btnTacGia.Text = "Tác giả";
             this.btnTacGia.Click += new System.EventHandler(this.btnTacGia_Click);
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.FillColor = System.Drawing.Color.MediumVioletRed;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(167, 128);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(303, 97);
-            this.guna2Button2.TabIndex = 28;
-            this.guna2Button2.Text = "Tất cả sách";
             // 
             // label12
             // 
@@ -569,7 +541,7 @@ namespace QLThuVien.GUI_Khach
             this.btnRegister.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(198)))), ((int)(((byte)(165)))));
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(31, 737);
+            this.btnRegister.Location = new System.Drawing.Point(31, 615);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(480, 71);
@@ -642,11 +614,9 @@ namespace QLThuVien.GUI_Khach
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button btnTheLoai;
         private Guna.UI2.WinForms.Guna2Button btnTacGia;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private System.Windows.Forms.Label label13;

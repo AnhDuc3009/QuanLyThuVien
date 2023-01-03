@@ -380,6 +380,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDSDausach.Location = new System.Drawing.Point(15, 238);
             this.dgvDSDausach.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDSDausach.Name = "dgvDSDausach";
+            this.dgvDSDausach.ReadOnly = true;
             this.dgvDSDausach.RowHeadersVisible = false;
             this.dgvDSDausach.RowHeadersWidth = 51;
             this.dgvDSDausach.RowTemplate.Height = 40;
@@ -398,7 +399,7 @@ namespace QLThuVien.GUI_Admin
             this.dgvDSDausach.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvDSDausach.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvDSDausach.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvDSDausach.ThemeStyle.ReadOnly = false;
+            this.dgvDSDausach.ThemeStyle.ReadOnly = true;
             this.dgvDSDausach.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDSDausach.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDSDausach.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -437,6 +438,7 @@ namespace QLThuVien.GUI_Admin
             this.ViTriSach.HeaderText = "Vị trí sách";
             this.ViTriSach.MinimumWidth = 6;
             this.ViTriSach.Name = "ViTriSach";
+            this.ViTriSach.ReadOnly = true;
             // 
             // btnDone
             // 

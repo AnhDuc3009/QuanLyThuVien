@@ -181,9 +181,17 @@ namespace QLThuVien.GUI_DocGia
             }
             else
             {
-                pmBus.InsertMuon(pmtnew, DSMaSach, isNV);
+                if(pmtnew.NgayMuon > pmtnew.HanTra)
+                {
+                    MessageBox.Show("Hạn trả không hợp lệ");
+                }
+                else
+                {
+                    pmBus.InsertMuon(pmtnew, DSMaSach, isNV);
+                    MessageBox.Show("Tạo phiếu mượn thành công!!\nĐộc giả vui lòng ra quầy để nhân viên tiếp tục xử lý");
+                }
 
-                MessageBox.Show("Tạo phiếu mượn thành công!!\nĐộc giả vui lòng ra quầy để nhân viên tiếp tục xử lý");
+                
             }
             
         }

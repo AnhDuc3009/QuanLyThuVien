@@ -45,7 +45,7 @@ namespace QLThuVien.GUI_Admin
             DataGridViewRow row = dgvNhanvien.Rows[e.RowIndex];
             txtName.Text = row.Cells[2].Value.ToString();
             txtDiaChi.Text = row.Cells["DiaChi"].Value.ToString().Trim();
-            pickerBirthday.Value = DateTime.Parse(row.Cells[4].Value.ToString()); ;
+            pickerBirthday.Value = DateTime.Parse(row.Cells[5].Value.ToString()); ;
             cbGioitinh.SelectedIndex = row.Cells["GioiTinh"].Value.ToString() == "Nam" ? 0 : 1;
             txtSDT.Text = row.Cells["SDT"].Value.ToString();
             txtCMND.Text = row.Cells["CMND"].Value.ToString();
@@ -84,10 +84,10 @@ namespace QLThuVien.GUI_Admin
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Hệ thống sẽ xóa hết thông tin của nhân viên \nBạn có chắc chắn muốn xóa?", "Xóa thông tin nhân viên?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn vô hiệu hóa tài khoản này?", "Vô hiệu hóa tài khoản?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                nvbus.Xoa(nv.MaNhanVien);
-                MessageBox.Show("Xóa thông tin thành công!");
+                nvbus.Xoa(nv.TenDangNhap);
+                MessageBox.Show("Vô hiệu hóa thành công!");
                 dgvNhanvien.DataSource = nvbus.GetList();
             }
         }

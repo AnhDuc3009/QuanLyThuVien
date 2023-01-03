@@ -33,8 +33,6 @@ namespace QLThuVien.GUI_Admin
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearchNV = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbFilterDG = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,7 +53,6 @@ namespace QLThuVien.GUI_Admin
             this.txtDiachi = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDG)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
@@ -68,8 +65,6 @@ namespace QLThuVien.GUI_Admin
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.btnSearchNV);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.cbFilterDG);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Location = new System.Drawing.Point(16, 65);
@@ -84,12 +79,12 @@ namespace QLThuVien.GUI_Admin
             this.btnXoa.FillColor = System.Drawing.Color.Crimson;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(939, 44);
+            this.btnXoa.Location = new System.Drawing.Point(921, 44);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(115, 44);
+            this.btnXoa.Size = new System.Drawing.Size(133, 44);
             this.btnXoa.TabIndex = 9;
-            this.btnXoa.Text = "Xóa ";
+            this.btnXoa.Text = "Vô hiệu hóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
@@ -112,47 +107,13 @@ namespace QLThuVien.GUI_Admin
             this.btnSearchNV.FillColor = System.Drawing.Color.Blue;
             this.btnSearchNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearchNV.ForeColor = System.Drawing.Color.White;
-            this.btnSearchNV.Location = new System.Drawing.Point(664, 44);
+            this.btnSearchNV.Location = new System.Drawing.Point(598, 44);
             this.btnSearchNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearchNV.Name = "btnSearchNV";
             this.btnSearchNV.Size = new System.Drawing.Size(129, 44);
             this.btnSearchNV.TabIndex = 5;
             this.btnSearchNV.Text = "Tìm kiếm";
             this.btnSearchNV.Click += new System.EventHandler(this.btnSearchNV_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(349, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 28);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Bộ lọc";
-            // 
-            // cbFilterDG
-            // 
-            this.cbFilterDG.BackColor = System.Drawing.Color.Transparent;
-            this.cbFilterDG.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbFilterDG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbFilterDG.FocusedColor = System.Drawing.Color.Empty;
-            this.cbFilterDG.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbFilterDG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbFilterDG.FormattingEnabled = true;
-            this.cbFilterDG.ItemHeight = 30;
-            this.cbFilterDG.Items.AddRange(new object[] {
-            "Theo tên",
-            "Theo Mã nhân viên",
-            "Theo Chức vụ",
-            "Theo Email",
-            "Theo SDT",
-            "Theo Tên đăng nhập",
-            "Tất cả"});
-            this.cbFilterDG.Location = new System.Drawing.Point(354, 44);
-            this.cbFilterDG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbFilterDG.Name = "cbFilterDG";
-            this.cbFilterDG.Size = new System.Drawing.Size(304, 36);
-            this.cbFilterDG.TabIndex = 6;
             // 
             // label2
             // 
@@ -182,7 +143,7 @@ namespace QLThuVien.GUI_Admin
             this.txtSearch.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtSearch.PlaceholderText = "Nhập nội dung tìm kiếm";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(312, 44);
+            this.txtSearch.Size = new System.Drawing.Size(529, 44);
             this.txtSearch.TabIndex = 2;
             // 
             // label1
@@ -490,19 +451,6 @@ namespace QLThuVien.GUI_Admin
             this.label7.TabIndex = 0;
             this.label7.Text = "Địa chỉ:";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.BorderRadius = 18;
-            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(1154, 15);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(115, 46);
-            this.btnAdd.TabIndex = 7;
-            this.btnAdd.Text = "Thêm";
-            // 
             // DanhSachDG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -513,7 +461,6 @@ namespace QLThuVien.GUI_Admin
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDG);
-            this.Controls.Add(this.btnAdd);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DanhSachDG";
             this.Size = new System.Drawing.Size(1779, 986);
@@ -534,13 +481,10 @@ namespace QLThuVien.GUI_Admin
 
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnSearchNV;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2ComboBox cbFilterDG;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvDG;
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2DateTimePicker pickerBirthday;
         private Guna.UI2.WinForms.Guna2TextBox txtSDT;

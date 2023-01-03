@@ -28,21 +28,31 @@ namespace QLThuVien.DAO
             if (GetData("select * from NHANVIEN where MaNhanVien = '" + nv.MaNhanVien + "'").Rows.Count > 0)
                 return false;
 
-            string sql = $"INSERT INTO dbo.NHANVIEN VALUES ('{nv.MaNhanVien}',N'{nv.TenNhanVien}',N'{nv.ChucVu}','{DateToString(nv.NgaySinh)}',N'{nv.GioiTinh}',N'{nv.DiaChi}','{nv.Email}','{nv.SDT}','{nv.CMND}','{nv.TenDangNhap}',NULL, NULL)";
+            string sql = $"INSERT INTO dbo.NHANVIEN VALUES ('{nv.MaNhanVien}',N'{nv.TenNhanVien}','1',N'{nv.ChucVu}','{DateToString(nv.NgaySinh)}',N'{nv.GioiTinh}',N'{nv.DiaChi}','{nv.Email}','{nv.SDT}','{nv.CMND}','{nv.TenDangNhap}',NULL, NULL)";
             Excute(sql);
 
 
             return true;
         }
 
-        public void Delete(string mnv)
+        public void Delete(string tDN)
         {
-            Excute("delete from NHANVIEN where MaNhanVien = '" + mnv + "'");
+            Excute("Update NHANVIEN set TrangThai = 0 where TenDangNhap = '" + tDN + "'");
+            Excute("Update TaiKhoan set LoaiTK = 'vohieuhoa' where TenDangNhap = '" + tDN + "'");
         }
 
         public void Update(NhanVien nv)
         {
             string sql = $"update NHANVIEN set TenNhanVien = N'{nv.TenNhanVien}', GioiTinh = N'{nv.GioiTinh}', NgaySinh = '{nv.NgaySinh}', DiaChi = N'{nv.DiaChi}', Email = '{nv.Email}', SDT = '{nv.SDT}', CMND = {nv.CMND}  where MaNhanVien = '{nv.MaNhanVien}'";
+            Excute(sql);
+
+
+        }
+
+
+        public void UpdateMK(NhanVien nv, TaiKhoan tk)
+        {
+            string sql = $"update TAIKHOAN set MatKhau = N'{tk.MatKhau}' where TenDangNhap = '{nv.TenDangNhap}'";
             Excute(sql);
 
 

@@ -29,9 +29,9 @@ namespace QLThuVien.BUS
             return dgDao.loadDocGiaLoc(loai);
         }
 
-        public void Xoa(string mDG)
+        public void Xoa(string tDN)
         {
-            dgDao.Delete(mDG);
+            dgDao.Delete(tDN);
         }
         public bool Sua(DocGia dg)
         {

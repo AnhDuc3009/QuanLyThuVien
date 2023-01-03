@@ -28,7 +28,6 @@ namespace QLThuVien.GUI_Admin
         private void btnSearchNV_Click(object sender, EventArgs e)
         {
             string keyword = txtSearch.Text;
-            string type = cbFilterDG.Text;
 
             if (keyword != "")
             {
@@ -52,12 +51,12 @@ namespace QLThuVien.GUI_Admin
                 DataGridViewRow row = dgvDG.Rows[e.RowIndex];
                 MaDocGiaCurrent = row.Cells["MaDocGia"].Value.ToString();
                 txtName.Text = row.Cells[2].Value.ToString();
-                txtDiachi.Text = row.Cells[3].Value.ToString();
-                pickerBirthday.Value = DateTime.Parse(row.Cells[4].Value.ToString()); ;
-                cbGender.Text = row.Cells[5].Value.ToString();
-                txtSDT.Text = row.Cells[6].Value.ToString();
-                txtCMND.Text = row.Cells[7].Value.ToString();
-                txtTendangnhap.Text = row.Cells[9].Value.ToString();
+                txtDiachi.Text = row.Cells[4].Value.ToString();
+                pickerBirthday.Value = DateTime.Parse(row.Cells[5].Value.ToString()); ;
+                cbGender.Text = row.Cells[6].Value.ToString();
+                txtSDT.Text = row.Cells[7].Value.ToString();
+                txtCMND.Text = row.Cells[8].Value.ToString();
+                txtTendangnhap.Text = row.Cells[10].Value.ToString();
 
                 dg.MaDocGia = row.Cells["MaDocGia"].Value.ToString();
                 dg.TenDocGia = txtName.Text;
@@ -101,10 +100,10 @@ namespace QLThuVien.GUI_Admin
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Hệ thống sẽ xóa hết thông tin mượn sách của độc giả \nBạn có chắc chắn muốn xóa?", "Xóa thông tin độc giả?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn muốn vô hiệu hóa tài khoản này?", "Vô hiệu hóa tài khoản?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                dgBus.Xoa(dg.MaDocGia);
-                MessageBox.Show("Xóa thông tin thành công!");
+                dgBus.Xoa(dg.TenDangNhap);
+                MessageBox.Show("Vô hiệu hóa thành công!");
                 dgvDG.DataSource = dgBus.GetList();
             }
         }

@@ -34,7 +34,6 @@ namespace QLThuVien.GUI_Admin
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lbSLBook = new System.Windows.Forms.Label();
-            this.btnFindByTG = new Guna.UI2.WinForms.Guna2Button();
             this.btnFindAll = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbTheLoai = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -50,7 +49,6 @@ namespace QLThuVien.GUI_Admin
             this.guna2CustomGradientPanel2.Controls.Add(this.button2);
             this.guna2CustomGradientPanel2.Controls.Add(this.button1);
             this.guna2CustomGradientPanel2.Controls.Add(this.lbSLBook);
-            this.guna2CustomGradientPanel2.Controls.Add(this.btnFindByTG);
             this.guna2CustomGradientPanel2.Controls.Add(this.btnFindAll);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtSearch);
             this.guna2CustomGradientPanel2.Controls.Add(this.cbTheLoai);
@@ -97,29 +95,12 @@ namespace QLThuVien.GUI_Admin
             this.lbSLBook.BackColor = System.Drawing.Color.Transparent;
             this.lbSLBook.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold);
             this.lbSLBook.ForeColor = System.Drawing.Color.Red;
-            this.lbSLBook.Location = new System.Drawing.Point(829, 34);
+            this.lbSLBook.Location = new System.Drawing.Point(677, 27);
             this.lbSLBook.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSLBook.Name = "lbSLBook";
             this.lbSLBook.Size = new System.Drawing.Size(15, 23);
             this.lbSLBook.TabIndex = 47;
             this.lbSLBook.Text = ".";
-            // 
-            // btnFindByTG
-            // 
-            this.btnFindByTG.BackColor = System.Drawing.Color.Transparent;
-            this.btnFindByTG.BorderRadius = 15;
-            this.btnFindByTG.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnFindByTG.FillColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnFindByTG.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnFindByTG.ForeColor = System.Drawing.Color.White;
-            this.btnFindByTG.Location = new System.Drawing.Point(621, 14);
-            this.btnFindByTG.Margin = new System.Windows.Forms.Padding(4);
-            this.btnFindByTG.Name = "btnFindByTG";
-            this.btnFindByTG.Size = new System.Drawing.Size(187, 44);
-            this.btnFindByTG.TabIndex = 40;
-            this.btnFindByTG.Tag = "Tìm theo tên tác giả";
-            this.btnFindByTG.Text = "Tìm theo tên tác giả";
-            this.btnFindByTG.Click += new System.EventHandler(this.btnFindByTG_Click);
             // 
             // btnFindAll
             // 
@@ -217,7 +198,6 @@ namespace QLThuVien.GUI_Admin
         #endregion
 
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
-        private Guna.UI2.WinForms.Guna2Button btnFindByTG;
         private Guna.UI2.WinForms.Guna2Button btnFindAll;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2ComboBox cbTheLoai;

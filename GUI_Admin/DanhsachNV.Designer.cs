@@ -106,12 +106,12 @@ namespace QLThuVien.GUI_Admin
             this.btnXoa.FillColor = System.Drawing.Color.Crimson;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(1131, 55);
+            this.btnXoa.Location = new System.Drawing.Point(1098, 55);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(130, 44);
+            this.btnXoa.Size = new System.Drawing.Size(152, 44);
             this.btnXoa.TabIndex = 11;
-            this.btnXoa.Text = "Xóa ";
+            this.btnXoa.Text = "Vô hiệu hóa";
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
@@ -120,7 +120,7 @@ namespace QLThuVien.GUI_Admin
             this.btnLuu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(937, 55);
+            this.btnLuu.Location = new System.Drawing.Point(903, 55);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(166, 44);

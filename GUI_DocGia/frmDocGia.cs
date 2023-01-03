@@ -24,18 +24,23 @@ namespace QLThuVien.GUI_DocGia
         {
             InitializeComponent();
             user = username;
+            TenND = tkBus.GetTenTK(username);
             listSachMuon = new List<string>();
         }
+
+
 
         public frmDocGia(string username, List<string> lsMuon)
         {
             InitializeComponent();
             user = username;
+            TenND = tkBus.GetTenTK(username);
             listSachMuon = lsMuon;
         }
 
         string Madocgia = "DG000001";
         string user = "";
+        string TenND = "";
 
         public static List<string> listSachMuon;
 
@@ -62,12 +67,13 @@ namespace QLThuVien.GUI_DocGia
         }
 
         DocGia_BUS dgBus = new DocGia_BUS();
+        TaiKhoan_BUS tkBus = new TaiKhoan_BUS();
 
         private void FrmDocGia_Load(object sender, EventArgs e)
         {
             if (user != "")
             {
-                nameuser.Text = user;
+                nameuser.Text = TenND;
                 Madocgia = dgBus.LoadMaDG_TK(user);
                 pictureAvt.Image = dgBus.LoadAnh(Madocgia);
             }

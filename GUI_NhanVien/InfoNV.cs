@@ -118,13 +118,23 @@ namespace QLThuVien.GUI_NhanVien
 
         private void btnDoiMK_Click(object sender, EventArgs e)
         {
+            nv.TenNhanVien = txtName.Text;
+            nv.NgaySinh = pickerBirthday.Value;
+            nv.Email = txtEmail.Text;
+            nv.SDT = txtSDT.Text;
+            nv.DiaChi = txtDiaChi.Text;
+            nv.CMND = txtCMND.Text;
+            nv.GioiTinh = cbGioitinh.Text;
+            nv.MaNhanVien = lbMaNV.Text;
+            nv.TenDangNhap = lbTenDangNhap.Text;
+
             if (txtNewpass1.Text != txtNewpass2.Text)
                 MessageBox.Show("Nhập lại mật khẩu mới!!");
             else
             {
                 tk.MatKhau = txtNewpass1.Text;
             }
-            if (nvBus.Sua(nv))
+            if (nvBus.SuaMK(nv, tk))
             {
                 MessageBox.Show("Cập nhật mật khẩu thành công!!");
             }

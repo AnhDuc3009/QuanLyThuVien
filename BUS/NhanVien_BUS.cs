@@ -25,15 +25,23 @@ namespace QLThuVien.BUS
         {
             return nvDao.loadMa_TenDangNhap(TenDangNhap);
         }
-        public void Xoa(string mNV)
+        public void Xoa(string tDN)
         {
-            nvDao.Delete(mNV);
+            nvDao.Delete(tDN);
         }
+
         public bool Sua(NhanVien nv)
         {
             if (string.IsNullOrEmpty(nv.MaNhanVien))
                 return false;
             nvDao.Update(nv);
+            return true;
+        }
+        public bool SuaMK(NhanVien nv, TaiKhoan tk)
+        {
+            if (string.IsNullOrEmpty(nv.MaNhanVien))
+                return false;
+            nvDao.UpdateMK(nv, tk);
             return true;
         }
         public bool Them(NhanVien nv)

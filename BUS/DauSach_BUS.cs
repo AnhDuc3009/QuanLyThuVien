@@ -94,6 +94,11 @@ namespace QLThuVien.BUS
             return dsDao.LoadDauSachMini();
         }
 
+        public DataTable LoadListDSMini(string _Timkiem)
+        {
+            return dsDao.LoadDauSachMini(_Timkiem);
+        }
+
         public DataTable LoadListSLDS(CuonSach cs)
         {
             return dsDao.LoadSLDauSach(cs);

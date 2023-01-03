@@ -163,22 +163,8 @@ namespace QLThuVien.GUI_NhanVien
             }
         }
         bool isSearchTG = false;
-        private void btnFindByTG_Click(object sender, EventArgs e)
-        {
-            if (btnFindByTG.Text == btnFindByTG.Tag.ToString())
-            {
-                btnFindByTG.Text = "Tìm theo tên sách";
-                txtSearch.PlaceholderText = "Nhập tên tác giả để tôi tìm sách cho bạn ";
-                isSearchTG = true;
-            }
-            else
-            {
-                btnFindByTG.Text = btnFindByTG.Tag.ToString();
-                txtSearch.PlaceholderText = "Nhập tên sách để tôi tìm cho bạn ";
-                isSearchTG = false;
-
-            }
-        }
+        
+        
 
         private void ShowAll()
         {
