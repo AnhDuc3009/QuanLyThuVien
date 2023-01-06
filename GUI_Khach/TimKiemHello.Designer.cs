@@ -48,14 +48,14 @@ namespace QLThuVien.GUI_Khach
             this.label13 = new System.Windows.Forms.Label();
             this.btnPreview = new Guna.UI2.WinForms.Guna2Button();
             this.dgvChooseBook = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.MaDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Remove = new System.Windows.Forms.DataGridViewButtonColumn();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.lbSLBook = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.MaDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Remove = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dragPanel.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChooseBook)).BeginInit();
@@ -214,7 +214,7 @@ namespace QLThuVien.GUI_Khach
             this.btnClearAll.Name = "btnClearAll";
             this.btnClearAll.Size = new System.Drawing.Size(172, 44);
             this.btnClearAll.TabIndex = 40;
-            this.btnClearAll.Text = "Clear all";
+            this.btnClearAll.Text = "Xóa tất cả";
             this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
             // label13
@@ -302,26 +302,8 @@ namespace QLThuVien.GUI_Khach
             this.dgvChooseBook.ThemeStyle.RowsStyle.Height = 40;
             this.dgvChooseBook.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvChooseBook.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // MaDauSach
-            // 
-            this.MaDauSach.HeaderText = "Mã đầu sách";
-            this.MaDauSach.MinimumWidth = 6;
-            this.MaDauSach.Name = "MaDauSach";
-            this.MaDauSach.ReadOnly = true;
-            // 
-            // TenDauSach
-            // 
-            this.TenDauSach.HeaderText = "Tên đầu sách";
-            this.TenDauSach.MinimumWidth = 6;
-            this.TenDauSach.Name = "TenDauSach";
-            // 
-            // Remove
-            // 
-            this.Remove.HeaderText = "Remove";
-            this.Remove.MinimumWidth = 6;
-            this.Remove.Name = "Remove";
-            this.Remove.Text = "Loại bỏ";
+            this.dgvChooseBook.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChooseBook_CellClick_1);
+            this.dgvChooseBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChooseBook_CellContentClick);
             // 
             // guna2CustomGradientPanel2
             // 
@@ -380,6 +362,26 @@ namespace QLThuVien.GUI_Khach
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // MaDauSach
+            // 
+            this.MaDauSach.HeaderText = "Mã đầu sách";
+            this.MaDauSach.MinimumWidth = 6;
+            this.MaDauSach.Name = "MaDauSach";
+            this.MaDauSach.ReadOnly = true;
+            // 
+            // TenDauSach
+            // 
+            this.TenDauSach.HeaderText = "Tên đầu sách";
+            this.TenDauSach.MinimumWidth = 6;
+            this.TenDauSach.Name = "TenDauSach";
+            // 
+            // Remove
+            // 
+            this.Remove.HeaderText = "Loại bỏ";
+            this.Remove.MinimumWidth = 6;
+            this.Remove.Name = "Remove";
+            this.Remove.Text = "Loại bỏ";
+            // 
             // TimKiemHello
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -423,13 +425,13 @@ namespace QLThuVien.GUI_Khach
         private Guna.UI2.WinForms.Guna2Button btnPreview;
         private Guna.UI2.WinForms.Guna2DataGridView dgvChooseBook;
         private Guna.UI2.WinForms.Guna2Button btnClearAll;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaDauSach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenDauSach;
-        private System.Windows.Forms.DataGridViewButtonColumn Remove;
         private System.Windows.Forms.Label lbSLBook;
         private Guna.UI2.WinForms.Guna2Button btnCreatePM;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDauSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDauSach;
+        private System.Windows.Forms.DataGridViewButtonColumn Remove;
     }
 }

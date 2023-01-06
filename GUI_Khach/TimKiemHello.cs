@@ -291,5 +291,35 @@ namespace QLThuVien.GUI_Khach
                 LoadBookFlow(index * limit);
             }
         }
+
+        private void dgvChooseBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvChooseBook_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 2)
+            {
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Xóa sách này ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+
+                    string MaXoa = dgvChooseBook.Rows[e.RowIndex].Cells["MaDauSach"].Value.ToString();
+                    dgvChooseBook.Rows.RemoveAt(e.RowIndex);
+                    foreach (var item in flowLayoutDS.Controls)
+                    {
+
+                        GUI_Khach.OneBook it = (GUI_Khach.OneBook)item;
+                        if (it.MaDauSach == MaXoa && it.selected)
+                        {
+                            it.HighLightItem();
+                            break;
+                        }
+
+                    }
+                }
+
+            }
+        }
     }
 }

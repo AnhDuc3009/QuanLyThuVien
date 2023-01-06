@@ -30,12 +30,14 @@ namespace QLThuVien.GUI_Admin
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmThemDauSach));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ofdOpenFile = new System.Windows.Forms.OpenFileDialog();
             this.panelShow = new System.Windows.Forms.Panel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.cbLoaiLoc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtTuKhoa = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.dgvDauSach = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -82,8 +84,6 @@ namespace QLThuVien.GUI_Admin
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaDauSach = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.cbLoaiLoc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panelShow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDauSach)).BeginInit();
             this.guna2CustomGradientPanel3.SuspendLayout();
@@ -110,6 +110,20 @@ namespace QLThuVien.GUI_Admin
             this.panelShow.Size = new System.Drawing.Size(1427, 805);
             this.panelShow.TabIndex = 1;
             // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderRadius = 10;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(1127, 465);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(120, 46);
+            this.guna2Button2.TabIndex = 41;
+            this.guna2Button2.Text = "Tìm kiếm";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.Transparent;
@@ -120,6 +134,26 @@ namespace QLThuVien.GUI_Admin
             this.label11.Size = new System.Drawing.Size(444, 53);
             this.label11.TabIndex = 39;
             this.label11.Text = "QUẢN LÝ ĐẦU SÁCH";
+            // 
+            // cbLoaiLoc
+            // 
+            this.cbLoaiLoc.BackColor = System.Drawing.Color.Transparent;
+            this.cbLoaiLoc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbLoaiLoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLoaiLoc.FocusedColor = System.Drawing.Color.Empty;
+            this.cbLoaiLoc.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbLoaiLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbLoaiLoc.FormattingEnabled = true;
+            this.cbLoaiLoc.ItemHeight = 30;
+            this.cbLoaiLoc.Items.AddRange(new object[] {
+            "Mã đầu sách",
+            "Tên đầu sách"});
+            this.cbLoaiLoc.Location = new System.Drawing.Point(41, 469);
+            this.cbLoaiLoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbLoaiLoc.Name = "cbLoaiLoc";
+            this.cbLoaiLoc.Size = new System.Drawing.Size(269, 36);
+            this.cbLoaiLoc.TabIndex = 40;
+            this.cbLoaiLoc.SelectedIndexChanged += new System.EventHandler(this.cbLoaiLoc_SelectedIndexChanged);
             // 
             // txtTuKhoa
             // 
@@ -162,18 +196,18 @@ namespace QLThuVien.GUI_Admin
             // dgvDauSach
             // 
             this.dgvDauSach.AllowUserToResizeRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            this.dgvDauSach.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvDauSach.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDauSach.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.MediumVioletRed;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(16)))), ((int)(((byte)(106)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDauSach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MediumVioletRed;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(16)))), ((int)(((byte)(106)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDauSach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDauSach.ColumnHeadersHeight = 40;
             this.dgvDauSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaDauSach,
@@ -191,14 +225,14 @@ namespace QLThuVien.GUI_Admin
             this.DiaChi,
             this.TenNhaXuatBan,
             this.TenTheLoai});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(208)))), ((int)(((byte)(230)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(114)))), ((int)(((byte)(181)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDauSach.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(208)))), ((int)(((byte)(230)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(114)))), ((int)(((byte)(181)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDauSach.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDauSach.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(184)))), ((int)(((byte)(218)))));
             this.dgvDauSach.Location = new System.Drawing.Point(41, 518);
             this.dgvDauSach.Margin = new System.Windows.Forms.Padding(4);
@@ -456,7 +490,7 @@ namespace QLThuVien.GUI_Admin
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(136, 52);
             this.guna2Button1.TabIndex = 36;
-            this.guna2Button1.Text = "Load ảnh";
+            this.guna2Button1.Text = "Tải ảnh";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // imageBook
@@ -827,40 +861,6 @@ namespace QLThuVien.GUI_Admin
             this.label5.Size = new System.Drawing.Size(95, 20);
             this.label5.TabIndex = 7;
             this.label5.Text = "Mã đầu sách";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(1127, 465);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(120, 46);
-            this.guna2Button2.TabIndex = 41;
-            this.guna2Button2.Text = "Tìm kiếm";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
-            // 
-            // cbLoaiLoc
-            // 
-            this.cbLoaiLoc.BackColor = System.Drawing.Color.Transparent;
-            this.cbLoaiLoc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbLoaiLoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbLoaiLoc.FocusedColor = System.Drawing.Color.Empty;
-            this.cbLoaiLoc.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbLoaiLoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbLoaiLoc.FormattingEnabled = true;
-            this.cbLoaiLoc.ItemHeight = 30;
-            this.cbLoaiLoc.Items.AddRange(new object[] {
-            "Mã đầu sách",
-            "Tên đầu sách"});
-            this.cbLoaiLoc.Location = new System.Drawing.Point(41, 469);
-            this.cbLoaiLoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbLoaiLoc.Name = "cbLoaiLoc";
-            this.cbLoaiLoc.Size = new System.Drawing.Size(269, 36);
-            this.cbLoaiLoc.TabIndex = 40;
-            this.cbLoaiLoc.SelectedIndexChanged += new System.EventHandler(this.cbLoaiLoc_SelectedIndexChanged);
             // 
             // FrmThemDauSach
             // 

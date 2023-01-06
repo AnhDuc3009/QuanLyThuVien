@@ -213,8 +213,8 @@ namespace QLThuVien.GUI
             this.txtMatkhau1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtMatkhau1.Name = "txtMatkhau1";
             this.txtMatkhau1.PasswordChar = '•';
-            this.txtMatkhau1.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtMatkhau1.PlaceholderText = "      Password";
+            this.txtMatkhau1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.txtMatkhau1.PlaceholderText = "      Mật khẩu";
             this.txtMatkhau1.SelectedText = "";
             this.txtMatkhau1.Size = new System.Drawing.Size(288, 42);
             this.txtMatkhau1.TabIndex = 24;
@@ -238,8 +238,8 @@ namespace QLThuVien.GUI
             this.txtMatkhau.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtMatkhau.Name = "txtMatkhau";
             this.txtMatkhau.PasswordChar = '•';
-            this.txtMatkhau.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtMatkhau.PlaceholderText = "      Password";
+            this.txtMatkhau.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.txtMatkhau.PlaceholderText = "      Mật khẩu";
             this.txtMatkhau.SelectedText = "";
             this.txtMatkhau.Size = new System.Drawing.Size(288, 42);
             this.txtMatkhau.TabIndex = 23;
@@ -263,8 +263,8 @@ namespace QLThuVien.GUI
             this.txtUsername.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.txtUsername.PlaceholderText = "      Username";
+            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.txtUsername.PlaceholderText = "      Tên đăng nhập";
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(287, 42);
             this.txtUsername.TabIndex = 17;

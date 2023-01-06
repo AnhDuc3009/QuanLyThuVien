@@ -335,7 +335,7 @@ namespace QLThuVien.GUI_DocGia
             this.btnPreview.Name = "btnPreview";
             this.btnPreview.Size = new System.Drawing.Size(159, 44);
             this.btnPreview.TabIndex = 2;
-            this.btnPreview.Text = "Preview";
+            this.btnPreview.Text = "Xem chi tiết";
             this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
             // guna2CustomGradientPanel2

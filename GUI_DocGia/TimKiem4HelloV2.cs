@@ -272,5 +272,10 @@ namespace QLThuVien.GUI_DocGia
                 LoadBookFlow(index * limit);
             }
         }
+
+        private void dgvChooseBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
